@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies>
+	<androidPackages>
+		<repositories>
+			<repository>https://repo.maven.apache.org/maven2</repository>
+		</repositories>
+		<androidPackage spec="com.amplitude:android-sdk:2.34.1">
+			<repositories>
+				<repository>https://maven.google.com</repository>
+			</repositories>
+		</androidPackage>
+		<androidPackage spec="com.squareup.okhttp3:okhttp:4.2.2">
+			<repositories>
+				<repository>https://maven.google.com</repository>
+			</repositories>
+		</androidPackage>
+	</androidPackages>
+	<androidPackage spec="com.google.android.gms:play-services-ads-identifier:16.0.0" />
+	<iosPods>
+	</iosPods>
+</dependencies>

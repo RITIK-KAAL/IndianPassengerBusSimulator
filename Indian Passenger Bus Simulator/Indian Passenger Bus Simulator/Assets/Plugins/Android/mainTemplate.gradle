@@ -1,0 +1,97 @@
+// Android Resolver Repos Start
+([rootProject] + (rootProject.subprojects as List)).each { project ->
+    project.repositories {
+        def unityProjectPath = $/file:///**DIR_UNITYPROJECT**/$.replace("\\", "/")
+        maven {
+            url "https://maven.google.com"
+        }
+        maven {
+            url "https://repo.maven.apache.org/maven2" // Assets/Editor/AmplitudeDependencies.xml:6
+        }
+        maven {
+            url "https://maven.google.com" // Assets/Editor/AmplitudeDependencies.xml:11, Assets/Editor/AmplitudeDependencies.xml:16
+        }
+        maven {
+            url "https://android-sdk.is.com/" // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:9, Assets/IronSource/Editor/ISAdColonyAdapterDependencies.xml:16, Assets/IronSource/Editor/ISAppLovinAdapterDependencies.xml:8, Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml:8, Assets/IronSource/Editor/ISVungleAdapterDependencies.xml:16
+        }
+        maven {
+            url "https://maven.google.com/" // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:17, Assets/IronSource/Editor/IronSourceSDKDependencies.xml:25, Assets/IronSource/Editor/ISAdColonyAdapterDependencies.xml:8, Assets/IronSource/Editor/ISAppLovinAdapterDependencies.xml:15, Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml:15
+        }
+        maven {
+            url "https://jitpack.io/" // Assets/IronSource/Editor/ISVungleAdapterDependencies.xml:8
+        }
+        mavenLocal()
+        mavenCentral()
+    }
+}
+// Android Resolver Repos End
+apply plugin: 'com.android.library'
+**APPLY_PLUGINS**
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.gms:play-services-ads:16.0.0'
+// Android Resolver Dependencies Start
+    implementation 'com.adcolony:sdk:4.8.0' // Assets/IronSource/Editor/ISAdColonyAdapterDependencies.xml:8
+    implementation 'com.amplitude:android-sdk:2.34.1' // Assets/Editor/AmplitudeDependencies.xml:11
+    implementation 'com.android.installreferrer:installreferrer:2.1' // Assets/AppsFlyer/Editor/AppsFlyerDependencies.xml:10
+    implementation 'com.applovin:applovin-sdk:11.6.1' // Assets/IronSource/Editor/ISAppLovinAdapterDependencies.xml:15
+    implementation 'com.appsflyer:af-android-sdk:6.10.3' // Assets/AppsFlyer/Editor/AppsFlyerDependencies.xml:6
+    implementation 'com.appsflyer:unity-wrapper:6.10.30' // Assets/AppsFlyer/Editor/AppsFlyerDependencies.xml:8
+    // implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0' // Assets/Editor/Dependencies.xml:3
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:17
+    implementation 'com.google.android.gms:play-services-basement:18.1.0' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:25
+    implementation 'com.ironsource.adapters:adcolonyadapter:4.3.13' // Assets/IronSource/Editor/ISAdColonyAdapterDependencies.xml:16
+    implementation 'com.ironsource.adapters:applovinadapter:4.3.36' // Assets/IronSource/Editor/ISAppLovinAdapterDependencies.xml:8
+    implementation 'com.ironsource.adapters:unityadsadapter:4.3.24' // Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml:8
+    implementation 'com.ironsource.adapters:vungleadapter:4.3.18' // Assets/IronSource/Editor/ISVungleAdapterDependencies.xml:16
+    implementation 'com.ironsource.sdk:mediationsdk:7.2.6' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:9
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2' // Assets/Editor/AmplitudeDependencies.xml:16
+    implementation 'com.unity3d.ads:unity-ads:4.4.1' // Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml:15
+    implementation 'com.vungle:publisher-sdk-android:6.12.0' // Assets/IronSource/Editor/ISVungleAdapterDependencies.xml:8
+// Android Resolver Dependencies End
+**DEPS**}
+
+// Android Resolver Exclusions Start
+android {
+  packagingOptions {
+      exclude ('/lib/armeabi/*' + '*')
+      exclude ('/lib/mips/*' + '*')
+      exclude ('/lib/mips64/*' + '*')
+      exclude ('/lib/x86/*' + '*')
+      exclude ('/lib/x86_64/*' + '*')
+  }
+}
+// Android Resolver Exclusions End
+android {
+    compileSdkVersion **APIVERSION**
+    buildToolsVersion '**BUILDTOOLS**'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion **MINSDKVERSION**
+        targetSdkVersion **TARGETSDKVERSION**
+        ndk {
+            abiFilters **ABIFILTERS**
+        }
+        versionCode **VERSIONCODE**
+        versionName '**VERSIONNAME**'
+        consumerProguardFiles 'proguard-unity.txt'**USER_PROGUARD**
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    aaptOptions {
+        noCompress = **BUILTIN_NOCOMPRESS** + unityStreamingAssets.tokenize(', ')
+        ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }**PACKAGING_OPTIONS**
+}**REPOSITORIES**
+**IL_CPP_BUILD_SETUP**
+**SOURCE_BUILD_SETUP**
+**EXTERNAL_SOURCES**
