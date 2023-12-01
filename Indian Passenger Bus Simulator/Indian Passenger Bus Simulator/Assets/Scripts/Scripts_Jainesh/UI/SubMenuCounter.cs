@@ -20,7 +20,7 @@ public class SubMenuCounter : MonoBehaviour
 
     public void OnMainMenu()
     {
-        if (PlayerPrefs.GetInt("isAdsOn", 0) == 1) return;
+/*        if (PlayerPrefs.GetInt("isAdsOn", 0) == 1) return;
         if (m_InterstitialManager == null) return;
 
         m_CurrentCount++;
@@ -31,6 +31,6 @@ public class SubMenuCounter : MonoBehaviour
 #endif
             m_CurrentCount = 0;
             m_InterstitialManager.interstitialplay();
-        }
+        }*/
     }
 }

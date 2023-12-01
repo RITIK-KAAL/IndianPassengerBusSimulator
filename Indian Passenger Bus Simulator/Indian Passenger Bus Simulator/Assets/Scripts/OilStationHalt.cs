@@ -59,6 +59,8 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField]
         private CarController Car;
         private object OilStationFreeFuelButton = "OilStationFreeFuelButton";
+        [SerializeField]
+        private Camera TopViewCamera;
 
         private Amplitude amplitude;
         private AndroidJavaClass pluginClass;
@@ -149,6 +151,20 @@ namespace UnityStandardAssets.Vehicles.Car
                 CinematicCamera.gameObject.SetActive(true);
                 FuelStationPopup.SetActive(true);
             }
+            else if (isTpp == false || isFpp == false)
+            {
+                Holder.SetActive(false);
+                yield return new WaitForSeconds(0.5f);
+                CameraFadeGameObject.SetActive(true);
+                CameraFadeScreen.Play("CameraFadeScreen");
+                yield return new WaitForSeconds(1.4f);
+                Bus.position = PositionHolder.position;
+                Bus.rotation = PositionHolder.rotation;
+                yield return new WaitForSeconds(0.24f);
+                TopViewCamera.gameObject.SetActive(false);
+                CinematicCamera.gameObject.SetActive(true);
+                FuelStationPopup.SetActive(true);
+            }
         }
 
         private IEnumerator Refueling1()
@@ -179,6 +195,20 @@ namespace UnityStandardAssets.Vehicles.Car
                 yield return new WaitForSeconds(0.24f);
                 FppCamera.gameObject.SetActive(false);
                 BusInterior.gameObject.SetActive(false);
+                CinematicCamera.gameObject.SetActive(true);
+                FuelStationPopup.SetActive(true);
+            }
+            else if (isTpp == false || isFpp == false)
+            {
+                Holder.SetActive(false);
+                yield return new WaitForSeconds(0.5f);
+                CameraFadeGameObject.SetActive(true);
+                CameraFadeScreen.Play("CameraFadeScreen");
+                yield return new WaitForSeconds(1.4f);
+                Bus.position = PositionHolder.position;
+                Bus.rotation = PositionHolder.rotation;
+                yield return new WaitForSeconds(0.24f);
+                TopViewCamera.gameObject.SetActive(false);
                 CinematicCamera.gameObject.SetActive(true);
                 FuelStationPopup.SetActive(true);
             }
@@ -251,6 +281,41 @@ namespace UnityStandardAssets.Vehicles.Car
                     FuelStationPopup.SetActive(false);
                     FppCamera.gameObject.SetActive(true);
                     BusInterior.gameObject.SetActive(true);
+                    OilStationHaltObj.SetActive(true);
+                    OilStationHaltObj1.SetActive(true);
+                    ParkingCheck.SetActive(false);
+                    ParkingCheck1.SetActive(false);
+
+                    rigidbody.drag = 0.25f;
+
+                    StartCoroutine(WaitForNextFuel());
+                }
+                else if (isTpp == false || isFpp == false)
+                {
+                    FuelCoinReward.SetActive(true);
+                    AudioManager.instance.Play("Coin");
+                    fuelMeterInstance.CurrentFuelCount += 5;
+                    fuelMeterInstance.TotalFuelCount.text = instance.currentFuel.ToString();
+                    fuelMeterInstance.slider.maxValue = instance.currentFuel * 100f;
+                    fuelMeterInstance.CurrentFuel = instance.currentFuel * 100f;
+                    fuelMeterInstance.FuelFill.SetActive(true);
+                    fuelMeterInstance.FuelFill1.SetActive(true);
+                    fuelMeterInstance.FuelFill2.SetActive(true);
+                    fuelMeterInstance.FuelFill3.SetActive(true);
+                    fuelMeterInstance.FuelFill4.SetActive(true);
+
+                    CoinInstance.currentCash -= 500;
+                    PlayerPrefs.SetInt("Coins", CoinInstance.currentCash);
+                    CoinInstance.cashAmount.text = "" + CoinInstance.currentCash;
+                    PlayerPrefs.Save();
+
+                    FuelEarnedText.text = "+5";
+                    WinningFuelAnimation.SetActive(true);
+                    CinematicCamera.gameObject.SetActive(false);
+                    CameraFadeGameObject.SetActive(false);
+                    Holder.SetActive(true);
+                    FuelStationPopup.SetActive(false);
+                    TopViewCamera.gameObject.SetActive(true);
                     OilStationHaltObj.SetActive(true);
                     OilStationHaltObj1.SetActive(true);
                     ParkingCheck.SetActive(false);
@@ -447,6 +512,90 @@ namespace UnityStandardAssets.Vehicles.Car
                     StartCoroutine(WaitForNextFuel());
                 }
             }
+            else if (isTpp == false || isFpp == false)
+            {
+                if (Application.internetReachability != NetworkReachability.NotReachable)
+                {
+                    Analytics.CustomEvent("WatchAdForFuel");
+                    IronSource.Agent.showRewardedVideo();
+
+                    // Showing Rewarded Ad Event
+                    Dictionary<string, object> RewardAdPlacement = new Dictionary<string, object>()
+                {
+                                     {"placement" , OilStationFreeFuelButton}
+                };
+                    amplitude.logEvent("showingRewardedAd", RewardAdPlacement);
+
+                    Dictionary<string, object> FreeFuelAmountAndCount = new Dictionary<string, object>()
+                {
+                                     {"amount" , 3}
+                };
+                    amplitude.logEvent("Free_Fuel", FreeFuelAmountAndCount);
+
+                    fuelMeterInstance.CurrentFuelCount += 3;
+                    fuelMeterInstance.TotalFuelCount.text = instance.currentFuel.ToString();
+                    fuelMeterInstance.slider.maxValue = instance.currentFuel * 100f;
+                    fuelMeterInstance.CurrentFuel = instance.currentFuel * 100f;
+
+                    if (fuelMeterInstance.CurrentFuel == 100)
+                    {
+                        fuelMeterInstance.FuelFill.SetActive(true);
+                    }
+                    else if (fuelMeterInstance.CurrentFuel == 200)
+                    {
+                        fuelMeterInstance.FuelFill.SetActive(true);
+                        fuelMeterInstance.FuelFill1.SetActive(true);
+                    }
+                    else if (fuelMeterInstance.CurrentFuel == 300)
+                    {
+                        fuelMeterInstance.FuelFill.SetActive(true);
+                        fuelMeterInstance.FuelFill1.SetActive(true);
+                        fuelMeterInstance.FuelFill2.SetActive(true);
+                    }
+                    else if (fuelMeterInstance.CurrentFuel == 400)
+                    {
+                        fuelMeterInstance.FuelFill.SetActive(true);
+                        fuelMeterInstance.FuelFill1.SetActive(true);
+                        fuelMeterInstance.FuelFill2.SetActive(true);
+                        fuelMeterInstance.FuelFill3.SetActive(true);
+                    }
+                    else if (fuelMeterInstance.CurrentFuel == 500)
+                    {
+                        fuelMeterInstance.FuelFill.SetActive(true);
+                        fuelMeterInstance.FuelFill1.SetActive(true);
+                        fuelMeterInstance.FuelFill2.SetActive(true);
+                        fuelMeterInstance.FuelFill3.SetActive(true);
+                        fuelMeterInstance.FuelFill4.SetActive(true);
+                    }
+
+                    FuelEarnedText.text = "+3";
+                    WinningFuelAnimation.SetActive(true);
+                    CinematicCamera.gameObject.SetActive(false);
+                    CameraFadeGameObject.SetActive(false);
+                    Holder.SetActive(true);
+                    FuelStationPopup.SetActive(false);
+                    TopViewCamera.gameObject.SetActive(true);
+                    OilStationHaltObj.SetActive(true);
+                    OilStationHaltObj1.SetActive(true);
+                    ParkingCheck.SetActive(false);
+                    ParkingCheck1.SetActive(false);
+
+                    rigidbody.drag = 0.25f;
+                    StartCoroutine(WaitForNextFuel());
+                }
+                else
+                {
+                    RewardedInstance.NoConnectionPopup.SetActive(true);
+                    FuelStationPopup.SetActive(false);
+                    OilStationHaltObj.SetActive(true);
+                    OilStationHaltObj1.SetActive(true);
+                    ParkingCheck.SetActive(false);
+                    ParkingCheck1.SetActive(false);
+
+                    rigidbody.drag = 0.25f;
+                    StartCoroutine(WaitForNextFuel());
+                }
+            }
         }
 
         public void FuelPopupExit()
@@ -525,6 +674,42 @@ namespace UnityStandardAssets.Vehicles.Car
                     StartCoroutine(WaitForNextFuel());
                 }
             }
+            else if (isTpp == false || isFpp == false)
+            {
+                if (instance.currentFuel == 0)
+                {
+                    FailScreen.SetActive(true);
+                    FuelStationPopup.SetActive(false);
+                    CinematicCamera.gameObject.SetActive(false);
+                    CameraFadeGameObject.SetActive(false);
+                    Holder.SetActive(true);
+                    TopViewCamera.gameObject.SetActive(true);
+                    OilStationHaltObj.SetActive(true);
+                    OilStationHaltObj1.SetActive(true);
+                    ParkingCheck.SetActive(false);
+                    ParkingCheck1.SetActive(false);
+
+                    rigidbody.drag = 0.25f;
+
+                    StartCoroutine(WaitForNextFuel());
+                }
+                else
+                {
+                    FuelStationPopup.SetActive(false);
+                    CinematicCamera.gameObject.SetActive(false);
+                    CameraFadeGameObject.SetActive(false);
+                    Holder.SetActive(true);
+                    TopViewCamera.gameObject.SetActive(true);
+                    OilStationHaltObj.SetActive(true);
+                    OilStationHaltObj1.SetActive(true);
+                    ParkingCheck.SetActive(false);
+                    ParkingCheck1.SetActive(false);
+
+                    rigidbody.drag = 0.25f;
+
+                    StartCoroutine(WaitForNextFuel());
+                }
+            }
         }
 
         public void OkButton()
@@ -551,6 +736,19 @@ namespace UnityStandardAssets.Vehicles.Car
                 Holder.SetActive(true);
                 FppCamera.gameObject.SetActive(true);
                 BusInterior.gameObject.SetActive(true);
+                OilStationHaltObj.SetActive(true);
+                OilStationHaltObj1.SetActive(true);
+                ParkingCheck.SetActive(false);
+                ParkingCheck1.SetActive(false);
+            }
+            else if (isTpp == false || isFpp == false)
+            {
+                NoConnectionPopup.SetActive(false);
+                FuelStationPopup.SetActive(true);
+                CinematicCamera.gameObject.SetActive(false);
+                CameraFadeGameObject.SetActive(false);
+                Holder.SetActive(true);
+                TopViewCamera.gameObject.SetActive(true);
                 OilStationHaltObj.SetActive(true);
                 OilStationHaltObj1.SetActive(true);
                 ParkingCheck.SetActive(false);

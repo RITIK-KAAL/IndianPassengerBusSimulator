@@ -133,6 +133,8 @@ public class IntroductionWindow : MonoBehaviour
     private GameObject AdRemovablePackPopup;
     private int AlternateSession;
 
+    private object App_Open = "App_Open";
+
     [Space(15)]
 
     [SerializeField] private Interstitial interstitialAdManager;
@@ -196,7 +198,7 @@ public class IntroductionWindow : MonoBehaviour
             amplitude.init("1acb370bcf89779db77dd17092d06718");
 
         // app_open Event
-        MiniIT.Utils.AdvertisingIdFetcher.RequestAdvertisingId(advertisingId =>
+/*        MiniIT.Utils.AdvertisingIdFetcher.RequestAdvertisingId(advertisingId =>
         {
             if (advertisingId != "")
             {
@@ -208,7 +210,13 @@ public class IntroductionWindow : MonoBehaviour
                 };
                 amplitude.logEvent("App_open", AppOpen);
             }
-        });
+        });*/
+
+        Dictionary<string, object> AppOpen = new Dictionary<string, object>()
+        {
+            {"app_Open" , App_Open }
+        };
+        amplitude.logEvent("App_Open", AppOpen);
 
         SceneManager.sceneLoaded += OnSceneLoad;
     }
@@ -268,13 +276,13 @@ public class IntroductionWindow : MonoBehaviour
 #elif UNITY_ANDROID || UNITY_IOS
         if (PlayerPrefs.GetInt("Home") == 0)
         {
-            StartCoroutine(WaitForLogoSound());
+/*            StartCoroutine(WaitForLogoSound());
             UnderDogsLogo.SetActive(true);
             FadeScreen.SetActive(true);
             yield return new WaitForSeconds(3f);
             Fade.SetBool("isStarted", false);
             yield return new WaitForSeconds(3f);
-            UnderDogsLogo.SetActive(false);
+            UnderDogsLogo.SetActive(false);*/
             yield return null;
             StartImage.SetActive(true);
             StartImageAudio.Play();

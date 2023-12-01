@@ -3193,12 +3193,14 @@ struct IntroductionWindow_t3C2E6C99F89C69793AE4894C188FE36FA75F7E57  : public Mo
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___AdRemovablePackPopup_74;
 	// System.Int32 IntroductionWindow::AlternateSession
 	int32_t ___AlternateSession_75;
+	// System.Object IntroductionWindow::App_Open
+	RuntimeObject* ___App_Open_76;
 	// Interstitial IntroductionWindow::interstitialAdManager
-	Interstitial_tDF9D8393937F3CF08A819856AC2411AB2D00B5FC* ___interstitialAdManager_76;
+	Interstitial_tDF9D8393937F3CF08A819856AC2411AB2D00B5FC* ___interstitialAdManager_77;
 	// UnityEngine.AndroidJavaClass IntroductionWindow::pluginClass
-	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___pluginClass_77;
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___pluginClass_78;
 	// UnityEngine.WaitForSeconds IntroductionWindow::checkInternetDelay
-	WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* ___checkInternetDelay_78;
+	WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* ___checkInternetDelay_79;
 };
 
 // Lean.LeanTouch
@@ -3299,10 +3301,12 @@ struct OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0  : public MonoBe
 	CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* ___Car_33;
 	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt::OilStationFreeFuelButton
 	RuntimeObject* ___OilStationFreeFuelButton_34;
+	// UnityEngine.Camera UnityStandardAssets.Vehicles.Car.OilStationHalt::TopViewCamera
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___TopViewCamera_35;
 	// Amplitude UnityStandardAssets.Vehicles.Car.OilStationHalt::amplitude
-	Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* ___amplitude_35;
+	Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* ___amplitude_36;
 	// UnityEngine.AndroidJavaClass UnityStandardAssets.Vehicles.Car.OilStationHalt::pluginClass
-	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___pluginClass_36;
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___pluginClass_37;
 };
 
 // UnityStandardAssets.Vehicles.Car.Rewarded

@@ -21,26 +21,7 @@ struct VirtualActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
-template <typename R>
-struct VirtualFuncInvoker0
-{
-	typedef R (*Func)(void*, const RuntimeMethod*);
 
-	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
-		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-
-// System.Action`1<UnityEngine.AsyncOperation>
-struct Action_1_tE8693FF0E67CDBA52BAFB211BFF1844D076ABAFB;
-// System.Action`1<System.Boolean>
-struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C;
-// System.Action`1<IronSourcePlacement>
-struct Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB;
-// System.Action`1<System.Object>
-struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 // System.Action`1<TMPro.TMP_TextInfo>
 struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
@@ -79,12 +60,8 @@ struct TMP_TextProcessingStack_1U5BU5D_t08293E0BB072311BB96170F351D1083BCA97B9B2
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 // UnityEngine.Color32[]
 struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
-// UnityEngine.ContactPoint[]
-struct ContactPointU5BU5D_t3570603E8D0685B71B3D8BA07031674B00C5E411;
 // System.Decimal[]
 struct DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615;
-// System.Delegate[]
-struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 // TMPro.FontWeight[]
 struct FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA;
 // UnityEngine.GameObject[]
@@ -113,8 +90,6 @@ struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct SoundU5BU5D_t72FB050B36D0242C25330F8F4AC115C91598A1F5;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
-// System.String[]
-struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 // TMPro.TMP_CharacterInfo[]
 struct TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99;
 // TMPro.TMP_ColorGradient[]
@@ -133,8 +108,6 @@ struct WheelEffectsU5BU5D_t60B4DC758CCE4F0E4454607DEDD5D47E41AE2686;
 struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
 // TMPro.TMP_Text/UnicodeChar[]
 struct UnicodeCharU5BU5D_t67F27D09F8EB28D2C42DFF16FE60054F157012F5;
-// System.Action
-struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 // Amplitude
 struct Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E;
 // UnityEngine.AndroidJavaClass
@@ -143,20 +116,12 @@ struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03;
 struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
 // UnityEngine.Animator
 struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883;
-// UnityEngine.AsyncOperation
-struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C;
-// UnityEngine.AudioClip
-struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20;
 // AudioManager
 struct AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B;
-// UnityEngine.AudioSource
-struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // BusInfo
 struct BusInfo_t1E3059CFC00E7E233905386ACA5CEC6889AC10A9;
 // UnityStandardAssets.Vehicles.Car.BusMovement
 struct BusMovement_tADB9F9BA701F9EB87C98BDC5EF1870E6B89CE69A;
-// UnityEngine.UI.Button
-struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 // UnityEngine.Canvas
@@ -171,14 +136,10 @@ struct CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347;
 struct CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E;
 // UnityEngine.Collider
 struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76;
-// UnityEngine.Collision
-struct Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0;
 // UnityEngine.Component
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // UnityEngine.Coroutine
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
-// System.DelegateData
-struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
 // FuelData
 struct FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF;
 // UnityStandardAssets.Vehicles.Car.FuelMeter
@@ -211,18 +172,12 @@ struct Interstitial_tDF9D8393937F3CF08A819856AC2411AB2D00B5FC;
 struct IronSource_t7DCCEB700A572343087F7D51705815185046A120;
 // IronSourceIAgent
 struct IronSourceIAgent_t1E296CC343BD8D5E1C7E838E8B1CB909442ACEF6;
-// IronSourcePlacement
-struct IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571;
-// Joystick
-struct Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A;
 // UnityEngine.UI.LayoutElement
 struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
 // UnityEngine.Material
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 // UnityEngine.Mesh
 struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
-// System.Reflection.MethodInfo
-struct MethodInfo_t;
 // UnityEngine.MonoBehaviour
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
 // UnityEngine.AI.NavMeshAgent
@@ -241,8 +196,6 @@ struct ParkingCheck1_t22DDF25ECE71BFC8E9DEB1FD3AC7CABE9CD6101A;
 struct ParkingCheck2_t5232B2F6F01645E8AD6FE354753193B6472596CD;
 // PassengerController
 struct PassengerController_tE45D38C45E4C9B6D879D50963435262BFFD035CD;
-// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu
-struct PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3;
 // UnityEngine.UI.RectMask2D
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 // UnityEngine.RectTransform
@@ -259,8 +212,6 @@ struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
 struct Sequence_tEADBE56D6ED2E9EE8FB2E5459C3E57131EC0545C;
 // UnityEngine.UI.Slider
 struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F;
-// UnityStandardAssets.Vehicles.Car.SpeedVariation
-struct SpeedVariation_tC3855852E458B6FEA14719FF0EFF9743A9D88F80;
 // UnityEngine.Sprite
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // SteeringWheel
@@ -291,12 +242,8 @@ struct TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D;
 struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 // UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter
 struct ThirdPersonCharacter_t9A1305E4F6D03897A4A33A73F2D7E9665218F41D;
-// UnityStandardAssets.Vehicles.Car.Timer
-struct Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697;
 // UnityEngine.Transform
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
-// UnityStandardAssets.Vehicles.Car.UnaffectedHealth
-struct UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0;
 // UnityEngine.Events.UnityAction
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
 // UnityEngine.UI.VertexHelper
@@ -311,14 +258,14 @@ struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct U3CWaitForNextAnimationU3Ed__49_t4C9E7C455E33BDAC2A2456B9CDD65AF03B1D3F3F;
 // UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38
-struct U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2;
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36
-struct U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446;
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35
-struct U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0;
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42
-struct U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F;
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39
+struct U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C;
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37
+struct U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582;
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36
+struct U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78;
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43
+struct U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A;
 // UnityStandardAssets.Vehicles.Car.ParkingCheck/<DropPassengers>d__67
 struct U3CDropPassengersU3Ed__67_t8F69640D7AA18D6C76070DC189D1C23D21150FBD;
 // UnityStandardAssets.Vehicles.Car.ParkingCheck/<DropWaitTime>d__72
@@ -379,28 +326,18 @@ struct U3CWaitTime2U3Ed__79_t719867941D1773E4F461D4956FC7CDE72D9027D6;
 struct U3CWaitTime3U3Ed__80_t163481E1A0D0AE904CD2DC7B7FE3AD938BA72A78;
 // UnityStandardAssets.Vehicles.Car.ParkingCheck2/<WaitTime>d__77
 struct U3CWaitTimeU3Ed__77_t6C33E3ABBC19E8C5C180B407F0373BA01178B1D9;
-// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14
-struct U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7;
 // UnityEngine.UI.Slider/SliderEvent
 struct SliderEvent_t92A82EF6C62E15AF92B640FE2D960E877E8C6555;
 
-IL2CPP_EXTERN_C RuntimeClass* Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* BusService_t545A0A75BAA8F084DA6C094B5447033DC8758742_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CDropPassengersU3Ed__67_t8F69640D7AA18D6C76070DC189D1C23D21150FBD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CDropPassengersU3Ed__67_tF4B76AAE114861813A5BB1F18AD45FB44FF7D96C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CDropPassengersU3Ed__76_tCEB2D4A2EAF681F856D62C84FDCB3B250C1D13F6_il2cpp_TypeInfo_var;
@@ -416,13 +353,12 @@ IL2CPP_EXTERN_C RuntimeClass* U3CPickupPassengersU3Ed__73_t76176F3A3ED8884A7C406
 IL2CPP_EXTERN_C RuntimeClass* U3CPickupWaitTimeU3Ed__70_tBF862928C70B5B00FCB1D695F0E8307D0700E024_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CPickupWaitTimeU3Ed__71_tD4A144CCDBAA1A1CF354D422EF04BD56891B818E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CPickupWaitTimeU3Ed__81_t6AD4662CC7FEFC8A73651678E8EE521F4AF69649_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CSoundDelayU3Ed__73_t1F001F79988B4C271EBBAB52F80FBF2147F73D77_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CSoundDelayU3Ed__73_t1F31CCC86E5B828F18B26353C8BF2226C289A6CA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CSoundDelayU3Ed__83_tC1B077E63D92DF8D3D35090F696CDC6AF3F8C69C_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CWaitForSteerU3Ed__57_t64FCB95A0107287342E2B7224CDC4C9D1189CEF4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CWaitForSteerU3Ed__60_t60126178C18438C53C410F9E2FE041896D4F2BFD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CWaitForSteerU3Ed__63_t494486FABD1FFA2508C00A047627A4CAC2F19FDC_il2cpp_TypeInfo_var;
@@ -435,7 +371,6 @@ IL2CPP_EXTERN_C RuntimeClass* U3CWaitTime3U3Ed__80_t163481E1A0D0AE904CD2DC7B7FE3
 IL2CPP_EXTERN_C RuntimeClass* U3CWaitTimeU3Ed__68_t99EAEC257E661E3C391DEBA59D7B7C65C0669A5A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CWaitTimeU3Ed__68_tCD9A196CA9A3CB1C50265ADA51619E8DDE4DF74A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CWaitTimeU3Ed__77_t6C33E3ABBC19E8C5C180B407F0373BA01178B1D9_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral05E54D4AF527F4717071BB52F2D3ADF4927AA4D7;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B7E04D0330427066E9BB37585E6B1EB51D55115;
@@ -443,70 +378,45 @@ IL2CPP_EXTERN_C String_t* _stringLiteral10AA371B7C51AD5FA1BA22623312C51078B7EE63
 IL2CPP_EXTERN_C String_t* _stringLiteral112313A981D38E13057157AB59296759481F107B;
 IL2CPP_EXTERN_C String_t* _stringLiteral14BBC620E8E75411EAE7D5F909B52070704C37FA;
 IL2CPP_EXTERN_C String_t* _stringLiteral14CE35AEE7E6C85576616A5851117B295A2343C1;
-IL2CPP_EXTERN_C String_t* _stringLiteral19E6F54B915CB01A74B7174DFEF8AC62E0C2BB5F;
 IL2CPP_EXTERN_C String_t* _stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15;
 IL2CPP_EXTERN_C String_t* _stringLiteral28ADD6B6F69731FBFD83718D9CA3ADB0FECAD2C9;
 IL2CPP_EXTERN_C String_t* _stringLiteral296D13113535BB052A59E626B304A6BDD6CE9247;
-IL2CPP_EXTERN_C String_t* _stringLiteral2A9E2747D0CA413DCBD2B279EC72DFE0BF548D71;
 IL2CPP_EXTERN_C String_t* _stringLiteral2E34C1DBF4BA82374F47E302195C48086D74A0E0;
 IL2CPP_EXTERN_C String_t* _stringLiteral31FE780553063315BB0EA21DD3ACBBE24A002F72;
 IL2CPP_EXTERN_C String_t* _stringLiteral39AA4591F5E8521FD30DD4AF3CD3D7C23E19314F;
-IL2CPP_EXTERN_C String_t* _stringLiteral3C7FA19EDE0206A6EF73DF8B5312DF5EBEB67FCE;
 IL2CPP_EXTERN_C String_t* _stringLiteral517270BB13D17092FFEF6D891626BF3F0D2760B5;
 IL2CPP_EXTERN_C String_t* _stringLiteral5BED1EFC4FB45E2F26E6D2C364279C5174FDB756;
 IL2CPP_EXTERN_C String_t* _stringLiteral5CA59CD3908DD36A013B542B6CEC65F4E62B52CC;
 IL2CPP_EXTERN_C String_t* _stringLiteral60AC34DD8CFAFEDC585175F3CA15FC6AC088FCEF;
 IL2CPP_EXTERN_C String_t* _stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD;
-IL2CPP_EXTERN_C String_t* _stringLiteral6C066B34F4DB79023C0642AFBC43B25A5327F710;
 IL2CPP_EXTERN_C String_t* _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1;
-IL2CPP_EXTERN_C String_t* _stringLiteral725A177C9794D8298EFEED11CCEB028D61634F89;
 IL2CPP_EXTERN_C String_t* _stringLiteral72C2A743C420FA6808FA7E80A418E886404FAD8A;
 IL2CPP_EXTERN_C String_t* _stringLiteral75787957FE2785C4BAC32A01312943429C493959;
-IL2CPP_EXTERN_C String_t* _stringLiteral78FE7F3E238F59DCADFB31DB9073639A0F8E2140;
-IL2CPP_EXTERN_C String_t* _stringLiteral79D33A3A0B9D256F358B6A9572BB0181E20B5B5C;
-IL2CPP_EXTERN_C String_t* _stringLiteral7CB769703018961A98904E0CD8E6078D6C2832CA;
-IL2CPP_EXTERN_C String_t* _stringLiteral816C57C6AD84B6942F9F7B9E2A2F0F7B5B456987;
 IL2CPP_EXTERN_C String_t* _stringLiteral8681AE31135D739BAD6532151B1D8552CF7F78D6;
 IL2CPP_EXTERN_C String_t* _stringLiteral86EF08942F0B5CB4EE8A776F3F259D6A230E3DC4;
 IL2CPP_EXTERN_C String_t* _stringLiteral8B4E1B0D7DDD10583DA7C1E16F940D574A76A025;
-IL2CPP_EXTERN_C String_t* _stringLiteral9DA7B596C07B11A65E2667BC87EC57777926861C;
 IL2CPP_EXTERN_C String_t* _stringLiteral9EE0F8466DB982097F181BF01C645F3FC0C20D63;
 IL2CPP_EXTERN_C String_t* _stringLiteral9F2F0665E9215C7D956B394817DABEB2155DAB50;
-IL2CPP_EXTERN_C String_t* _stringLiteral9F51A7868A9FB6D864FDB2B35CBDCCDCAAA95AA0;
-IL2CPP_EXTERN_C String_t* _stringLiteralA1E8FE88DD71D4193E8FCC70B7364E997A92740E;
-IL2CPP_EXTERN_C String_t* _stringLiteralA27A735963C35C40C55510103CE6D297CAD13B07;
-IL2CPP_EXTERN_C String_t* _stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410;
-IL2CPP_EXTERN_C String_t* _stringLiteralA825DFF2EFDEE65254DD2CF716D86D45561B078D;
 IL2CPP_EXTERN_C String_t* _stringLiteralA982A1BA4D18DFE3E66F126342126192B22DB764;
-IL2CPP_EXTERN_C String_t* _stringLiteralAA8DDD692CFBA350C83D8203D9CA9ECBC1E2050C;
-IL2CPP_EXTERN_C String_t* _stringLiteralB404F63CFA087BF3979B80169574C6B0155AF029;
 IL2CPP_EXTERN_C String_t* _stringLiteralB8B5CA548476E511C93929077FE5C67E336CAF7D;
 IL2CPP_EXTERN_C String_t* _stringLiteralBE677CF16CFC543971DE1B7C0497DE36D595BE94;
-IL2CPP_EXTERN_C String_t* _stringLiteralC4D495F4756BF493A167DB5EF3EFFA207718389D;
 IL2CPP_EXTERN_C String_t* _stringLiteralCAE10AC0A0419298BD426031ACBC2FF3EC2723E3;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBD9C6C35F8F76BD4B6073BAC366E68D4E36DEA8;
 IL2CPP_EXTERN_C String_t* _stringLiteralCEF36B6375A694F6D69455DBF7163B7B5247BF42;
-IL2CPP_EXTERN_C String_t* _stringLiteralD3C6FF105F16F36B05CE62DC0895F7A6B90F6ED8;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-IL2CPP_EXTERN_C String_t* _stringLiteralDDBC67A0A5B715656006F4E96C4CDEA983C1AB81;
-IL2CPP_EXTERN_C String_t* _stringLiteralE6223909301FC6EC095026FC41BEB25614A36F3C;
 IL2CPP_EXTERN_C String_t* _stringLiteralF1A9BE8908B6E65FACB885209B209FD97BBDF648;
 IL2CPP_EXTERN_C String_t* _stringLiteralF26114C948A9847A250BCD5153B91C4805B7C85E;
 IL2CPP_EXTERN_C String_t* _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC;
 IL2CPP_EXTERN_C String_t* _stringLiteralFCBFB4570B1D96937D755179D63018BA41612598;
 IL2CPP_EXTERN_C String_t* _stringLiteralFCC240D20DEEF79B0563C25F7DF95135F7D0FC29;
 IL2CPP_EXTERN_C String_t* _stringLiteralFDA9CAFA8DAAEF3D00AE0DF3A728FC9F990AF4E7;
-IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_m83612DF20D907705994B4C139301E9DE5DFF2A69_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisHealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9_mAA26AF66415FDF5589986A49BFDF2B0508BB0C30_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisPassengerController_tE45D38C45E4C9B6D879D50963435262BFFD035CD_m12F82488E3DB4B306AE9CF7CE7D6CC6B5081DD6E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TisBusInfo_t1E3059CFC00E7E233905386ACA5CEC6889AC10A9_m8F7704A25EF784015393A033F6CDE9D37633B91F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Rewarded_RewardedVideoAdClosedEvent_m58A0E1D4E60BEE8724EBD693FFEEADEB031947D0_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Rewarded_RewardedVideoAdRewardedEvent_m47612E0AAA5FD0DBBC4C87D79B2111B4E38B12ED_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Rewarded_RewardedVideoAvailabilityChangedEvent_m48C8F336BC589739B47135F50C97F266E7820147_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CAlertTextU3Ed__38_System_Collections_IEnumerator_Reset_m56B19931EA3CC4B4B5598F039724CDB86CC46788_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CAlertTextU3Ed__39_System_Collections_IEnumerator_Reset_mDEF1571BDB7278B37EA5182277810B518B309328_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDropPassengersU3Ed__67_System_Collections_IEnumerator_Reset_m635BE63492DF0685B84062B116E6D8B71AA795C2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDropPassengersU3Ed__67_System_Collections_IEnumerator_Reset_mC9DF9AB5A6203408CC4055F7369537CF5363EE7F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDropPassengersU3Ed__76_System_Collections_IEnumerator_Reset_m8C421021EFF5E61E96371D870354B74C2A710BCC_RuntimeMethod_var;
@@ -522,14 +432,13 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CPickupPassengersU3Ed__73_System_Collecti
 IL2CPP_EXTERN_C const RuntimeMethod* U3CPickupWaitTimeU3Ed__70_System_Collections_IEnumerator_Reset_mBF8080D822EC3DEE5CB5FC2AE6687B1EFBF74FB3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CPickupWaitTimeU3Ed__71_System_Collections_IEnumerator_Reset_m20B10959A1BAA2DF36149718B28E887A4EAB81B6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CPickupWaitTimeU3Ed__81_System_Collections_IEnumerator_Reset_m2BB18A8D697C4AAC3192BA1DAE6AF79C722D5DDE_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CRefueling1U3Ed__36_System_Collections_IEnumerator_Reset_mE9681DBFDC434509527530ABC363A5AAE0E94AF8_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CRefuelingU3Ed__35_System_Collections_IEnumerator_Reset_m3FD44B857A41EBCAFCE6C24109BABEEAFA537E40_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CReturnHomeAsyncU3Ed__14_System_Collections_IEnumerator_Reset_m62E4C1E22C9833FC30A7451934515EF4003AA4FC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CRefueling1U3Ed__37_System_Collections_IEnumerator_Reset_m5A355AAB925C6E5FD0CED707FE5690F45132F393_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CRefuelingU3Ed__36_System_Collections_IEnumerator_Reset_mC1D0A154D0C76C176B685948DB34FAD18E8DCD7C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CSoundDelayU3Ed__73_System_Collections_IEnumerator_Reset_m3ABD24F13096D982FE6DC0D2CA2A5660EBF4AFF5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CSoundDelayU3Ed__73_System_Collections_IEnumerator_Reset_m553108F275FB101585DA7CFAADA1E75407C3A8B7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CSoundDelayU3Ed__83_System_Collections_IEnumerator_Reset_m32C1E87A36EBAC6A38CE6C0ACCC1CC8A509AD3D1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitForNextAnimationU3Ed__49_System_Collections_IEnumerator_Reset_mE808C67D44151A14BD652E0CA2939156CF49B097_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitForNextFuelU3Ed__42_System_Collections_IEnumerator_Reset_mA8FCE1F2FD2B9BA6F850FB7E9EF6717827A6E6A9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitForNextFuelU3Ed__43_System_Collections_IEnumerator_Reset_m0D1BF6F5DEB0C6DE77873240F40B7C48BB152355_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitForSteerU3Ed__57_System_Collections_IEnumerator_Reset_m875BF2814073C783CC9F22584627E0269BD29AC3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitForSteerU3Ed__60_System_Collections_IEnumerator_Reset_m11636A4A35FB9D9187DF8435643F2D5BAE8FDE6C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitForSteerU3Ed__63_System_Collections_IEnumerator_Reset_mDC39B5F3C997C9F801B1A8D0691C6FD73D230C54_RuntimeMethod_var;
@@ -542,13 +451,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitTime3U3Ed__80_System_Collections_IEn
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitTimeU3Ed__68_System_Collections_IEnumerator_Reset_m35037EC753D84448C90FED07E0653414B5D0F35E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitTimeU3Ed__68_System_Collections_IEnumerator_Reset_m7680296B6B76187FF4BA892AE733AEC7179D0B50_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWaitTimeU3Ed__77_System_Collections_IEnumerator_Reset_m5C3A7E917F20B11AFC41E61E0CD540AB71AC5E02_RuntimeMethod_var;
-struct ContactPoint_t241857959C0D517C21F541BB04B63FA6C1EAB3F9;
-struct Delegate_t_marshaled_com;
-struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
-struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -602,17 +507,6 @@ struct IronSource_t7DCCEB700A572343087F7D51705815185046A120  : public RuntimeObj
 	RuntimeObject* ____platformAgent_0;
 };
 
-// IronSourcePlacement
-struct IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571  : public RuntimeObject
-{
-	// System.String IronSourcePlacement::rewardName
-	String_t* ___rewardName_0;
-	// System.Int32 IronSourcePlacement::rewardAmount
-	int32_t ___rewardAmount_1;
-	// System.String IronSourcePlacement::placementName
-	String_t* ___placementName_2;
-};
-
 // System.String
 struct String_t  : public RuntimeObject
 {
@@ -659,47 +553,47 @@ struct U3CWaitForNextAnimationU3Ed__49_t4C9E7C455E33BDAC2A2456B9CDD65AF03B1D3F3F
 	InAppStore_t749D216F08AD7558275686A9F3F330B6DFAD1636* ___U3CU3E4__this_2;
 };
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38
-struct U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2  : public RuntimeObject
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39
+struct U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C  : public RuntimeObject
 {
-	// System.Int32 UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::<>1__state
+	// System.Int32 UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::<>2__current
+	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// UnityStandardAssets.Vehicles.Car.OilStationHalt UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::<>4__this
+	// UnityStandardAssets.Vehicles.Car.OilStationHalt UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::<>4__this
 	OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* ___U3CU3E4__this_2;
 };
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36
-struct U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446  : public RuntimeObject
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37
+struct U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582  : public RuntimeObject
 {
-	// System.Int32 UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::<>1__state
+	// System.Int32 UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::<>2__current
+	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// UnityStandardAssets.Vehicles.Car.OilStationHalt UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::<>4__this
+	// UnityStandardAssets.Vehicles.Car.OilStationHalt UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::<>4__this
 	OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* ___U3CU3E4__this_2;
 };
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35
-struct U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0  : public RuntimeObject
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36
+struct U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78  : public RuntimeObject
 {
-	// System.Int32 UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::<>1__state
+	// System.Int32 UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::<>2__current
+	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// UnityStandardAssets.Vehicles.Car.OilStationHalt UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::<>4__this
+	// UnityStandardAssets.Vehicles.Car.OilStationHalt UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::<>4__this
 	OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* ___U3CU3E4__this_2;
 };
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42
-struct U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F  : public RuntimeObject
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43
+struct U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A  : public RuntimeObject
 {
-	// System.Int32 UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::<>1__state
+	// System.Int32 UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::<>2__current
+	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// UnityStandardAssets.Vehicles.Car.OilStationHalt UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::<>4__this
+	// UnityStandardAssets.Vehicles.Car.OilStationHalt UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::<>4__this
 	OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* ___U3CU3E4__this_2;
 };
 
@@ -1033,21 +927,6 @@ struct U3CWaitTimeU3Ed__77_t6C33E3ABBC19E8C5C180B407F0373BA01178B1D9  : public R
 	ParkingCheck2_t5232B2F6F01645E8AD6FE354753193B6472596CD* ___U3CU3E4__this_2;
 };
 
-// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14
-struct U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7  : public RuntimeObject
-{
-	// System.Int32 UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Int32 UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::SceneIndex
-	int32_t ___SceneIndex_2;
-	// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::<>4__this
-	PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* ___U3CU3E4__this_3;
-	// UnityEngine.AsyncOperation UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::<operation>5__2
-	AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* ___U3CoperationU3E5__2_4;
-};
-
 // TMPro.TMP_TextProcessingStack`1<TMPro.FontWeight>
 struct TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 
 {
@@ -1220,13 +1099,6 @@ struct Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B
 			uint8_t ___a_4_forAlignmentOnly;
 		};
 	};
-};
-
-// System.Double
-struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
-{
-	// System.Double System.Double::m_value
-	double ___m_value_0;
 };
 
 // UnityEngine.DrivenRectTransformTracker
@@ -1618,68 +1490,6 @@ struct TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9
 	int32_t ___m_Count_5;
 };
 
-// UnityEngine.AsyncOperation
-struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
-{
-	// System.IntPtr UnityEngine.AsyncOperation::m_Ptr
-	intptr_t ___m_Ptr_0;
-	// System.Action`1<UnityEngine.AsyncOperation> UnityEngine.AsyncOperation::m_completeCallback
-	Action_1_tE8693FF0E67CDBA52BAFB211BFF1844D076ABAFB* ___m_completeCallback_1;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.AsyncOperation
-struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
-{
-	intptr_t ___m_Ptr_0;
-	Il2CppMethodPointer ___m_completeCallback_1;
-};
-// Native definition for COM marshalling of UnityEngine.AsyncOperation
-struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
-{
-	intptr_t ___m_Ptr_0;
-	Il2CppMethodPointer ___m_completeCallback_1;
-};
-
-// UnityEngine.Collision
-struct Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0  : public RuntimeObject
-{
-	// UnityEngine.Vector3 UnityEngine.Collision::m_Impulse
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Impulse_0;
-	// UnityEngine.Vector3 UnityEngine.Collision::m_RelativeVelocity
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_RelativeVelocity_1;
-	// UnityEngine.Component UnityEngine.Collision::m_Body
-	Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* ___m_Body_2;
-	// UnityEngine.Collider UnityEngine.Collision::m_Collider
-	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___m_Collider_3;
-	// System.Int32 UnityEngine.Collision::m_ContactCount
-	int32_t ___m_ContactCount_4;
-	// UnityEngine.ContactPoint[] UnityEngine.Collision::m_ReusedContacts
-	ContactPointU5BU5D_t3570603E8D0685B71B3D8BA07031674B00C5E411* ___m_ReusedContacts_5;
-	// UnityEngine.ContactPoint[] UnityEngine.Collision::m_LegacyContacts
-	ContactPointU5BU5D_t3570603E8D0685B71B3D8BA07031674B00C5E411* ___m_LegacyContacts_6;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.Collision
-struct Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0_marshaled_pinvoke
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Impulse_0;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_RelativeVelocity_1;
-	Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* ___m_Body_2;
-	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___m_Collider_3;
-	int32_t ___m_ContactCount_4;
-	ContactPoint_t241857959C0D517C21F541BB04B63FA6C1EAB3F9* ___m_ReusedContacts_5;
-	ContactPoint_t241857959C0D517C21F541BB04B63FA6C1EAB3F9* ___m_LegacyContacts_6;
-};
-// Native definition for COM marshalling of UnityEngine.Collision
-struct Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0_marshaled_com
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Impulse_0;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_RelativeVelocity_1;
-	Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* ___m_Body_2;
-	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___m_Collider_3;
-	int32_t ___m_ContactCount_4;
-	ContactPoint_t241857959C0D517C21F541BB04B63FA6C1EAB3F9* ___m_ReusedContacts_5;
-	ContactPoint_t241857959C0D517C21F541BB04B63FA6C1EAB3F9* ___m_LegacyContacts_6;
-};
-
 // UnityEngine.UI.ColorBlock
 struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 
 {
@@ -1714,71 +1524,6 @@ struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : p
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
 	intptr_t ___m_Ptr_0;
-};
-
-// System.Delegate
-struct Delegate_t  : public RuntimeObject
-{
-	// System.IntPtr System.Delegate::method_ptr
-	Il2CppMethodPointer ___method_ptr_0;
-	// System.IntPtr System.Delegate::invoke_impl
-	intptr_t ___invoke_impl_1;
-	// System.Object System.Delegate::m_target
-	RuntimeObject* ___m_target_2;
-	// System.IntPtr System.Delegate::method
-	intptr_t ___method_3;
-	// System.IntPtr System.Delegate::delegate_trampoline
-	intptr_t ___delegate_trampoline_4;
-	// System.IntPtr System.Delegate::extra_arg
-	intptr_t ___extra_arg_5;
-	// System.IntPtr System.Delegate::method_code
-	intptr_t ___method_code_6;
-	// System.IntPtr System.Delegate::interp_method
-	intptr_t ___interp_method_7;
-	// System.IntPtr System.Delegate::interp_invoke_impl
-	intptr_t ___interp_invoke_impl_8;
-	// System.Reflection.MethodInfo System.Delegate::method_info
-	MethodInfo_t* ___method_info_9;
-	// System.Reflection.MethodInfo System.Delegate::original_method_info
-	MethodInfo_t* ___original_method_info_10;
-	// System.DelegateData System.Delegate::data
-	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
-	// System.Boolean System.Delegate::method_is_virtual
-	bool ___method_is_virtual_12;
-};
-// Native definition for P/Invoke marshalling of System.Delegate
-struct Delegate_t_marshaled_pinvoke
-{
-	intptr_t ___method_ptr_0;
-	intptr_t ___invoke_impl_1;
-	Il2CppIUnknown* ___m_target_2;
-	intptr_t ___method_3;
-	intptr_t ___delegate_trampoline_4;
-	intptr_t ___extra_arg_5;
-	intptr_t ___method_code_6;
-	intptr_t ___interp_method_7;
-	intptr_t ___interp_invoke_impl_8;
-	MethodInfo_t* ___method_info_9;
-	MethodInfo_t* ___original_method_info_10;
-	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
-	int32_t ___method_is_virtual_12;
-};
-// Native definition for COM marshalling of System.Delegate
-struct Delegate_t_marshaled_com
-{
-	intptr_t ___method_ptr_0;
-	intptr_t ___invoke_impl_1;
-	Il2CppIUnknown* ___m_target_2;
-	intptr_t ___method_3;
-	intptr_t ___delegate_trampoline_4;
-	intptr_t ___extra_arg_5;
-	intptr_t ___method_code_6;
-	intptr_t ___interp_method_7;
-	intptr_t ___interp_invoke_impl_8;
-	MethodInfo_t* ___method_info_9;
-	MethodInfo_t* ___original_method_info_10;
-	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
-	int32_t ___method_is_virtual_12;
 };
 
 // System.Exception
@@ -1900,23 +1645,6 @@ struct ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD
 	intptr_t ___m_Ptr_0;
 };
 
-// UnityEngine.RaycastHit
-struct RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 
-{
-	// UnityEngine.Vector3 UnityEngine.RaycastHit::m_Point
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Point_0;
-	// UnityEngine.Vector3 UnityEngine.RaycastHit::m_Normal
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Normal_1;
-	// System.UInt32 UnityEngine.RaycastHit::m_FaceID
-	uint32_t ___m_FaceID_2;
-	// System.Single UnityEngine.RaycastHit::m_Distance
-	float ___m_Distance_3;
-	// UnityEngine.Vector2 UnityEngine.RaycastHit::m_UV
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_UV_4;
-	// System.Int32 UnityEngine.RaycastHit::m_Collider
-	int32_t ___m_Collider_5;
-};
-
 // TMPro.VertexGradient
 struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F 
 {
@@ -1955,23 +1683,6 @@ struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12
 // UnityEngine.GameObject
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
-};
-
-// System.MulticastDelegate
-struct MulticastDelegate_t  : public Delegate_t
-{
-	// System.Delegate[] System.MulticastDelegate::delegates
-	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
-};
-// Native definition for P/Invoke marshalling of System.MulticastDelegate
-struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
-{
-	Delegate_t_marshaled_pinvoke** ___delegates_13;
-};
-// Native definition for COM marshalling of System.MulticastDelegate
-struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
-{
-	Delegate_t_marshaled_com** ___delegates_13;
 };
 
 // System.SystemException
@@ -2022,21 +1733,6 @@ struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3
 	int32_t ___alignment_18;
 	// TMPro.Extents TMPro.TMP_LineInfo::lineExtents
 	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___lineExtents_19;
-};
-
-// System.Action`1<System.Boolean>
-struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<IronSourcePlacement>
-struct Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB  : public MulticastDelegate_t
-{
-};
-
-// System.Action
-struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
-{
 };
 
 // UnityEngine.Behaviour
@@ -2411,231 +2107,6 @@ struct BusInfo_t1E3059CFC00E7E233905386ACA5CEC6889AC10A9  : public MonoBehaviour
 	bool ___m_IsIndicatorParkingOn_17;
 	// System.Boolean BusInfo::m_IsHeadLightOn
 	bool ___m_IsHeadLightOn_18;
-};
-
-// UnityStandardAssets.Vehicles.Car.BusMovement
-struct BusMovement_tADB9F9BA701F9EB87C98BDC5EF1870E6B89CE69A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// Joystick UnityStandardAssets.Vehicles.Car.BusMovement::joystick
-	Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* ___joystick_4;
-	// System.Single UnityStandardAssets.Vehicles.Car.BusMovement::NegativeSpeed
-	float ___NegativeSpeed_5;
-	// System.Single UnityStandardAssets.Vehicles.Car.BusMovement::vConverter
-	float ___vConverter_6;
-	// System.Single UnityStandardAssets.Vehicles.Car.BusMovement::hConverter
-	float ___hConverter_7;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isForward
-	bool ___isForward_8;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isBackward
-	bool ___isBackward_9;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isEngineStarted
-	bool ___isEngineStarted_10;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isHeadLightOn
-	bool ___isHeadLightOn_11;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isRightIndicatorOn
-	bool ___isRightIndicatorOn_12;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isLeftIndicatorOn
-	bool ___isLeftIndicatorOn_13;
-	// UnityEngine.UI.Image UnityStandardAssets.Vehicles.Car.BusMovement::CurrentGearImage
-	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___CurrentGearImage_14;
-	// UnityEngine.UI.Image UnityStandardAssets.Vehicles.Car.BusMovement::ForwardGearImage
-	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___ForwardGearImage_15;
-	// UnityEngine.UI.Image UnityStandardAssets.Vehicles.Car.BusMovement::BackwardGearImage
-	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___BackwardGearImage_16;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::FrontRightHeadLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FrontRightHeadLight_17;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::FrontLeftHeadLight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FrontLeftHeadLight_18;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::RearLeftIndicator
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___RearLeftIndicator_19;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::RearRightIndicator
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___RearRightIndicator_20;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::FrontLeftIndicator
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FrontLeftIndicator_21;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::FrontRightIndicator
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FrontRightIndicator_22;
-	// UnityEngine.GameObject[] UnityStandardAssets.Vehicles.Car.BusMovement::TriLightRight
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___TriLightRight_23;
-	// UnityEngine.GameObject[] UnityStandardAssets.Vehicles.Car.BusMovement::TriLightLeft
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___TriLightLeft_24;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::StartEngineButton
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___StartEngineButton_25;
-	// UnityEngine.Animator UnityStandardAssets.Vehicles.Car.BusMovement::LightBlink
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___LightBlink_26;
-	// UnityEngine.Animator UnityStandardAssets.Vehicles.Car.BusMovement::LightBlink1
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___LightBlink1_27;
-	// UnityEngine.Animator UnityStandardAssets.Vehicles.Car.BusMovement::LightBlink2
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___LightBlink2_28;
-	// UnityEngine.Animator UnityStandardAssets.Vehicles.Car.BusMovement::LightBlink3
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___LightBlink3_29;
-	// UnityEngine.Animator UnityStandardAssets.Vehicles.Car.BusMovement::LightBlink4
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___LightBlink4_30;
-	// UnityEngine.Animator UnityStandardAssets.Vehicles.Car.BusMovement::LightBlink5
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___LightBlink5_31;
-	// UnityStandardAssets.Vehicles.Car.CarController UnityStandardAssets.Vehicles.Car.BusMovement::m_Car
-	CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* ___m_Car_32;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::SteeringWheel
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___SteeringWheel_33;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::ArrowControls
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ArrowControls_34;
-	// System.Single UnityStandardAssets.Vehicles.Car.BusMovement::h
-	float ___h_35;
-	// UnityEngine.UI.Slider UnityStandardAssets.Vehicles.Car.BusMovement::GearSlider
-	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___GearSlider_36;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::TriLightRightGameObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___TriLightRightGameObject_37;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::TriLightLeftGameObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___TriLightLeftGameObject_38;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::RearRightIndicatorGameObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___RearRightIndicatorGameObject_39;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::RearLeftIndicatorGameObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___RearLeftIndicatorGameObject_40;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::Camera
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Camera_41;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::VirtualCamera
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___VirtualCamera_42;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::GearToggle
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GearToggle_43;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::ExplainationImage
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ExplainationImage_44;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::GearToggleText
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GearToggleText_45;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::Trigger
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Trigger_46;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::FppCamera
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FppCamera_47;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::TppCamera
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___TppCamera_48;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::BusInterior
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BusInterior_49;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::Speedometer
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Speedometer_50;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::TextBackground
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___TextBackground_51;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::ExplainationText2
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ExplainationText2_52;
-	// TMPro.TMP_Text UnityStandardAssets.Vehicles.Car.BusMovement::Speed
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___Speed_53;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::Audio
-	bool ___Audio_54;
-	// UnityStandardAssets.Vehicles.Car.CarAudio UnityStandardAssets.Vehicles.Car.BusMovement::instance
-	CarAudio_t9FCCC1F5F3A53E2A421966EBFD03957CC08BB270* ___instance_55;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::AcceleratorText
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___AcceleratorText_56;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isEngineTurnedOn
-	bool ___isEngineTurnedOn_57;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isEngineFinallyOn
-	bool ___isEngineFinallyOn_58;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::StartEngineReward
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___StartEngineReward_59;
-	// CoinData UnityStandardAssets.Vehicles.Car.BusMovement::CoinInstance
-	CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* ___CoinInstance_60;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::isTimerOn
-	bool ___isTimerOn_61;
-	// UnityEngine.UI.Button UnityStandardAssets.Vehicles.Car.BusMovement::CameraSwitch
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___CameraSwitch_62;
-	// UnityEngine.Animator UnityStandardAssets.Vehicles.Car.BusMovement::BusShake
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___BusShake_63;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::AllBusesContainer
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___AllBusesContainer_64;
-	// UnityEngine.RaycastHit UnityStandardAssets.Vehicles.Car.BusMovement::hit
-	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___hit_65;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusMovement::m_EngineStarted
-	bool ___m_EngineStarted_66;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusMovement::m_TopViewCamera
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_TopViewCamera_67;
-	// BusInfo UnityStandardAssets.Vehicles.Car.BusMovement::m_BusInfo
-	BusInfo_t1E3059CFC00E7E233905386ACA5CEC6889AC10A9* ___m_BusInfo_68;
-};
-
-// UnityStandardAssets.Vehicles.Car.BusService
-struct BusService_t545A0A75BAA8F084DA6C094B5447033DC8758742  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusService::SeatBeltButton
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___SeatBeltButton_4;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusService::CoinRewardAnimation
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___CoinRewardAnimation_5;
-	// UnityEngine.Transform UnityStandardAssets.Vehicles.Car.BusService::Bus
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___Bus_6;
-	// TMPro.TMP_Text UnityStandardAssets.Vehicles.Car.BusService::CoinCount
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___CoinCount_7;
-	// System.Int32 UnityStandardAssets.Vehicles.Car.BusService::Coins
-	int32_t ___Coins_8;
-	// System.Int32 UnityStandardAssets.Vehicles.Car.BusService::ServiceCharge
-	int32_t ___ServiceCharge_9;
-	// TMPro.TMP_Text UnityStandardAssets.Vehicles.Car.BusService::CoinRewardText
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___CoinRewardText_10;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusService::ServiceMenu
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ServiceMenu_11;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusService::FailScreen
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FailScreen_12;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.BusService::isServiceRequired
-	bool ___isServiceRequired_14;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusService::Timer
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Timer_15;
-	// UnityEngine.Transform UnityStandardAssets.Vehicles.Car.BusService::ServicePoint
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___ServicePoint_16;
-	// UnityEngine.Transform UnityStandardAssets.Vehicles.Car.BusService::ServicePoint1
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___ServicePoint1_17;
-	// UnityEngine.Transform UnityStandardAssets.Vehicles.Car.BusService::ServicePoint2
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___ServicePoint2_18;
-	// UnityEngine.Transform UnityStandardAssets.Vehicles.Car.BusService::StartingPoint
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___StartingPoint_19;
-	// System.Single UnityStandardAssets.Vehicles.Car.BusService::Start
-	float ___Start_20;
-	// CoinData UnityStandardAssets.Vehicles.Car.BusService::CoinInstance
-	CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* ___CoinInstance_21;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.BusService::InsufficientCoinText
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___InsufficientCoinText_22;
-	// UnityStandardAssets.Vehicles.Car.Rewarded UnityStandardAssets.Vehicles.Car.BusService::RewardedInstance
-	Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* ___RewardedInstance_23;
-	// System.Object UnityStandardAssets.Vehicles.Car.BusService::ServiceButton
-	RuntimeObject* ___ServiceButton_24;
-	// Amplitude UnityStandardAssets.Vehicles.Car.BusService::amplitude
-	Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* ___amplitude_25;
-	// UnityEngine.AndroidJavaClass UnityStandardAssets.Vehicles.Car.BusService::pluginClass
-	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___pluginClass_26;
-};
-
-// UnityStandardAssets.Vehicles.Car.CarAudio
-struct CarAudio_t9FCCC1F5F3A53E2A421966EBFD03957CC08BB270  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityStandardAssets.Vehicles.Car.CarAudio/EngineAudioOptions UnityStandardAssets.Vehicles.Car.CarAudio::engineSoundStyle
-	int32_t ___engineSoundStyle_4;
-	// UnityEngine.AudioClip UnityStandardAssets.Vehicles.Car.CarAudio::lowAccelClip
-	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___lowAccelClip_5;
-	// UnityEngine.AudioClip UnityStandardAssets.Vehicles.Car.CarAudio::lowDecelClip
-	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___lowDecelClip_6;
-	// UnityEngine.AudioClip UnityStandardAssets.Vehicles.Car.CarAudio::highAccelClip
-	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___highAccelClip_7;
-	// UnityEngine.AudioClip UnityStandardAssets.Vehicles.Car.CarAudio::highDecelClip
-	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___highDecelClip_8;
-	// System.Single UnityStandardAssets.Vehicles.Car.CarAudio::pitchMultiplier
-	float ___pitchMultiplier_9;
-	// System.Single UnityStandardAssets.Vehicles.Car.CarAudio::lowPitchMin
-	float ___lowPitchMin_10;
-	// System.Single UnityStandardAssets.Vehicles.Car.CarAudio::lowPitchMax
-	float ___lowPitchMax_11;
-	// System.Single UnityStandardAssets.Vehicles.Car.CarAudio::highPitchMultiplier
-	float ___highPitchMultiplier_12;
-	// System.Single UnityStandardAssets.Vehicles.Car.CarAudio::maxRolloffDistance
-	float ___maxRolloffDistance_13;
-	// System.Single UnityStandardAssets.Vehicles.Car.CarAudio::dopplerLevel
-	float ___dopplerLevel_14;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.CarAudio::useDoppler
-	bool ___useDoppler_15;
-	// UnityEngine.AudioSource UnityStandardAssets.Vehicles.Car.CarAudio::m_LowAccel
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___m_LowAccel_16;
-	// UnityEngine.AudioSource UnityStandardAssets.Vehicles.Car.CarAudio::m_LowDecel
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___m_LowDecel_17;
-	// UnityEngine.AudioSource UnityStandardAssets.Vehicles.Car.CarAudio::m_HighAccel
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___m_HighAccel_18;
-	// UnityEngine.AudioSource UnityStandardAssets.Vehicles.Car.CarAudio::m_HighDecel
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___m_HighDecel_19;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.CarAudio::m_StartedSound
-	bool ___m_StartedSound_20;
-	// UnityStandardAssets.Vehicles.Car.CarController UnityStandardAssets.Vehicles.Car.CarAudio::m_CarController
-	CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* ___m_CarController_21;
 };
 
 // UnityStandardAssets.Vehicles.Car.CarController
@@ -3037,10 +2508,12 @@ struct OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0  : public MonoBe
 	CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* ___Car_33;
 	// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt::OilStationFreeFuelButton
 	RuntimeObject* ___OilStationFreeFuelButton_34;
+	// UnityEngine.Camera UnityStandardAssets.Vehicles.Car.OilStationHalt::TopViewCamera
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___TopViewCamera_35;
 	// Amplitude UnityStandardAssets.Vehicles.Car.OilStationHalt::amplitude
-	Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* ___amplitude_35;
+	Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* ___amplitude_36;
 	// UnityEngine.AndroidJavaClass UnityStandardAssets.Vehicles.Car.OilStationHalt::pluginClass
-	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___pluginClass_36;
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___pluginClass_37;
 };
 
 // UnityStandardAssets.Vehicles.Car.ParkingCheck
@@ -3423,33 +2896,6 @@ struct PassengerController_tE45D38C45E4C9B6D879D50963435262BFFD035CD  : public M
 	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___m_Animator_13;
 };
 
-// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu
-struct PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::PauseBluringImage
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___PauseBluringImage_4;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::PauseMenu
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___PauseMenu_5;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::LoadingImage
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___LoadingImage_6;
-	// UnityEngine.UI.Slider UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::slider
-	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___slider_7;
-	// TMPro.TMP_Text UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::LoadingPercentage
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___LoadingPercentage_8;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::PauseButton
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___PauseButton_9;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::SteeringWheel
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___SteeringWheel_10;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::ArrowControls
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ArrowControls_11;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::CurrentControls
-	bool ___CurrentControls_12;
-	// UnityStandardAssets.Vehicles.Car.CarAudio UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::carAudio
-	CarAudio_t9FCCC1F5F3A53E2A421966EBFD03957CC08BB270* ___carAudio_13;
-	// System.Int32 UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::RealTimeScene
-	int32_t ___RealTimeScene_14;
-};
-
 // UnityStandardAssets.Vehicles.Car.Rewarded
 struct Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3489,13 +2935,6 @@ struct Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F  : public MonoBehaviou
 	InAppStore_t749D216F08AD7558275686A9F3F330B6DFAD1636* ___InAppStoreInstance_20;
 };
 
-// UnityStandardAssets.Vehicles.Car.SpeedVariation
-struct SpeedVariation_tC3855852E458B6FEA14719FF0EFF9743A9D88F80  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityStandardAssets.Vehicles.Car.CarController UnityStandardAssets.Vehicles.Car.SpeedVariation::Bus
-	CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* ___Bus_4;
-};
-
 // SteeringWheel
 struct SteeringWheel_t95EF3D325E812BC6842FC8F12329A1B72C90AF8D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3519,43 +2958,9 @@ struct SteeringWheel_t95EF3D325E812BC6842FC8F12329A1B72C90AF8D  : public MonoBeh
 	BusMovement_tADB9F9BA701F9EB87C98BDC5EF1870E6B89CE69A* ___Bus_12;
 };
 
-// UnityStandardAssets.Vehicles.Car.Timer
-struct Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.Single UnityStandardAssets.Vehicles.Car.Timer::TimeRemaining
-	float ___TimeRemaining_4;
-	// TMPro.TMP_Text UnityStandardAssets.Vehicles.Car.Timer::TimeText
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___TimeText_5;
-	// System.Boolean UnityStandardAssets.Vehicles.Car.Timer::TimerIsRunning
-	bool ___TimerIsRunning_6;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.Timer::FailScreen
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FailScreen_7;
-	// UnityEngine.UI.Slider UnityStandardAssets.Vehicles.Car.Timer::slider
-	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___slider_8;
-	// UnityStandardAssets.Vehicles.Car.BusMovement UnityStandardAssets.Vehicles.Car.Timer::Bus
-	BusMovement_tADB9F9BA701F9EB87C98BDC5EF1870E6B89CE69A* ___Bus_10;
-};
-
 // UnityEngine.EventSystems.UIBehaviour
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-};
-
-// UnityStandardAssets.Vehicles.Car.UnaffectedHealth
-struct UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.Int32 UnityStandardAssets.Vehicles.Car.UnaffectedHealth::MaxHealth
-	int32_t ___MaxHealth_4;
-	// System.Int32 UnityStandardAssets.Vehicles.Car.UnaffectedHealth::CurrentHealth
-	int32_t ___CurrentHealth_5;
-	// UnityEngine.UI.Slider UnityStandardAssets.Vehicles.Car.UnaffectedHealth::slider
-	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___slider_6;
-	// UnityEngine.UI.Image UnityStandardAssets.Vehicles.Car.UnaffectedHealth::HealthBarFill
-	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___HealthBarFill_7;
-	// UnityEngine.GameObject UnityStandardAssets.Vehicles.Car.UnaffectedHealth::ServiceScreen
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ServiceScreen_8;
-	// System.Int32 UnityStandardAssets.Vehicles.Car.UnaffectedHealth::MainScreenFail
-	int32_t ___MainScreenFail_10;
 };
 
 // UnityEngine.UI.Graphic
@@ -4147,10 +3552,6 @@ struct IronSource_t7DCCEB700A572343087F7D51705815185046A120_StaticFields
 
 // IronSource
 
-// IronSourcePlacement
-
-// IronSourcePlacement
-
 // System.String
 struct String_t_StaticFields
 {
@@ -4172,21 +3573,21 @@ struct String_t_StaticFields
 
 // UnityStandardAssets.Vehicles.Car.InAppStore/<WaitForNextAnimation>d__49
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43
 
-// UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42
+// UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43
 
 // UnityStandardAssets.Vehicles.Car.ParkingCheck/<DropPassengers>d__67
 
@@ -4307,10 +3708,6 @@ struct String_t_StaticFields
 // UnityStandardAssets.Vehicles.Car.ParkingCheck2/<WaitTime>d__77
 
 // UnityStandardAssets.Vehicles.Car.ParkingCheck2/<WaitTime>d__77
-
-// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14
-
-// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14
 
 // TMPro.TMP_TextProcessingStack`1<TMPro.FontWeight>
 
@@ -4350,10 +3747,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 // UnityEngine.Color32
 
 // UnityEngine.Color32
-
-// System.Double
-
-// System.Double
 
 // UnityEngine.DrivenRectTransformTracker
 
@@ -4514,14 +3907,6 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 
 // TMPro.TMP_TextProcessingStack`1<TMPro.MaterialReference>
 
-// UnityEngine.AsyncOperation
-
-// UnityEngine.AsyncOperation
-
-// UnityEngine.Collision
-
-// UnityEngine.Collision
-
 // UnityEngine.UI.ColorBlock
 struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11_StaticFields
 {
@@ -4534,10 +3919,6 @@ struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11_StaticFields
 // UnityEngine.Coroutine
 
 // UnityEngine.Coroutine
-
-// System.Delegate
-
-// System.Delegate
 
 // System.Exception
 struct Exception_t_StaticFields
@@ -4576,10 +3957,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // Unity.Profiling.ProfilerMarker
 
-// UnityEngine.RaycastHit
-
-// UnityEngine.RaycastHit
-
 // TMPro.VertexGradient
 
 // TMPro.VertexGradient
@@ -4596,10 +3973,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // UnityEngine.GameObject
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // System.SystemException
 
 // System.SystemException
@@ -4607,18 +3980,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 // TMPro.TMP_LineInfo
 
 // TMPro.TMP_LineInfo
-
-// System.Action`1<System.Boolean>
-
-// System.Action`1<System.Boolean>
-
-// System.Action`1<IronSourcePlacement>
-
-// System.Action`1<IronSourcePlacement>
-
-// System.Action
-
-// System.Action
 
 // UnityEngine.Behaviour
 
@@ -4681,23 +4042,6 @@ struct AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields
 // BusInfo
 
 // BusInfo
-
-// UnityStandardAssets.Vehicles.Car.BusMovement
-
-// UnityStandardAssets.Vehicles.Car.BusMovement
-
-// UnityStandardAssets.Vehicles.Car.BusService
-struct BusService_t545A0A75BAA8F084DA6C094B5447033DC8758742_StaticFields
-{
-	// UnityStandardAssets.Vehicles.Car.BusService UnityStandardAssets.Vehicles.Car.BusService::instance
-	BusService_t545A0A75BAA8F084DA6C094B5447033DC8758742* ___instance_13;
-};
-
-// UnityStandardAssets.Vehicles.Car.BusService
-
-// UnityStandardAssets.Vehicles.Car.CarAudio
-
-// UnityStandardAssets.Vehicles.Car.CarAudio
 
 // UnityStandardAssets.Vehicles.Car.CarController
 struct CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_StaticFields
@@ -4771,43 +4115,17 @@ struct ParkingCheck_t865157AB19465D84C9D47516B6433619766F4D9C_StaticFields
 
 // PassengerController
 
-// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu
-
-// UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu
-
 // UnityStandardAssets.Vehicles.Car.Rewarded
 
 // UnityStandardAssets.Vehicles.Car.Rewarded
-
-// UnityStandardAssets.Vehicles.Car.SpeedVariation
-
-// UnityStandardAssets.Vehicles.Car.SpeedVariation
 
 // SteeringWheel
 
 // SteeringWheel
 
-// UnityStandardAssets.Vehicles.Car.Timer
-struct Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697_StaticFields
-{
-	// UnityStandardAssets.Vehicles.Car.Timer UnityStandardAssets.Vehicles.Car.Timer::instance
-	Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697* ___instance_9;
-};
-
-// UnityStandardAssets.Vehicles.Car.Timer
-
 // UnityEngine.EventSystems.UIBehaviour
 
 // UnityEngine.EventSystems.UIBehaviour
-
-// UnityStandardAssets.Vehicles.Car.UnaffectedHealth
-struct UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_StaticFields
-{
-	// UnityStandardAssets.Vehicles.Car.UnaffectedHealth UnityStandardAssets.Vehicles.Car.UnaffectedHealth::instance
-	UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0* ___instance_9;
-};
-
-// UnityStandardAssets.Vehicles.Car.UnaffectedHealth
 
 // UnityEngine.UI.Graphic
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
@@ -4898,41 +4216,6 @@ struct TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_StaticFields
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// System.String[]
-struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
-{
-	ALIGN_FIELD (8) String_t* m_Items[1];
-
-	inline String_t* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline String_t** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, String_t* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-};
 
 
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
@@ -4943,10 +4226,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F09
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_FindObjectOfType_TisRuntimeObject_m02DFBF011F3B59F777A5E521DB2A116DD496E968_gshared (const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
-// System.Void System.Action`1<System.Boolean>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501_gshared (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
-// System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
@@ -4992,10 +4271,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OilStationHalt_Refueling_m2EE0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator UnityStandardAssets.Vehicles.Car.OilStationHalt::Refueling1()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OilStationHalt_Refueling1_m0E78389FB95714B09148A597B382BA3651E25E34 (OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* __this, const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__35__ctor_mEB2E870BA49503C76581EBC6CE85E749A59FB4A4 (U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__36__ctor_mA90BB66AB34BC61F00D683A9CBFE42E268451965 (U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__36__ctor_m43ED46EC894D49C5F9F9E67EBA86D668C066F918 (U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__37__ctor_mE963E859471291BB842327E1BFD877A9E4974675 (U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::CustomEvent(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_CustomEvent_m9AB6593D77ED4BF66F5C613E1C40CD103C2CEAEB (String_t* ___0_customEventName, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString()
@@ -5014,8 +4293,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_drag_m9E9F375A26A8F3D1AABC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OilStationHalt_WaitForNextFuel_m0D334771B7DA6E079C17649D6DD3745C6DEF0021 (OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* __this, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator UnityStandardAssets.Vehicles.Car.OilStationHalt::AlertText()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OilStationHalt_AlertText_m22FA9AD28839C31B11741904712F5DB9A9D82A42 (OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* __this, const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__38__ctor_m4D35AB18B86591E805778EBA69E7F7D8BA6EB815 (U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__39__ctor_m460146DBB0D4086B047424DC13ED1479FDABE670 (U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // UnityEngine.NetworkReachability UnityEngine.Application::get_internetReachability()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_internetReachability_m3FECA8BA005340369BB952CE8CDF3E1A53F3BA0E (const RuntimeMethod* method) ;
 // System.Void IronSource::showRewardedVideo()
@@ -5032,8 +4311,8 @@ inline void Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443 (Dictiona
 }
 // System.Void Amplitude::logEvent(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181 (Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* __this, String_t* ___0_evt, RuntimeObject* ___1_properties, const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__42__ctor_m8E5682C2C7968BBE9E744FEDBBEECD53F3F64EF0 (U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__43__ctor_mB99330758E8D82F08DA1882EFA4ABAC936780608 (U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Animator::Play(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_stateName, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
@@ -5196,77 +4475,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPickupWaitTimeU3Ed__81__ctor_m8987CDA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDropWaitTimeU3Ed__82__ctor_m313B8F0A923A17D1CD10CCF01DD3495943B20401 (U3CDropWaitTimeU3Ed__82_t1113794CB9C7DBC2565195AF9BD726D9FAA6604F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void UnityStandardAssets.Vehicles.Car.ParkingCheck2/<SoundDelay>d__83::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSoundDelayU3Ed__83__ctor_m5BF5CA8D8346382EC7ED7850C89DAE8DF6A64FDF (U3CSoundDelayU3Ed__83_tC1B077E63D92DF8D3D35090F696CDC6AF3F8C69C* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.CarAudio::StopSound()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CarAudio_StopSound_m2B30F05942D8051001A6B21BA51267F2AF0B1E4C (CarAudio_t9FCCC1F5F3A53E2A421966EBFD03957CC08BB270* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Time::set_timeScale(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331 (float ___0_value, const RuntimeMethod* method) ;
-// System.Collections.IEnumerator UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::ReturnHomeAsync(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PauseAndResumeMenu_ReturnHomeAsync_m6290FB6E60949E790065C27922B240E13ABB577F (PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* __this, int32_t ___0_SceneIndex, const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReturnHomeAsyncU3Ed__14__ctor_m7A0CCD7D1E4CC21DC17BF8A73AEFB893A58CFD6E (U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.CarAudio::StartSound()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CarAudio_StartSound_mAB4B4A392392E398BE1C9337BA939C9746F6A9EB (CarAudio_t9FCCC1F5F3A53E2A421966EBFD03957CC08BB270* __this, const RuntimeMethod* method) ;
-// UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::LoadSceneAsync(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* SceneManager_LoadSceneAsync_mA3C1B55E83225487A615436731B82087D77D4935 (int32_t ___0_sceneBuildIndex, const RuntimeMethod* method) ;
-// System.Single UnityEngine.AsyncOperation::get_progress()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AsyncOperation_get_progress_mF3B2837C1A5DDF3C2F7A3BA1E449DD4C71C632EE (AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* __this, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Mathf::Clamp01(System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
-// System.String System.Single::ToString()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
-// System.String System.String::Concat(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.AsyncOperation::get_isDone()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AsyncOperation_get_isDone_m68A0682777E2132FC033182E9F50303566AA354D (AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* __this, const RuntimeMethod* method) ;
-// System.Void IronSource::shouldTrackNetworkState(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IronSource_shouldTrackNetworkState_mB5FF34F60168FF821571775E654BC5FDD34DBF13 (IronSource_t7DCCEB700A572343087F7D51705815185046A120* __this, bool ___0_track, const RuntimeMethod* method) ;
-// System.Void System.Action`1<System.Boolean>::.ctor(System.Object,System.IntPtr)
-inline void Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501 (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
-{
-	((  void (*) (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501_gshared)(__this, ___0_object, ___1_method, method);
-}
-// System.Void IronSourceEvents::add_onRewardedVideoAvailabilityChangedEvent(System.Action`1<System.Boolean>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IronSourceEvents_add_onRewardedVideoAvailabilityChangedEvent_m5A19B1A1EBFDC945BA01B41D2CE0BA9BE5734B72 (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___0_value, const RuntimeMethod* method) ;
-// System.Void System.Action::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
-// System.Void IronSourceEvents::add_onRewardedVideoAdClosedEvent(System.Action)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IronSourceEvents_add_onRewardedVideoAdClosedEvent_m959D5DD7F99D48A65FDC3441C934EB3D4E7300E4 (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) ;
-// System.Void System.Action`1<IronSourcePlacement>::.ctor(System.Object,System.IntPtr)
-inline void Action_1__ctor_m893FA618302EAABC4D556938617527B15A7D01DD (Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
-{
-	((  void (*) (Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___0_object, ___1_method, method);
-}
-// System.Void IronSourceEvents::add_onRewardedVideoAdRewardedEvent(System.Action`1<IronSourcePlacement>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IronSourceEvents_add_onRewardedVideoAdRewardedEvent_mA71DC1C296BDAFB7EF00BC2937C0D8838E93AFAD (Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB* ___0_value, const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.GameFinish::NextLevels()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameFinish_NextLevels_mDE02B7BE244BFF04BF714CC3AC4989EEEAE58F12 (GameFinish_t8C01CF372112D210F413A51A305B013B573CD95C* __this, const RuntimeMethod* method) ;
-// System.String IronSourceAdUnits::get_REWARDED_VIDEO()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* IronSourceAdUnits_get_REWARDED_VIDEO_mA0E5A6A8356BC1F538996BDE9FC07C1B51D86057 (const RuntimeMethod* method) ;
-// System.Void IronSource::init(System.String,System.String[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IronSource_init_mC764BC165DE9127E939FF7DA044367690B4DD3DA (IronSource_t7DCCEB700A572343087F7D51705815185046A120* __this, String_t* ___0_appKey, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___1_adUnits, const RuntimeMethod* method) ;
-// IronSourcePlacement IronSource::getPlacementInfo(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* IronSource_getPlacementInfo_mCF44F07E63A48BF07FE8CB4F3861AB726773E840 (IronSource_t7DCCEB700A572343087F7D51705815185046A120* __this, String_t* ___0_placementName, const RuntimeMethod* method) ;
-// System.String IronSourcePlacement::getPlacementName()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* IronSourcePlacement_getPlacementName_m747D38E22E987B023508667E0026B1DD18D88C2B_inline (IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* __this, const RuntimeMethod* method) ;
-// System.String IronSourcePlacement::getRewardName()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* IronSourcePlacement_getRewardName_m49DECEF7708B57ED1C5C402479DD8E1F21D6CB18_inline (IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* __this, const RuntimeMethod* method) ;
-// System.Int32 IronSourcePlacement::getRewardAmount()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t IronSourcePlacement_getRewardAmount_m872D997472B60D9E782F5D30DE02845109BBE909_inline (IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* __this, const RuntimeMethod* method) ;
-// T UnityEngine.Component::GetComponent<UnityStandardAssets.Vehicles.Car.CarController>()
-inline CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* Component_GetComponent_TisCarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_m83612DF20D907705994B4C139301E9DE5DFF2A69 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
-{
-	return ((  CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
-}
-// System.Single UnityEngine.Time::get_deltaTime()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
-// System.Void UnityStandardAssets.Vehicles.Car.Timer::DisplayTime(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_DisplayTime_mBB553D1A916C651BA41291740F8FE0378737DC0C (Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697* __this, float ___0_TimeToDisplay, const RuntimeMethod* method) ;
-// System.Int32 UnityEngine.Mathf::FloorToInt(System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline (float ___0_f, const RuntimeMethod* method) ;
-// System.String System.String::Format(System.String,System.Object,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
-// UnityEngine.GameObject UnityEngine.Collision::get_gameObject()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E (Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* __this, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -5487,10 +4695,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OilStationHalt_Awake_m829AAB6CAB5280E4C7
 		il2cpp_codegen_runtime_class_init_inline(Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E_il2cpp_TypeInfo_var);
 		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_0;
 		L_0 = Amplitude_getInstance_m8010E251C8C95520BB4E20C16724F84930EEB820(NULL);
-		__this->___amplitude_35 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___amplitude_35), (void*)L_0);
+		__this->___amplitude_36 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___amplitude_36), (void*)L_0);
 		// amplitude.init("1acb370bcf89779db77dd17092d06718");
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_1 = __this->___amplitude_35;
+		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_1 = __this->___amplitude_36;
 		NullCheck(L_1);
 		Amplitude_init_m6AA2A103385C3BEFC5B88B707FF1CB36A8A0D477(L_1, _stringLiteral517270BB13D17092FFEF6D891626BF3F0D2760B5, NULL);
 		// if (PlayerPrefs.HasKey("Fuel"))
@@ -5740,14 +4948,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OilStationHalt_Refueling_m2EE0
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* L_0 = (U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0*)il2cpp_codegen_object_new(U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0_il2cpp_TypeInfo_var);
+		U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* L_0 = (U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78*)il2cpp_codegen_object_new(U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CRefuelingU3Ed__35__ctor_mEB2E870BA49503C76581EBC6CE85E749A59FB4A4(L_0, 0, NULL);
-		U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* L_1 = L_0;
+		U3CRefuelingU3Ed__36__ctor_m43ED46EC894D49C5F9F9E67EBA86D668C066F918(L_0, 0, NULL);
+		U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
@@ -5760,14 +4968,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OilStationHalt_Refueling1_m0E7
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* L_0 = (U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446*)il2cpp_codegen_object_new(U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446_il2cpp_TypeInfo_var);
+		U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* L_0 = (U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582*)il2cpp_codegen_object_new(U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CRefueling1U3Ed__36__ctor_mA90BB66AB34BC61F00D683A9CBFE42E268451965(L_0, 0, NULL);
-		U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* L_1 = L_0;
+		U3CRefueling1U3Ed__37__ctor_mE963E859471291BB842327E1BFD877A9E4974675(L_0, 0, NULL);
+		U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
@@ -5796,6 +5004,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OilStationHalt_FuelStationBuyFuel_m91DFB
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B8_1 = NULL;
 	String_t* G_B7_0 = NULL;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B7_1 = NULL;
+	String_t* G_B13_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B13_1 = NULL;
+	String_t* G_B12_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B12_1 = NULL;
 	{
 		// if (CoinInstance.currentCash >= ServiceCharge)
 		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_0 = __this->___CoinInstance_25;
@@ -5804,7 +5016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OilStationHalt_FuelStationBuyFuel_m91DFB
 		int32_t L_2 = __this->___ServiceCharge_32;
 		if ((((int32_t)L_1) < ((int32_t)L_2)))
 		{
-			goto IL_0420;
+			goto IL_061f;
 		}
 	}
 	{
@@ -6001,7 +5213,7 @@ IL_0218:
 		bool L_59 = __this->___isFpp_11;
 		if (!L_59)
 		{
-			goto IL_042d;
+			goto IL_0420;
 		}
 	}
 	{
@@ -6190,14 +5402,209 @@ IL_0355:
 
 IL_0420:
 	{
-		// StartCoroutine(AlertText());
-		RuntimeObject* L_116;
-		L_116 = OilStationHalt_AlertText_m22FA9AD28839C31B11741904712F5DB9A9D82A42(__this, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_117;
-		L_117 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_116, NULL);
+		// else if (isTpp == false || isFpp == false)
+		bool L_116 = __this->___isTpp_10;
+		if (!L_116)
+		{
+			goto IL_0433;
+		}
+	}
+	{
+		bool L_117 = __this->___isFpp_11;
+		if (L_117)
+		{
+			goto IL_062c;
+		}
 	}
 
-IL_042d:
+IL_0433:
+	{
+		// FuelCoinReward.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_118 = __this->___FuelCoinReward_29;
+		NullCheck(L_118);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_118, (bool)1, NULL);
+		// AudioManager.instance.Play("Coin");
+		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_119 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
+		NullCheck(L_119);
+		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_119, _stringLiteralA982A1BA4D18DFE3E66F126342126192B22DB764, NULL);
+		// fuelMeterInstance.CurrentFuelCount += 5;
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_120 = __this->___fuelMeterInstance_23;
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_121 = L_120;
+		NullCheck(L_121);
+		int32_t L_122 = L_121->___CurrentFuelCount_10;
+		NullCheck(L_121);
+		L_121->___CurrentFuelCount_10 = ((int32_t)il2cpp_codegen_add(L_122, 5));
+		// fuelMeterInstance.TotalFuelCount.text = instance.currentFuel.ToString();
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_123 = __this->___fuelMeterInstance_23;
+		NullCheck(L_123);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_124 = L_123->___TotalFuelCount_9;
+		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_125 = __this->___instance_22;
+		NullCheck(L_125);
+		int32_t* L_126 = (&L_125->___currentFuel_5);
+		String_t* L_127;
+		L_127 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_126, NULL);
+		NullCheck(L_124);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_124, L_127);
+		// fuelMeterInstance.slider.maxValue = instance.currentFuel * 100f;
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_128 = __this->___fuelMeterInstance_23;
+		NullCheck(L_128);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_129 = L_128->___slider_8;
+		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_130 = __this->___instance_22;
+		NullCheck(L_130);
+		int32_t L_131 = L_130->___currentFuel_5;
+		NullCheck(L_129);
+		Slider_set_maxValue_m43F3BF47C6D7063D80C578FD9B95AD88494203BE(L_129, ((float)il2cpp_codegen_multiply(((float)L_131), (100.0f))), NULL);
+		// fuelMeterInstance.CurrentFuel = instance.currentFuel * 100f;
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_132 = __this->___fuelMeterInstance_23;
+		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_133 = __this->___instance_22;
+		NullCheck(L_133);
+		int32_t L_134 = L_133->___currentFuel_5;
+		NullCheck(L_132);
+		L_132->___CurrentFuel_5 = ((float)il2cpp_codegen_multiply(((float)L_134), (100.0f)));
+		// fuelMeterInstance.FuelFill.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_135 = __this->___fuelMeterInstance_23;
+		NullCheck(L_135);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_136 = L_135->___FuelFill_11;
+		NullCheck(L_136);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_136, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill1.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_137 = __this->___fuelMeterInstance_23;
+		NullCheck(L_137);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_138 = L_137->___FuelFill1_12;
+		NullCheck(L_138);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_138, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill2.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_139 = __this->___fuelMeterInstance_23;
+		NullCheck(L_139);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_140 = L_139->___FuelFill2_13;
+		NullCheck(L_140);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_140, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill3.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_141 = __this->___fuelMeterInstance_23;
+		NullCheck(L_141);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_142 = L_141->___FuelFill3_14;
+		NullCheck(L_142);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_142, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill4.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_143 = __this->___fuelMeterInstance_23;
+		NullCheck(L_143);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_144 = L_143->___FuelFill4_15;
+		NullCheck(L_144);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_144, (bool)1, NULL);
+		// CoinInstance.currentCash -= 500;
+		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_145 = __this->___CoinInstance_25;
+		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_146 = L_145;
+		NullCheck(L_146);
+		int32_t L_147 = L_146->___currentCash_5;
+		NullCheck(L_146);
+		L_146->___currentCash_5 = ((int32_t)il2cpp_codegen_subtract(L_147, ((int32_t)500)));
+		// PlayerPrefs.SetInt("Coins", CoinInstance.currentCash);
+		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_148 = __this->___CoinInstance_25;
+		NullCheck(L_148);
+		int32_t L_149 = L_148->___currentCash_5;
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15, L_149, NULL);
+		// CoinInstance.cashAmount.text = "" + CoinInstance.currentCash;
+		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_150 = __this->___CoinInstance_25;
+		NullCheck(L_150);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_151 = L_150->___cashAmount_4;
+		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_152 = __this->___CoinInstance_25;
+		NullCheck(L_152);
+		int32_t* L_153 = (&L_152->___currentCash_5);
+		String_t* L_154;
+		L_154 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_153, NULL);
+		String_t* L_155 = L_154;
+		G_B12_0 = L_155;
+		G_B12_1 = L_151;
+		if (L_155)
+		{
+			G_B13_0 = L_155;
+			G_B13_1 = L_151;
+			goto IL_0565;
+		}
+	}
+	{
+		G_B13_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		G_B13_1 = G_B12_1;
+	}
+
+IL_0565:
+	{
+		NullCheck(G_B13_1);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, G_B13_1, G_B13_0);
+		// PlayerPrefs.Save();
+		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
+		// FuelEarnedText.text = "+5";
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_156 = __this->___FuelEarnedText_30;
+		NullCheck(L_156);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_156, _stringLiteral75787957FE2785C4BAC32A01312943429C493959);
+		// WinningFuelAnimation.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_157 = __this->___WinningFuelAnimation_21;
+		NullCheck(L_157);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_157, (bool)1, NULL);
+		// CinematicCamera.gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_158 = __this->___CinematicCamera_8;
+		NullCheck(L_158);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_159;
+		L_159 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_158, NULL);
+		NullCheck(L_159);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_159, (bool)0, NULL);
+		// CameraFadeGameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_160 = __this->___CameraFadeGameObject_18;
+		NullCheck(L_160);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_160, (bool)0, NULL);
+		// Holder.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_161 = __this->___Holder_19;
+		NullCheck(L_161);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_161, (bool)1, NULL);
+		// FuelStationPopup.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_162 = __this->___FuelStationPopup_24;
+		NullCheck(L_162);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_162, (bool)0, NULL);
+		// TopViewCamera.gameObject.SetActive(true);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_163 = __this->___TopViewCamera_35;
+		NullCheck(L_163);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_164;
+		L_164 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_163, NULL);
+		NullCheck(L_164);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_164, (bool)1, NULL);
+		// OilStationHaltObj.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_165 = __this->___OilStationHaltObj_15;
+		NullCheck(L_165);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_165, (bool)1, NULL);
+		// OilStationHaltObj1.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_166 = __this->___OilStationHaltObj1_16;
+		NullCheck(L_166);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_166, (bool)1, NULL);
+		// ParkingCheck.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_167 = __this->___ParkingCheck_4;
+		NullCheck(L_167);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_167, (bool)0, NULL);
+		// ParkingCheck1.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_168 = __this->___ParkingCheck1_5;
+		NullCheck(L_168);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_168, (bool)0, NULL);
+		// rigidbody.drag = 0.25f;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_169 = __this->___rigidbody_9;
+		NullCheck(L_169);
+		Rigidbody_set_drag_m9E9F375A26A8F3D1AABCEB015E41696F39088EE0(L_169, (0.25f), NULL);
+		// StartCoroutine(WaitForNextFuel());
+		RuntimeObject* L_170;
+		L_170 = OilStationHalt_WaitForNextFuel_m0D334771B7DA6E079C17649D6DD3745C6DEF0021(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_171;
+		L_171 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_170, NULL);
+		return;
+	}
+
+IL_061f:
+	{
+		// StartCoroutine(AlertText());
+		RuntimeObject* L_172;
+		L_172 = OilStationHalt_AlertText_m22FA9AD28839C31B11741904712F5DB9A9D82A42(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_173;
+		L_173 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_172, NULL);
+	}
+
+IL_062c:
 	{
 		// }
 		return;
@@ -6209,14 +5616,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OilStationHalt_AlertText_m22FA
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* L_0 = (U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2*)il2cpp_codegen_object_new(U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2_il2cpp_TypeInfo_var);
+		U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* L_0 = (U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C*)il2cpp_codegen_object_new(U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CAlertTextU3Ed__38__ctor_m4D35AB18B86591E805778EBA69E7F7D8BA6EB815(L_0, 0, NULL);
-		U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* L_1 = L_0;
+		U3CAlertTextU3Ed__39__ctor_m460146DBB0D4086B047424DC13ED1479FDABE670(L_0, 0, NULL);
+		U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
@@ -6246,6 +5653,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OilStationHalt_FuelStationAd_mE4AD321EA8
 	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_1 = NULL;
 	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_2 = NULL;
 	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_3 = NULL;
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_4 = NULL;
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_5 = NULL;
 	{
 		// if (isTpp == true)
 		bool L_0 = __this->___isTpp_10;
@@ -6286,7 +5695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OilStationHalt_FuelStationAd_mE4AD321EA8
 		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_5, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
 		V_0 = L_5;
 		// amplitude.logEvent("showingRewardedAd", RewardAdPlacement);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_7 = __this->___amplitude_35;
+		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_7 = __this->___amplitude_36;
 		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_8 = V_0;
 		NullCheck(L_7);
 		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_7, _stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD, L_8, NULL);
@@ -6304,7 +5713,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OilStationHalt_FuelStationAd_mE4AD321EA8
 		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_10, _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1, L_12, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
 		V_1 = L_10;
 		// amplitude.logEvent("Free_Fuel", FreeFuelAmountAndCount);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_13 = __this->___amplitude_35;
+		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_13 = __this->___amplitude_36;
 		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_14 = V_1;
 		NullCheck(L_13);
 		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_13, _stringLiteral9F2F0665E9215C7D956B394817DABEB2155DAB50, L_14, NULL);
@@ -6614,7 +6023,7 @@ IL_0371:
 		bool L_96 = __this->___isFpp_11;
 		if (!L_96)
 		{
-			goto IL_06d2;
+			goto IL_06d3;
 		}
 	}
 	{
@@ -6649,7 +6058,7 @@ IL_0371:
 		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_101, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_102, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
 		V_2 = L_101;
 		// amplitude.logEvent("showingRewardedAd", RewardAdPlacement);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_103 = __this->___amplitude_35;
+		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_103 = __this->___amplitude_36;
 		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_104 = V_2;
 		NullCheck(L_103);
 		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_103, _stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD, L_104, NULL);
@@ -6667,7 +6076,7 @@ IL_0371:
 		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_106, _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1, L_108, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
 		V_3 = L_106;
 		// amplitude.logEvent("Free_Fuel", FreeFuelAmountAndCount);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_109 = __this->___amplitude_35;
+		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_109 = __this->___amplitude_36;
 		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_110 = V_3;
 		NullCheck(L_109);
 		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_109, _stringLiteral9F2F0665E9215C7D956B394817DABEB2155DAB50, L_110, NULL);
@@ -6967,9 +6376,381 @@ IL_0678:
 		L_190 = OilStationHalt_WaitForNextFuel_m0D334771B7DA6E079C17649D6DD3745C6DEF0021(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_191;
 		L_191 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_190, NULL);
+		return;
 	}
 
-IL_06d2:
+IL_06d3:
+	{
+		// else if (isTpp == false || isFpp == false)
+		bool L_192 = __this->___isTpp_10;
+		if (!L_192)
+		{
+			goto IL_06e6;
+		}
+	}
+	{
+		bool L_193 = __this->___isFpp_11;
+		if (L_193)
+		{
+			goto IL_0a4f;
+		}
+	}
+
+IL_06e6:
+	{
+		// if (Application.internetReachability != NetworkReachability.NotReachable)
+		int32_t L_194;
+		L_194 = Application_get_internetReachability_m3FECA8BA005340369BB952CE8CDF3E1A53F3BA0E(NULL);
+		if (!L_194)
+		{
+			goto IL_09e5;
+		}
+	}
+	{
+		// Analytics.CustomEvent("WatchAdForFuel");
+		int32_t L_195;
+		L_195 = Analytics_CustomEvent_m9AB6593D77ED4BF66F5C613E1C40CD103C2CEAEB(_stringLiteral2E34C1DBF4BA82374F47E302195C48086D74A0E0, NULL);
+		// IronSource.Agent.showRewardedVideo();
+		il2cpp_codegen_runtime_class_init_inline(IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
+		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_196;
+		L_196 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
+		NullCheck(L_196);
+		IronSource_showRewardedVideo_m5BF8747147A5AB0C167BBBCED99B300DB0F257AD(L_196, NULL);
+		//     Dictionary<string, object> RewardAdPlacement = new Dictionary<string, object>()
+		// {
+		//                      {"placement" , OilStationFreeFuelButton}
+		// };
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_197 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		NullCheck(L_197);
+		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_197, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_198 = L_197;
+		RuntimeObject* L_199 = __this->___OilStationFreeFuelButton_34;
+		NullCheck(L_198);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_198, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_199, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		V_4 = L_198;
+		// amplitude.logEvent("showingRewardedAd", RewardAdPlacement);
+		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_200 = __this->___amplitude_36;
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_201 = V_4;
+		NullCheck(L_200);
+		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_200, _stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD, L_201, NULL);
+		//     Dictionary<string, object> FreeFuelAmountAndCount = new Dictionary<string, object>()
+		// {
+		//                      {"amount" , 3}
+		// };
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_202 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		NullCheck(L_202);
+		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_202, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_203 = L_202;
+		int32_t L_204 = 3;
+		RuntimeObject* L_205 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_204);
+		NullCheck(L_203);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_203, _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1, L_205, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		V_5 = L_203;
+		// amplitude.logEvent("Free_Fuel", FreeFuelAmountAndCount);
+		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_206 = __this->___amplitude_36;
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_207 = V_5;
+		NullCheck(L_206);
+		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_206, _stringLiteral9F2F0665E9215C7D956B394817DABEB2155DAB50, L_207, NULL);
+		// fuelMeterInstance.CurrentFuelCount += 3;
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_208 = __this->___fuelMeterInstance_23;
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_209 = L_208;
+		NullCheck(L_209);
+		int32_t L_210 = L_209->___CurrentFuelCount_10;
+		NullCheck(L_209);
+		L_209->___CurrentFuelCount_10 = ((int32_t)il2cpp_codegen_add(L_210, 3));
+		// fuelMeterInstance.TotalFuelCount.text = instance.currentFuel.ToString();
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_211 = __this->___fuelMeterInstance_23;
+		NullCheck(L_211);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_212 = L_211->___TotalFuelCount_9;
+		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_213 = __this->___instance_22;
+		NullCheck(L_213);
+		int32_t* L_214 = (&L_213->___currentFuel_5);
+		String_t* L_215;
+		L_215 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_214, NULL);
+		NullCheck(L_212);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_212, L_215);
+		// fuelMeterInstance.slider.maxValue = instance.currentFuel * 100f;
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_216 = __this->___fuelMeterInstance_23;
+		NullCheck(L_216);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_217 = L_216->___slider_8;
+		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_218 = __this->___instance_22;
+		NullCheck(L_218);
+		int32_t L_219 = L_218->___currentFuel_5;
+		NullCheck(L_217);
+		Slider_set_maxValue_m43F3BF47C6D7063D80C578FD9B95AD88494203BE(L_217, ((float)il2cpp_codegen_multiply(((float)L_219), (100.0f))), NULL);
+		// fuelMeterInstance.CurrentFuel = instance.currentFuel * 100f;
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_220 = __this->___fuelMeterInstance_23;
+		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_221 = __this->___instance_22;
+		NullCheck(L_221);
+		int32_t L_222 = L_221->___currentFuel_5;
+		NullCheck(L_220);
+		L_220->___CurrentFuel_5 = ((float)il2cpp_codegen_multiply(((float)L_222), (100.0f)));
+		// if (fuelMeterInstance.CurrentFuel == 100)
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_223 = __this->___fuelMeterInstance_23;
+		NullCheck(L_223);
+		float L_224 = L_223->___CurrentFuel_5;
+		if ((!(((float)L_224) == ((float)(100.0f)))))
+		{
+			goto IL_07f3;
+		}
+	}
+	{
+		// fuelMeterInstance.FuelFill.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_225 = __this->___fuelMeterInstance_23;
+		NullCheck(L_225);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_226 = L_225->___FuelFill_11;
+		NullCheck(L_226);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_226, (bool)1, NULL);
+		goto IL_0935;
+	}
+
+IL_07f3:
+	{
+		// else if (fuelMeterInstance.CurrentFuel == 200)
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_227 = __this->___fuelMeterInstance_23;
+		NullCheck(L_227);
+		float L_228 = L_227->___CurrentFuel_5;
+		if ((!(((float)L_228) == ((float)(200.0f)))))
+		{
+			goto IL_082c;
+		}
+	}
+	{
+		// fuelMeterInstance.FuelFill.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_229 = __this->___fuelMeterInstance_23;
+		NullCheck(L_229);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_230 = L_229->___FuelFill_11;
+		NullCheck(L_230);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_230, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill1.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_231 = __this->___fuelMeterInstance_23;
+		NullCheck(L_231);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_232 = L_231->___FuelFill1_12;
+		NullCheck(L_232);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_232, (bool)1, NULL);
+		goto IL_0935;
+	}
+
+IL_082c:
+	{
+		// else if (fuelMeterInstance.CurrentFuel == 300)
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_233 = __this->___fuelMeterInstance_23;
+		NullCheck(L_233);
+		float L_234 = L_233->___CurrentFuel_5;
+		if ((!(((float)L_234) == ((float)(300.0f)))))
+		{
+			goto IL_0876;
+		}
+	}
+	{
+		// fuelMeterInstance.FuelFill.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_235 = __this->___fuelMeterInstance_23;
+		NullCheck(L_235);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_236 = L_235->___FuelFill_11;
+		NullCheck(L_236);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_236, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill1.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_237 = __this->___fuelMeterInstance_23;
+		NullCheck(L_237);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_238 = L_237->___FuelFill1_12;
+		NullCheck(L_238);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_238, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill2.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_239 = __this->___fuelMeterInstance_23;
+		NullCheck(L_239);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_240 = L_239->___FuelFill2_13;
+		NullCheck(L_240);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_240, (bool)1, NULL);
+		goto IL_0935;
+	}
+
+IL_0876:
+	{
+		// else if (fuelMeterInstance.CurrentFuel == 400)
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_241 = __this->___fuelMeterInstance_23;
+		NullCheck(L_241);
+		float L_242 = L_241->___CurrentFuel_5;
+		if ((!(((float)L_242) == ((float)(400.0f)))))
+		{
+			goto IL_08ce;
+		}
+	}
+	{
+		// fuelMeterInstance.FuelFill.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_243 = __this->___fuelMeterInstance_23;
+		NullCheck(L_243);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_244 = L_243->___FuelFill_11;
+		NullCheck(L_244);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_244, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill1.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_245 = __this->___fuelMeterInstance_23;
+		NullCheck(L_245);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_246 = L_245->___FuelFill1_12;
+		NullCheck(L_246);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_246, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill2.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_247 = __this->___fuelMeterInstance_23;
+		NullCheck(L_247);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_248 = L_247->___FuelFill2_13;
+		NullCheck(L_248);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_248, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill3.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_249 = __this->___fuelMeterInstance_23;
+		NullCheck(L_249);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_250 = L_249->___FuelFill3_14;
+		NullCheck(L_250);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_250, (bool)1, NULL);
+		goto IL_0935;
+	}
+
+IL_08ce:
+	{
+		// else if (fuelMeterInstance.CurrentFuel == 500)
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_251 = __this->___fuelMeterInstance_23;
+		NullCheck(L_251);
+		float L_252 = L_251->___CurrentFuel_5;
+		if ((!(((float)L_252) == ((float)(500.0f)))))
+		{
+			goto IL_0935;
+		}
+	}
+	{
+		// fuelMeterInstance.FuelFill.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_253 = __this->___fuelMeterInstance_23;
+		NullCheck(L_253);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_254 = L_253->___FuelFill_11;
+		NullCheck(L_254);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_254, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill1.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_255 = __this->___fuelMeterInstance_23;
+		NullCheck(L_255);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_256 = L_255->___FuelFill1_12;
+		NullCheck(L_256);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_256, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill2.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_257 = __this->___fuelMeterInstance_23;
+		NullCheck(L_257);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_258 = L_257->___FuelFill2_13;
+		NullCheck(L_258);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_258, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill3.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_259 = __this->___fuelMeterInstance_23;
+		NullCheck(L_259);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_260 = L_259->___FuelFill3_14;
+		NullCheck(L_260);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_260, (bool)1, NULL);
+		// fuelMeterInstance.FuelFill4.SetActive(true);
+		FuelMeter_tD887865DE7D96CB480C5E7F469E198B70D936BA3* L_261 = __this->___fuelMeterInstance_23;
+		NullCheck(L_261);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_262 = L_261->___FuelFill4_15;
+		NullCheck(L_262);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_262, (bool)1, NULL);
+	}
+
+IL_0935:
+	{
+		// FuelEarnedText.text = "+3";
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_263 = __this->___FuelEarnedText_30;
+		NullCheck(L_263);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_263, _stringLiteral8681AE31135D739BAD6532151B1D8552CF7F78D6);
+		// WinningFuelAnimation.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_264 = __this->___WinningFuelAnimation_21;
+		NullCheck(L_264);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_264, (bool)1, NULL);
+		// CinematicCamera.gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_265 = __this->___CinematicCamera_8;
+		NullCheck(L_265);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_266;
+		L_266 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_265, NULL);
+		NullCheck(L_266);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_266, (bool)0, NULL);
+		// CameraFadeGameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_267 = __this->___CameraFadeGameObject_18;
+		NullCheck(L_267);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_267, (bool)0, NULL);
+		// Holder.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_268 = __this->___Holder_19;
+		NullCheck(L_268);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_268, (bool)1, NULL);
+		// FuelStationPopup.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_269 = __this->___FuelStationPopup_24;
+		NullCheck(L_269);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_269, (bool)0, NULL);
+		// TopViewCamera.gameObject.SetActive(true);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_270 = __this->___TopViewCamera_35;
+		NullCheck(L_270);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_271;
+		L_271 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_270, NULL);
+		NullCheck(L_271);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_271, (bool)1, NULL);
+		// OilStationHaltObj.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_272 = __this->___OilStationHaltObj_15;
+		NullCheck(L_272);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_272, (bool)1, NULL);
+		// OilStationHaltObj1.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_273 = __this->___OilStationHaltObj1_16;
+		NullCheck(L_273);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_273, (bool)1, NULL);
+		// ParkingCheck.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_274 = __this->___ParkingCheck_4;
+		NullCheck(L_274);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_274, (bool)0, NULL);
+		// ParkingCheck1.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_275 = __this->___ParkingCheck1_5;
+		NullCheck(L_275);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_275, (bool)0, NULL);
+		// rigidbody.drag = 0.25f;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_276 = __this->___rigidbody_9;
+		NullCheck(L_276);
+		Rigidbody_set_drag_m9E9F375A26A8F3D1AABCEB015E41696F39088EE0(L_276, (0.25f), NULL);
+		// StartCoroutine(WaitForNextFuel());
+		RuntimeObject* L_277;
+		L_277 = OilStationHalt_WaitForNextFuel_m0D334771B7DA6E079C17649D6DD3745C6DEF0021(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_278;
+		L_278 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_277, NULL);
+		return;
+	}
+
+IL_09e5:
+	{
+		// RewardedInstance.NoConnectionPopup.SetActive(true);
+		Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* L_279 = __this->___RewardedInstance_26;
+		NullCheck(L_279);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_280 = L_279->___NoConnectionPopup_10;
+		NullCheck(L_280);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_280, (bool)1, NULL);
+		// FuelStationPopup.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_281 = __this->___FuelStationPopup_24;
+		NullCheck(L_281);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_281, (bool)0, NULL);
+		// OilStationHaltObj.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_282 = __this->___OilStationHaltObj_15;
+		NullCheck(L_282);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_282, (bool)1, NULL);
+		// OilStationHaltObj1.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_283 = __this->___OilStationHaltObj1_16;
+		NullCheck(L_283);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_283, (bool)1, NULL);
+		// ParkingCheck.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_284 = __this->___ParkingCheck_4;
+		NullCheck(L_284);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_284, (bool)0, NULL);
+		// ParkingCheck1.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_285 = __this->___ParkingCheck1_5;
+		NullCheck(L_285);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_285, (bool)0, NULL);
+		// rigidbody.drag = 0.25f;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_286 = __this->___rigidbody_9;
+		NullCheck(L_286);
+		Rigidbody_set_drag_m9E9F375A26A8F3D1AABCEB015E41696F39088EE0(L_286, (0.25f), NULL);
+		// StartCoroutine(WaitForNextFuel());
+		RuntimeObject* L_287;
+		L_287 = OilStationHalt_WaitForNextFuel_m0D334771B7DA6E079C17649D6DD3745C6DEF0021(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_288;
+		L_288 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_287, NULL);
+	}
+
+IL_0a4f:
 	{
 		// }
 		return;
@@ -7117,7 +6898,7 @@ IL_014f:
 		bool L_32 = __this->___isFpp_11;
 		if (!L_32)
 		{
-			goto IL_02bf;
+			goto IL_02c0;
 		}
 	}
 	{
@@ -7256,9 +7037,152 @@ IL_021b:
 		L_66 = OilStationHalt_WaitForNextFuel_m0D334771B7DA6E079C17649D6DD3745C6DEF0021(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_67;
 		L_67 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_66, NULL);
+		return;
 	}
 
-IL_02bf:
+IL_02c0:
+	{
+		// else if (isTpp == false || isFpp == false)
+		bool L_68 = __this->___isTpp_10;
+		if (!L_68)
+		{
+			goto IL_02d3;
+		}
+	}
+	{
+		bool L_69 = __this->___isFpp_11;
+		if (L_69)
+		{
+			goto IL_0416;
+		}
+	}
+
+IL_02d3:
+	{
+		// if (instance.currentFuel == 0)
+		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_70 = __this->___instance_22;
+		NullCheck(L_70);
+		int32_t L_71 = L_70->___currentFuel_5;
+		if (L_71)
+		{
+			goto IL_0383;
+		}
+	}
+	{
+		// FailScreen.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_72 = __this->___FailScreen_27;
+		NullCheck(L_72);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_72, (bool)1, NULL);
+		// FuelStationPopup.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_73 = __this->___FuelStationPopup_24;
+		NullCheck(L_73);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_73, (bool)0, NULL);
+		// CinematicCamera.gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_74 = __this->___CinematicCamera_8;
+		NullCheck(L_74);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_75;
+		L_75 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_74, NULL);
+		NullCheck(L_75);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_75, (bool)0, NULL);
+		// CameraFadeGameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_76 = __this->___CameraFadeGameObject_18;
+		NullCheck(L_76);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_76, (bool)0, NULL);
+		// Holder.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_77 = __this->___Holder_19;
+		NullCheck(L_77);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_77, (bool)1, NULL);
+		// TopViewCamera.gameObject.SetActive(true);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_78 = __this->___TopViewCamera_35;
+		NullCheck(L_78);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_79;
+		L_79 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_78, NULL);
+		NullCheck(L_79);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_79, (bool)1, NULL);
+		// OilStationHaltObj.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_80 = __this->___OilStationHaltObj_15;
+		NullCheck(L_80);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_80, (bool)1, NULL);
+		// OilStationHaltObj1.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_81 = __this->___OilStationHaltObj1_16;
+		NullCheck(L_81);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_81, (bool)1, NULL);
+		// ParkingCheck.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_82 = __this->___ParkingCheck_4;
+		NullCheck(L_82);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_82, (bool)0, NULL);
+		// ParkingCheck1.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_83 = __this->___ParkingCheck1_5;
+		NullCheck(L_83);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_83, (bool)0, NULL);
+		// rigidbody.drag = 0.25f;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_84 = __this->___rigidbody_9;
+		NullCheck(L_84);
+		Rigidbody_set_drag_m9E9F375A26A8F3D1AABCEB015E41696F39088EE0(L_84, (0.25f), NULL);
+		// StartCoroutine(WaitForNextFuel());
+		RuntimeObject* L_85;
+		L_85 = OilStationHalt_WaitForNextFuel_m0D334771B7DA6E079C17649D6DD3745C6DEF0021(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_86;
+		L_86 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_85, NULL);
+		return;
+	}
+
+IL_0383:
+	{
+		// FuelStationPopup.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_87 = __this->___FuelStationPopup_24;
+		NullCheck(L_87);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_87, (bool)0, NULL);
+		// CinematicCamera.gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_88 = __this->___CinematicCamera_8;
+		NullCheck(L_88);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_89;
+		L_89 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_88, NULL);
+		NullCheck(L_89);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_89, (bool)0, NULL);
+		// CameraFadeGameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_90 = __this->___CameraFadeGameObject_18;
+		NullCheck(L_90);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_90, (bool)0, NULL);
+		// Holder.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_91 = __this->___Holder_19;
+		NullCheck(L_91);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_91, (bool)1, NULL);
+		// TopViewCamera.gameObject.SetActive(true);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_92 = __this->___TopViewCamera_35;
+		NullCheck(L_92);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_93;
+		L_93 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_92, NULL);
+		NullCheck(L_93);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_93, (bool)1, NULL);
+		// OilStationHaltObj.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_94 = __this->___OilStationHaltObj_15;
+		NullCheck(L_94);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_94, (bool)1, NULL);
+		// OilStationHaltObj1.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_95 = __this->___OilStationHaltObj1_16;
+		NullCheck(L_95);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_95, (bool)1, NULL);
+		// ParkingCheck.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_96 = __this->___ParkingCheck_4;
+		NullCheck(L_96);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_96, (bool)0, NULL);
+		// ParkingCheck1.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_97 = __this->___ParkingCheck1_5;
+		NullCheck(L_97);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_97, (bool)0, NULL);
+		// rigidbody.drag = 0.25f;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_98 = __this->___rigidbody_9;
+		NullCheck(L_98);
+		Rigidbody_set_drag_m9E9F375A26A8F3D1AABCEB015E41696F39088EE0(L_98, (0.25f), NULL);
+		// StartCoroutine(WaitForNextFuel());
+		RuntimeObject* L_99;
+		L_99 = OilStationHalt_WaitForNextFuel_m0D334771B7DA6E079C17649D6DD3745C6DEF0021(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_100;
+		L_100 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_99, NULL);
+	}
+
+IL_0416:
 	{
 		// }
 		return;
@@ -7331,7 +7255,7 @@ IL_008e:
 		bool L_13 = __this->___isFpp_11;
 		if (!L_13)
 		{
-			goto IL_012c;
+			goto IL_012d;
 		}
 	}
 	{
@@ -7388,9 +7312,77 @@ IL_008e:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = __this->___ParkingCheck1_5;
 		NullCheck(L_27);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_27, (bool)0, NULL);
+		return;
 	}
 
-IL_012c:
+IL_012d:
+	{
+		// else if (isTpp == false || isFpp == false)
+		bool L_28 = __this->___isTpp_10;
+		if (!L_28)
+		{
+			goto IL_0140;
+		}
+	}
+	{
+		bool L_29 = __this->___isFpp_11;
+		if (L_29)
+		{
+			goto IL_01c2;
+		}
+	}
+
+IL_0140:
+	{
+		// NoConnectionPopup.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = __this->___NoConnectionPopup_28;
+		NullCheck(L_30);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_30, (bool)0, NULL);
+		// FuelStationPopup.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->___FuelStationPopup_24;
+		NullCheck(L_31);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)1, NULL);
+		// CinematicCamera.gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->___CinematicCamera_8;
+		NullCheck(L_32);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33;
+		L_33 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_32, NULL);
+		NullCheck(L_33);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_33, (bool)0, NULL);
+		// CameraFadeGameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = __this->___CameraFadeGameObject_18;
+		NullCheck(L_34);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_34, (bool)0, NULL);
+		// Holder.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35 = __this->___Holder_19;
+		NullCheck(L_35);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_35, (bool)1, NULL);
+		// TopViewCamera.gameObject.SetActive(true);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_36 = __this->___TopViewCamera_35;
+		NullCheck(L_36);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37;
+		L_37 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_36, NULL);
+		NullCheck(L_37);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_37, (bool)1, NULL);
+		// OilStationHaltObj.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = __this->___OilStationHaltObj_15;
+		NullCheck(L_38);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, (bool)1, NULL);
+		// OilStationHaltObj1.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_39 = __this->___OilStationHaltObj1_16;
+		NullCheck(L_39);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_39, (bool)1, NULL);
+		// ParkingCheck.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = __this->___ParkingCheck_4;
+		NullCheck(L_40);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_40, (bool)0, NULL);
+		// ParkingCheck1.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_41 = __this->___ParkingCheck1_5;
+		NullCheck(L_41);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_41, (bool)0, NULL);
+	}
+
+IL_01c2:
 	{
 		// }
 		return;
@@ -7402,14 +7394,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OilStationHalt_WaitForNextFuel
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* L_0 = (U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F*)il2cpp_codegen_object_new(U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F_il2cpp_TypeInfo_var);
+		U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* L_0 = (U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A*)il2cpp_codegen_object_new(U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CWaitForNextFuelU3Ed__42__ctor_m8E5682C2C7968BBE9E744FEDBBEECD53F3F64EF0(L_0, 0, NULL);
-		U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* L_1 = L_0;
+		U3CWaitForNextFuelU3Ed__43__ctor_mB99330758E8D82F08DA1882EFA4ABAC936780608(L_0, 0, NULL);
+		U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
@@ -7443,8 +7435,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OilStationHalt__ctor_m0E9113A72980D5EF42
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__35__ctor_mEB2E870BA49503C76581EBC6CE85E749A59FB4A4 (U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__36__ctor_m43ED46EC894D49C5F9F9E67EBA86D668C066F918 (U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -7453,15 +7445,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__35__ctor_mEB2E870BA495
 		return;
 	}
 }
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__35_System_IDisposable_Dispose_m6C97E1E49A0ADC45DBD099BE4DC81A8B494D3C87 (U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* __this, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__36_System_IDisposable_Dispose_m4CD7A8B5B76AE2749639BC6DB0CD86C757DF6ADF (U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRefuelingU3Ed__35_MoveNext_mE29B35D87E7AC6EB6F207143A5ED7E9F445BE23A (U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* __this, const RuntimeMethod* method) 
+// System.Boolean UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRefuelingU3Ed__36_MoveNext_mAEC6F23CA169AC4B33C4B40E77BD42255A6C3904 (U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7482,31 +7474,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRefuelingU3Ed__35_MoveNext_mE29B35D87
 		{
 			case 0:
 			{
-				goto IL_0032;
+				goto IL_003e;
 			}
 			case 1:
 			{
-				goto IL_0069;
+				goto IL_0075;
 			}
 			case 2:
 			{
-				goto IL_00a5;
+				goto IL_00b1;
 			}
 			case 3:
 			{
-				goto IL_00f1;
+				goto IL_00fd;
 			}
 			case 4:
 			{
-				goto IL_015b;
+				goto IL_0167;
 			}
 			case 5:
 			{
-				goto IL_0197;
+				goto IL_01a3;
 			}
 			case 6:
 			{
-				goto IL_01e3;
+				goto IL_01ef;
+			}
+			case 7:
+			{
+				goto IL_0272;
+			}
+			case 8:
+			{
+				goto IL_02ae;
+			}
+			case 9:
+			{
+				goto IL_02fb;
 			}
 		}
 	}
@@ -7514,7 +7518,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRefuelingU3Ed__35_MoveNext_mE29B35D87
 		return (bool)0;
 	}
 
-IL_0032:
+IL_003e:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// if (isTpp == true)
@@ -7523,7 +7527,7 @@ IL_0032:
 		bool L_4 = L_3->___isTpp_10;
 		if (!L_4)
 		{
-			goto IL_012b;
+			goto IL_0137;
 		}
 	}
 	{
@@ -7543,7 +7547,7 @@ IL_0032:
 		return (bool)1;
 	}
 
-IL_0069:
+IL_0075:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// CameraFadeGameObject.SetActive(true);
@@ -7568,7 +7572,7 @@ IL_0069:
 		return (bool)1;
 	}
 
-IL_00a5:
+IL_00b1:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// Bus.position = PositionHolder.position;
@@ -7605,7 +7609,7 @@ IL_00a5:
 		return (bool)1;
 	}
 
-IL_00f1:
+IL_00fd:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// TppCamera.gameObject.SetActive(false);
@@ -7632,10 +7636,10 @@ IL_00f1:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = L_30->___FuelStationPopup_24;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)1, NULL);
-		goto IL_0229;
+		goto IL_0330;
 	}
 
-IL_012b:
+IL_0137:
 	{
 		// else if (isFpp == true)
 		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_32 = V_1;
@@ -7643,7 +7647,7 @@ IL_012b:
 		bool L_33 = L_32->___isFpp_11;
 		if (!L_33)
 		{
-			goto IL_0229;
+			goto IL_023a;
 		}
 	}
 	{
@@ -7663,7 +7667,7 @@ IL_012b:
 		return (bool)1;
 	}
 
-IL_015b:
+IL_0167:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// CameraFadeGameObject.SetActive(true);
@@ -7688,7 +7692,7 @@ IL_015b:
 		return (bool)1;
 	}
 
-IL_0197:
+IL_01a3:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// Bus.position = PositionHolder.position;
@@ -7725,7 +7729,7 @@ IL_0197:
 		return (bool)1;
 	}
 
-IL_01e3:
+IL_01ef:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// FppCamera.gameObject.SetActive(false);
@@ -7761,34 +7765,165 @@ IL_01e3:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_63 = L_62->___FuelStationPopup_24;
 		NullCheck(L_63);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_63, (bool)1, NULL);
+		goto IL_0330;
 	}
 
-IL_0229:
+IL_023a:
+	{
+		// else if (isTpp == false || isFpp == false)
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_64 = V_1;
+		NullCheck(L_64);
+		bool L_65 = L_64->___isTpp_10;
+		if (!L_65)
+		{
+			goto IL_024d;
+		}
+	}
+	{
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_66 = V_1;
+		NullCheck(L_66);
+		bool L_67 = L_66->___isFpp_11;
+		if (L_67)
+		{
+			goto IL_0330;
+		}
+	}
+
+IL_024d:
+	{
+		// Holder.SetActive(false);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_68 = V_1;
+		NullCheck(L_68);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_69 = L_68->___Holder_19;
+		NullCheck(L_69);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_69, (bool)0, NULL);
+		// yield return new WaitForSeconds(0.5f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_70 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_70);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_70, (0.5f), NULL);
+		__this->___U3CU3E2__current_1 = L_70;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_70);
+		__this->___U3CU3E1__state_0 = 7;
+		return (bool)1;
+	}
+
+IL_0272:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// CameraFadeGameObject.SetActive(true);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_71 = V_1;
+		NullCheck(L_71);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_72 = L_71->___CameraFadeGameObject_18;
+		NullCheck(L_72);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_72, (bool)1, NULL);
+		// CameraFadeScreen.Play("CameraFadeScreen");
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_73 = V_1;
+		NullCheck(L_73);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_74 = L_73->___CameraFadeScreen_17;
+		NullCheck(L_74);
+		Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9(L_74, _stringLiteral296D13113535BB052A59E626B304A6BDD6CE9247, NULL);
+		// yield return new WaitForSeconds(1.4f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_75 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_75);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_75, (1.39999998f), NULL);
+		__this->___U3CU3E2__current_1 = L_75;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_75);
+		__this->___U3CU3E1__state_0 = 8;
+		return (bool)1;
+	}
+
+IL_02ae:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// Bus.position = PositionHolder.position;
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_76 = V_1;
+		NullCheck(L_76);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_77 = L_76->___Bus_12;
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_78 = V_1;
+		NullCheck(L_78);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_79 = L_78->___PositionHolder_13;
+		NullCheck(L_79);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80;
+		L_80 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_79, NULL);
+		NullCheck(L_77);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_77, L_80, NULL);
+		// Bus.rotation = PositionHolder.rotation;
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_81 = V_1;
+		NullCheck(L_81);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_82 = L_81->___Bus_12;
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_83 = V_1;
+		NullCheck(L_83);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_84 = L_83->___PositionHolder_13;
+		NullCheck(L_84);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_85;
+		L_85 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_84, NULL);
+		NullCheck(L_82);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_82, L_85, NULL);
+		// yield return new WaitForSeconds(0.24f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_86 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_86);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_86, (0.239999995f), NULL);
+		__this->___U3CU3E2__current_1 = L_86;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_86);
+		__this->___U3CU3E1__state_0 = ((int32_t)9);
+		return (bool)1;
+	}
+
+IL_02fb:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// TopViewCamera.gameObject.SetActive(false);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_87 = V_1;
+		NullCheck(L_87);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_88 = L_87->___TopViewCamera_35;
+		NullCheck(L_88);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_89;
+		L_89 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_88, NULL);
+		NullCheck(L_89);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_89, (bool)0, NULL);
+		// CinematicCamera.gameObject.SetActive(true);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_90 = V_1;
+		NullCheck(L_90);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_91 = L_90->___CinematicCamera_8;
+		NullCheck(L_91);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_92;
+		L_92 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_91, NULL);
+		NullCheck(L_92);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_92, (bool)1, NULL);
+		// FuelStationPopup.SetActive(true);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_93 = V_1;
+		NullCheck(L_93);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_94 = L_93->___FuelStationPopup_24;
+		NullCheck(L_94);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_94, (bool)1, NULL);
+	}
+
+IL_0330:
 	{
 		// }
 		return (bool)0;
 	}
 }
-// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefuelingU3Ed__35_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m311E937C8EEF068C39791D2E5767C33B1D2ECCA3 (U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* __this, const RuntimeMethod* method) 
+// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefuelingU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4CECAEA708DC27C8DE7440F5AFC3DE60ADBE2556 (U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__35_System_Collections_IEnumerator_Reset_m3FD44B857A41EBCAFCE6C24109BABEEAFA537E40 (U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* __this, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefuelingU3Ed__36_System_Collections_IEnumerator_Reset_mC1D0A154D0C76C176B685948DB34FAD18E8DCD7C (U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRefuelingU3Ed__35_System_Collections_IEnumerator_Reset_m3FD44B857A41EBCAFCE6C24109BABEEAFA537E40_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRefuelingU3Ed__36_System_Collections_IEnumerator_Reset_mC1D0A154D0C76C176B685948DB34FAD18E8DCD7C_RuntimeMethod_var)));
 	}
 }
-// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__35::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefuelingU3Ed__35_System_Collections_IEnumerator_get_Current_m42D3E1555FAB7153092FD4D7D97B9C485FE61DC8 (U3CRefuelingU3Ed__35_t976C5A887080166D9DA8C543C04DE57C78067DC0* __this, const RuntimeMethod* method) 
+// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling>d__36::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefuelingU3Ed__36_System_Collections_IEnumerator_get_Current_m2EBBCE710C1164881244D7C895B32A20DE87C468 (U3CRefuelingU3Ed__36_tE29FCA9144CA6C89F3A1C625583C517D0DC9FE78* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
@@ -7803,8 +7938,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefuelingU3Ed__35_System_Co
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__36__ctor_mA90BB66AB34BC61F00D683A9CBFE42E268451965 (U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__37__ctor_mE963E859471291BB842327E1BFD877A9E4974675 (U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -7813,15 +7948,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__36__ctor_mA90BB66AB34
 		return;
 	}
 }
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__36_System_IDisposable_Dispose_mBB62027F3CF53712DD19CD141DF5E3AD498C128A (U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* __this, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__37_System_IDisposable_Dispose_m3875A64A51A30713315CD5C7378764DA69F186C9 (U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRefueling1U3Ed__36_MoveNext_mB9C9C57D72B133535C3F0794DA888B9E2FC87169 (U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* __this, const RuntimeMethod* method) 
+// System.Boolean UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRefueling1U3Ed__37_MoveNext_m73FD77C3B151A7DD654AE8ADE38F33B5360E0E2B (U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7842,31 +7977,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRefueling1U3Ed__36_MoveNext_mB9C9C57D
 		{
 			case 0:
 			{
-				goto IL_0032;
+				goto IL_003e;
 			}
 			case 1:
 			{
-				goto IL_0069;
+				goto IL_0075;
 			}
 			case 2:
 			{
-				goto IL_00a5;
+				goto IL_00b1;
 			}
 			case 3:
 			{
-				goto IL_00f1;
+				goto IL_00fd;
 			}
 			case 4:
 			{
-				goto IL_015b;
+				goto IL_0167;
 			}
 			case 5:
 			{
-				goto IL_0197;
+				goto IL_01a3;
 			}
 			case 6:
 			{
-				goto IL_01e3;
+				goto IL_01ef;
+			}
+			case 7:
+			{
+				goto IL_0272;
+			}
+			case 8:
+			{
+				goto IL_02ae;
+			}
+			case 9:
+			{
+				goto IL_02fb;
 			}
 		}
 	}
@@ -7874,7 +8021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRefueling1U3Ed__36_MoveNext_mB9C9C57D
 		return (bool)0;
 	}
 
-IL_0032:
+IL_003e:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// if (isTpp == true)
@@ -7883,7 +8030,7 @@ IL_0032:
 		bool L_4 = L_3->___isTpp_10;
 		if (!L_4)
 		{
-			goto IL_012b;
+			goto IL_0137;
 		}
 	}
 	{
@@ -7903,7 +8050,7 @@ IL_0032:
 		return (bool)1;
 	}
 
-IL_0069:
+IL_0075:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// CameraFadeGameObject.SetActive(true);
@@ -7928,7 +8075,7 @@ IL_0069:
 		return (bool)1;
 	}
 
-IL_00a5:
+IL_00b1:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// Bus.position = PositionHolder1.position;
@@ -7965,7 +8112,7 @@ IL_00a5:
 		return (bool)1;
 	}
 
-IL_00f1:
+IL_00fd:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// TppCamera.gameObject.SetActive(false);
@@ -7992,10 +8139,10 @@ IL_00f1:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = L_30->___FuelStationPopup_24;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)1, NULL);
-		goto IL_0229;
+		goto IL_0330;
 	}
 
-IL_012b:
+IL_0137:
 	{
 		// else if (isFpp == true)
 		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_32 = V_1;
@@ -8003,7 +8150,7 @@ IL_012b:
 		bool L_33 = L_32->___isFpp_11;
 		if (!L_33)
 		{
-			goto IL_0229;
+			goto IL_023a;
 		}
 	}
 	{
@@ -8023,7 +8170,7 @@ IL_012b:
 		return (bool)1;
 	}
 
-IL_015b:
+IL_0167:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// CameraFadeGameObject.SetActive(true);
@@ -8048,7 +8195,7 @@ IL_015b:
 		return (bool)1;
 	}
 
-IL_0197:
+IL_01a3:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// Bus.position = PositionHolder1.position;
@@ -8085,7 +8232,7 @@ IL_0197:
 		return (bool)1;
 	}
 
-IL_01e3:
+IL_01ef:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// FppCamera.gameObject.SetActive(false);
@@ -8121,34 +8268,165 @@ IL_01e3:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_63 = L_62->___FuelStationPopup_24;
 		NullCheck(L_63);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_63, (bool)1, NULL);
+		goto IL_0330;
 	}
 
-IL_0229:
+IL_023a:
+	{
+		// else if (isTpp == false || isFpp == false)
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_64 = V_1;
+		NullCheck(L_64);
+		bool L_65 = L_64->___isTpp_10;
+		if (!L_65)
+		{
+			goto IL_024d;
+		}
+	}
+	{
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_66 = V_1;
+		NullCheck(L_66);
+		bool L_67 = L_66->___isFpp_11;
+		if (L_67)
+		{
+			goto IL_0330;
+		}
+	}
+
+IL_024d:
+	{
+		// Holder.SetActive(false);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_68 = V_1;
+		NullCheck(L_68);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_69 = L_68->___Holder_19;
+		NullCheck(L_69);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_69, (bool)0, NULL);
+		// yield return new WaitForSeconds(0.5f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_70 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_70);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_70, (0.5f), NULL);
+		__this->___U3CU3E2__current_1 = L_70;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_70);
+		__this->___U3CU3E1__state_0 = 7;
+		return (bool)1;
+	}
+
+IL_0272:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// CameraFadeGameObject.SetActive(true);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_71 = V_1;
+		NullCheck(L_71);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_72 = L_71->___CameraFadeGameObject_18;
+		NullCheck(L_72);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_72, (bool)1, NULL);
+		// CameraFadeScreen.Play("CameraFadeScreen");
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_73 = V_1;
+		NullCheck(L_73);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_74 = L_73->___CameraFadeScreen_17;
+		NullCheck(L_74);
+		Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9(L_74, _stringLiteral296D13113535BB052A59E626B304A6BDD6CE9247, NULL);
+		// yield return new WaitForSeconds(1.4f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_75 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_75);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_75, (1.39999998f), NULL);
+		__this->___U3CU3E2__current_1 = L_75;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_75);
+		__this->___U3CU3E1__state_0 = 8;
+		return (bool)1;
+	}
+
+IL_02ae:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// Bus.position = PositionHolder.position;
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_76 = V_1;
+		NullCheck(L_76);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_77 = L_76->___Bus_12;
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_78 = V_1;
+		NullCheck(L_78);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_79 = L_78->___PositionHolder_13;
+		NullCheck(L_79);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80;
+		L_80 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_79, NULL);
+		NullCheck(L_77);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_77, L_80, NULL);
+		// Bus.rotation = PositionHolder.rotation;
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_81 = V_1;
+		NullCheck(L_81);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_82 = L_81->___Bus_12;
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_83 = V_1;
+		NullCheck(L_83);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_84 = L_83->___PositionHolder_13;
+		NullCheck(L_84);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_85;
+		L_85 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_84, NULL);
+		NullCheck(L_82);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_82, L_85, NULL);
+		// yield return new WaitForSeconds(0.24f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_86 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_86);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_86, (0.239999995f), NULL);
+		__this->___U3CU3E2__current_1 = L_86;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_86);
+		__this->___U3CU3E1__state_0 = ((int32_t)9);
+		return (bool)1;
+	}
+
+IL_02fb:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// TopViewCamera.gameObject.SetActive(false);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_87 = V_1;
+		NullCheck(L_87);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_88 = L_87->___TopViewCamera_35;
+		NullCheck(L_88);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_89;
+		L_89 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_88, NULL);
+		NullCheck(L_89);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_89, (bool)0, NULL);
+		// CinematicCamera.gameObject.SetActive(true);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_90 = V_1;
+		NullCheck(L_90);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_91 = L_90->___CinematicCamera_8;
+		NullCheck(L_91);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_92;
+		L_92 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_91, NULL);
+		NullCheck(L_92);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_92, (bool)1, NULL);
+		// FuelStationPopup.SetActive(true);
+		OilStationHalt_tF1889BC004EAD0E68E6A302BF0B37361FAE65DE0* L_93 = V_1;
+		NullCheck(L_93);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_94 = L_93->___FuelStationPopup_24;
+		NullCheck(L_94);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_94, (bool)1, NULL);
+	}
+
+IL_0330:
 	{
 		// }
 		return (bool)0;
 	}
 }
-// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefueling1U3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m319D49D06AE723D734DEAABDFD42F20C6191BED4 (U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* __this, const RuntimeMethod* method) 
+// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefueling1U3Ed__37_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE40866029617373F48A9211DC586E3B8D8A54B9F (U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__36_System_Collections_IEnumerator_Reset_mE9681DBFDC434509527530ABC363A5AAE0E94AF8 (U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* __this, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRefueling1U3Ed__37_System_Collections_IEnumerator_Reset_m5A355AAB925C6E5FD0CED707FE5690F45132F393 (U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRefueling1U3Ed__36_System_Collections_IEnumerator_Reset_mE9681DBFDC434509527530ABC363A5AAE0E94AF8_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRefueling1U3Ed__37_System_Collections_IEnumerator_Reset_m5A355AAB925C6E5FD0CED707FE5690F45132F393_RuntimeMethod_var)));
 	}
 }
-// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__36::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefueling1U3Ed__36_System_Collections_IEnumerator_get_Current_mFD72EB669C913ADD675AD3D3DBD2EBFEBA534921 (U3CRefueling1U3Ed__36_tE146272F25BE50F92479969A0EB3B1429FF37446* __this, const RuntimeMethod* method) 
+// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<Refueling1>d__37::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefueling1U3Ed__37_System_Collections_IEnumerator_get_Current_mC6FEEC0F98D94C3DE4FE75A0A05732ED950BAFFA (U3CRefueling1U3Ed__37_t8336C2908AC796A9A2C9590241A61890A75C3582* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
@@ -8163,8 +8441,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRefueling1U3Ed__36_System_C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__38__ctor_m4D35AB18B86591E805778EBA69E7F7D8BA6EB815 (U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__39__ctor_m460146DBB0D4086B047424DC13ED1479FDABE670 (U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -8173,15 +8451,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__38__ctor_m4D35AB18B865
 		return;
 	}
 }
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__38_System_IDisposable_Dispose_m21959FB1D87F17DC015894F1E47135D1BAFEA9C0 (U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* __this, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__39_System_IDisposable_Dispose_m36361AD92EC699F9A85FA9C6BB4335F623CFAFEE (U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAlertTextU3Ed__38_MoveNext_mD1CD33954E58F28704FDC2D668EB7AD6D2DDD516 (U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* __this, const RuntimeMethod* method) 
+// System.Boolean UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAlertTextU3Ed__39_MoveNext_mC19D17F87D01FDC31EA91B4348FBDB6AE88F9800 (U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8245,26 +8523,26 @@ IL_0043:
 		return (bool)0;
 	}
 }
-// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAlertTextU3Ed__38_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m56A6F0F595B2A88DCA868CC9249EB3A5568269BE (U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* __this, const RuntimeMethod* method) 
+// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAlertTextU3Ed__39_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA229C476DFB3E6997D23B0E6E9CE48CAD92B11EE (U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__38_System_Collections_IEnumerator_Reset_m56B19931EA3CC4B4B5598F039724CDB86CC46788 (U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* __this, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAlertTextU3Ed__39_System_Collections_IEnumerator_Reset_mDEF1571BDB7278B37EA5182277810B518B309328 (U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAlertTextU3Ed__38_System_Collections_IEnumerator_Reset_m56B19931EA3CC4B4B5598F039724CDB86CC46788_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAlertTextU3Ed__39_System_Collections_IEnumerator_Reset_mDEF1571BDB7278B37EA5182277810B518B309328_RuntimeMethod_var)));
 	}
 }
-// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__38::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAlertTextU3Ed__38_System_Collections_IEnumerator_get_Current_m4088D06CF6A4929EC389B2618063978D51CF27F3 (U3CAlertTextU3Ed__38_t635369AE9F81C33E66BAC78B7B4B84E6F207D5C2* __this, const RuntimeMethod* method) 
+// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<AlertText>d__39::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAlertTextU3Ed__39_System_Collections_IEnumerator_get_Current_m0652D8F90DEE185B57EF1EFA93C3E3AEB96F9E36 (U3CAlertTextU3Ed__39_t9CB697A52FD45D19516D21B720C0793EEDEA5F5C* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
@@ -8279,8 +8557,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAlertTextU3Ed__38_System_Co
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__42__ctor_m8E5682C2C7968BBE9E744FEDBBEECD53F3F64EF0 (U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__43__ctor_mB99330758E8D82F08DA1882EFA4ABAC936780608 (U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -8289,15 +8567,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__42__ctor_m8E5682
 		return;
 	}
 }
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__42_System_IDisposable_Dispose_m696A7AB6E26912A834E59BBA64E4F339056998E3 (U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* __this, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__43_System_IDisposable_Dispose_mE0F13E698147689E3D2FB64B67341FD5517C90A0 (U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWaitForNextFuelU3Ed__42_MoveNext_mA538B1FB6F46ADBC83A0583ABF9BB42FD5B1CCEC (U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* __this, const RuntimeMethod* method) 
+// System.Boolean UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWaitForNextFuelU3Ed__43_MoveNext_mB5562227AA6E602F77693218364EE1317A19A4D4 (U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8373,26 +8651,26 @@ IL_0037:
 		return (bool)0;
 	}
 }
-// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWaitForNextFuelU3Ed__42_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA4DAAF336EB90A5C1D4359A78AFFEFE23BEB6771 (U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* __this, const RuntimeMethod* method) 
+// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWaitForNextFuelU3Ed__43_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6D446BC906D6C0B93EE278B54D273F7EE041C1E7 (U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__42_System_Collections_IEnumerator_Reset_mA8FCE1F2FD2B9BA6F850FB7E9EF6717827A6E6A9 (U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* __this, const RuntimeMethod* method) 
+// System.Void UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForNextFuelU3Ed__43_System_Collections_IEnumerator_Reset_m0D1BF6F5DEB0C6DE77873240F40B7C48BB152355 (U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CWaitForNextFuelU3Ed__42_System_Collections_IEnumerator_Reset_mA8FCE1F2FD2B9BA6F850FB7E9EF6717827A6E6A9_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CWaitForNextFuelU3Ed__43_System_Collections_IEnumerator_Reset_m0D1BF6F5DEB0C6DE77873240F40B7C48BB152355_RuntimeMethod_var)));
 	}
 }
-// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__42::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWaitForNextFuelU3Ed__42_System_Collections_IEnumerator_get_Current_mE50B33BEC212F07875309D21DF1489E1114562BE (U3CWaitForNextFuelU3Ed__42_t2D0A99DBF4B4CCE401026F36E2DF402A96B0876F* __this, const RuntimeMethod* method) 
+// System.Object UnityStandardAssets.Vehicles.Car.OilStationHalt/<WaitForNextFuel>d__43::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWaitForNextFuelU3Ed__43_System_Collections_IEnumerator_get_Current_m55BC57C82692A27055917F96966730C4D54DF048 (U3CWaitForNextFuelU3Ed__43_tB3B0B71EA437602E815D0ABA89078672A5A41A5A* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
@@ -20112,1658 +20390,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CSoundDelayU3Ed__83_System_C
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseAndResumeMenu_Awake_mA159371A43FB852591C805C624F4BC97BA997740 (PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		// RealTimeScene = SceneManager.GetActiveScene().buildIndex;
-		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_0;
-		L_0 = SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8(NULL);
-		V_0 = L_0;
-		int32_t L_1;
-		L_1 = Scene_get_buildIndex_m82B6E0C96C85C952B7A2D794DB73CDA99AA9A57E((&V_0), NULL);
-		__this->___RealTimeScene_14 = L_1;
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::Pause()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseAndResumeMenu_Pause_m8C79D0EC3D70B90399D755C2530E385F26F20912 (PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3C7FA19EDE0206A6EF73DF8B5312DF5EBEB67FCE);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAA8DDD692CFBA350C83D8203D9CA9ECBC1E2050C);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCBD9C6C35F8F76BD4B6073BAC366E68D4E36DEA8);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// AudioManager.instance.Play("Buttons");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_0 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_0);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_0, _stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410, NULL);
-		// carAudio.StopSound();
-		CarAudio_t9FCCC1F5F3A53E2A421966EBFD03957CC08BB270* L_1 = __this->___carAudio_13;
-		NullCheck(L_1);
-		CarAudio_StopSound_m2B30F05942D8051001A6B21BA51267F2AF0B1E4C(L_1, NULL);
-		// AudioManager.instance.Stop("City");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_2 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_2);
-		AudioManager_Stop_m45D13BF030985CD03F88752B8CA92FFFCD0B11C3(L_2, _stringLiteralAA8DDD692CFBA350C83D8203D9CA9ECBC1E2050C, NULL);
-		// AudioManager.instance.Stop("BackGear");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_3 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_3);
-		AudioManager_Stop_m45D13BF030985CD03F88752B8CA92FFFCD0B11C3(L_3, _stringLiteralCBD9C6C35F8F76BD4B6073BAC366E68D4E36DEA8, NULL);
-		// AudioManager.instance.Stop("Fpp");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_4 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_4);
-		AudioManager_Stop_m45D13BF030985CD03F88752B8CA92FFFCD0B11C3(L_4, _stringLiteral3C7FA19EDE0206A6EF73DF8B5312DF5EBEB67FCE, NULL);
-		// PauseBluringImage.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___PauseBluringImage_4;
-		NullCheck(L_5);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
-		// PauseButton.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___PauseButton_9;
-		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
-		// Time.timeScale = 0f;
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((0.0f), NULL);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::ReloadScene(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseAndResumeMenu_ReloadScene_mE484B4576DBEA0976367F9C3919C8FFB8A9F03DD (PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* __this, int32_t ___0_SceneIndex, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral19E6F54B915CB01A74B7174DFEF8AC62E0C2BB5F);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3C7FA19EDE0206A6EF73DF8B5312DF5EBEB67FCE);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCBD9C6C35F8F76BD4B6073BAC366E68D4E36DEA8);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// PlayerPrefs.SetInt("Home", 1);
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral19E6F54B915CB01A74B7174DFEF8AC62E0C2BB5F, 1, NULL);
-		// PlayerPrefs.Save();
-		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
-		// AudioManager.instance.Stop("BackGear");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_0 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_0);
-		AudioManager_Stop_m45D13BF030985CD03F88752B8CA92FFFCD0B11C3(L_0, _stringLiteralCBD9C6C35F8F76BD4B6073BAC366E68D4E36DEA8, NULL);
-		// AudioManager.instance.Play("Buttons");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_1 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_1);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_1, _stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410, NULL);
-		// AudioManager.instance.Stop("Fpp");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_2 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_2);
-		AudioManager_Stop_m45D13BF030985CD03F88752B8CA92FFFCD0B11C3(L_2, _stringLiteral3C7FA19EDE0206A6EF73DF8B5312DF5EBEB67FCE, NULL);
-		// StartCoroutine(ReturnHomeAsync(SceneIndex));
-		int32_t L_3 = ___0_SceneIndex;
-		RuntimeObject* L_4;
-		L_4 = PauseAndResumeMenu_ReturnHomeAsync_m6290FB6E60949E790065C27922B240E13ABB577F(__this, L_3, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
-		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
-		// }
-		return;
-	}
-}
-// System.Collections.IEnumerator UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::ReturnHomeAsync(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PauseAndResumeMenu_ReturnHomeAsync_m6290FB6E60949E790065C27922B240E13ABB577F (PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* __this, int32_t ___0_SceneIndex, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* L_0 = (U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7*)il2cpp_codegen_object_new(U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		U3CReturnHomeAsyncU3Ed__14__ctor_m7A0CCD7D1E4CC21DC17BF8A73AEFB893A58CFD6E(L_0, 0, NULL);
-		U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* L_1 = L_0;
-		NullCheck(L_1);
-		L_1->___U3CU3E4__this_3 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_3), (void*)__this);
-		U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* L_2 = L_1;
-		int32_t L_3 = ___0_SceneIndex;
-		NullCheck(L_2);
-		L_2->___SceneIndex_2 = L_3;
-		return L_2;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::Resume()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseAndResumeMenu_Resume_mA42C889019B7E930F0B67AC6D07883531DD2379A (PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3C7FA19EDE0206A6EF73DF8B5312DF5EBEB67FCE);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAA8DDD692CFBA350C83D8203D9CA9ECBC1E2050C);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCBD9C6C35F8F76BD4B6073BAC366E68D4E36DEA8);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// AudioManager.instance.Play("City");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_0 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_0);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_0, _stringLiteralAA8DDD692CFBA350C83D8203D9CA9ECBC1E2050C, NULL);
-		// AudioManager.instance.Stop("BackGear");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_1 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_1);
-		AudioManager_Stop_m45D13BF030985CD03F88752B8CA92FFFCD0B11C3(L_1, _stringLiteralCBD9C6C35F8F76BD4B6073BAC366E68D4E36DEA8, NULL);
-		// AudioManager.instance.Play("Buttons");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_2 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_2);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_2, _stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410, NULL);
-		// AudioManager.instance.Play("Fpp");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_3 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_3);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_3, _stringLiteral3C7FA19EDE0206A6EF73DF8B5312DF5EBEB67FCE, NULL);
-		// carAudio.StartSound();
-		CarAudio_t9FCCC1F5F3A53E2A421966EBFD03957CC08BB270* L_4 = __this->___carAudio_13;
-		NullCheck(L_4);
-		CarAudio_StartSound_mAB4B4A392392E398BE1C9337BA939C9746F6A9EB(L_4, NULL);
-		// PauseButton.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___PauseButton_9;
-		NullCheck(L_5);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
-		// PauseBluringImage.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___PauseBluringImage_4;
-		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
-		// Time.timeScale = 1f;
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::ChangeControls()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseAndResumeMenu_ChangeControls_mF2365AEBBC117882EFBC77669CC590B1C6265D73 (PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9F51A7868A9FB6D864FDB2B35CBDCCDCAAA95AA0);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA1E8FE88DD71D4193E8FCC70B7364E997A92740E);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if (CurrentControls)
-		bool L_0 = __this->___CurrentControls_12;
-		if (!L_0)
-		{
-			goto IL_003e;
-		}
-	}
-	{
-		// ArrowControls.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___ArrowControls_11;
-		NullCheck(L_1);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
-		// SteeringWheel.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___SteeringWheel_10;
-		NullCheck(L_2);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		// PlayerPrefs.SetInt("SelectedControls", 0);
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteralA1E8FE88DD71D4193E8FCC70B7364E997A92740E, 0, NULL);
-		// PlayerPrefs.SetInt("SelectedControlsArrow", 1);
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral9F51A7868A9FB6D864FDB2B35CBDCCDCAAA95AA0, 1, NULL);
-		// CurrentControls = false;
-		__this->___CurrentControls_12 = (bool)0;
-		return;
-	}
-
-IL_003e:
-	{
-		// SteeringWheel.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___SteeringWheel_10;
-		NullCheck(L_3);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
-		// ArrowControls.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___ArrowControls_11;
-		NullCheck(L_4);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		// PlayerPrefs.SetInt("SelectedControlsArrow", 0);
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral9F51A7868A9FB6D864FDB2B35CBDCCDCAAA95AA0, 0, NULL);
-		// PlayerPrefs.SetInt("SelectedControls", 1);
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteralA1E8FE88DD71D4193E8FCC70B7364E997A92740E, 1, NULL);
-		// CurrentControls = true;
-		__this->___CurrentControls_12 = (bool)1;
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseAndResumeMenu__ctor_mC02D37AB5BB20678D6F2FBA1E3203379FB89C654 (PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* __this, const RuntimeMethod* method) 
-{
-	{
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReturnHomeAsyncU3Ed__14__ctor_m7A0CCD7D1E4CC21DC17BF8A73AEFB893A58CFD6E (U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___0_U3CU3E1__state;
-		__this->___U3CU3E1__state_0 = L_0;
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReturnHomeAsyncU3Ed__14_System_IDisposable_Dispose_mBE41B9F5C34D83E92CA7EDABCA0F5041995D9287 (U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
-// System.Boolean UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CReturnHomeAsyncU3Ed__14_MoveNext_mFBF932165D02B8A2163595296E8295E8D6AA6A3D (U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C066B34F4DB79023C0642AFBC43B25A5327F710);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* V_1 = NULL;
-	float V_2 = 0.0f;
-	float V_3 = 0.0f;
-	{
-		int32_t L_0 = __this->___U3CU3E1__state_0;
-		V_0 = L_0;
-		PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* L_1 = __this->___U3CU3E4__this_3;
-		V_1 = L_1;
-		int32_t L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_001a;
-		}
-	}
-	{
-		int32_t L_3 = V_0;
-		if ((((int32_t)L_3) == ((int32_t)1)))
-		{
-			goto IL_00b9;
-		}
-	}
-	{
-		return (bool)0;
-	}
-
-IL_001a:
-	{
-		__this->___U3CU3E1__state_0 = (-1);
-		// AsyncOperation operation = SceneManager.LoadSceneAsync(SceneIndex);
-		int32_t L_4 = __this->___SceneIndex_2;
-		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_5;
-		L_5 = SceneManager_LoadSceneAsync_mA3C1B55E83225487A615436731B82087D77D4935(L_4, NULL);
-		__this->___U3CoperationU3E5__2_4 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CoperationU3E5__2_4), (void*)L_5);
-		// PauseBluringImage.SetActive(false);
-		PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* L_6 = V_1;
-		NullCheck(L_6);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = L_6->___PauseBluringImage_4;
-		NullCheck(L_7);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
-		// PauseButton.SetActive(false);
-		PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* L_8 = V_1;
-		NullCheck(L_8);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = L_8->___PauseButton_9;
-		NullCheck(L_9);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
-		// Time.timeScale = 1f;
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
-		// LoadingImage.SetActive(true);
-		PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* L_10 = V_1;
-		NullCheck(L_10);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = L_10->___LoadingImage_6;
-		NullCheck(L_11);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)1, NULL);
-		goto IL_00c0;
-	}
-
-IL_0062:
-	{
-		// float Progress = Mathf.Clamp01(operation.progress / 0.9f);
-		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_12 = __this->___U3CoperationU3E5__2_4;
-		NullCheck(L_12);
-		float L_13;
-		L_13 = AsyncOperation_get_progress_mF3B2837C1A5DDF3C2F7A3BA1E449DD4C71C632EE(L_12, NULL);
-		float L_14;
-		L_14 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(L_13/(0.899999976f))), NULL);
-		V_2 = L_14;
-		// slider.value = Progress;
-		PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* L_15 = V_1;
-		NullCheck(L_15);
-		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_16 = L_15->___slider_7;
-		float L_17 = V_2;
-		NullCheck(L_16);
-		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_16, L_17);
-		// LoadingPercentage.text = Progress * 100f + "%";
-		PauseAndResumeMenu_tEEF1EA1DE7950BE29C430BC9D51B34B0B9BD9AB3* L_18 = V_1;
-		NullCheck(L_18);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_19 = L_18->___LoadingPercentage_8;
-		float L_20 = V_2;
-		V_3 = ((float)il2cpp_codegen_multiply(L_20, (100.0f)));
-		String_t* L_21;
-		L_21 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972((&V_3), NULL);
-		String_t* L_22;
-		L_22 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_21, _stringLiteral6C066B34F4DB79023C0642AFBC43B25A5327F710, NULL);
-		NullCheck(L_19);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_19, L_22);
-		// yield return null;
-		__this->___U3CU3E2__current_1 = NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)NULL);
-		__this->___U3CU3E1__state_0 = 1;
-		return (bool)1;
-	}
-
-IL_00b9:
-	{
-		__this->___U3CU3E1__state_0 = (-1);
-	}
-
-IL_00c0:
-	{
-		// while (!operation.isDone)
-		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_23 = __this->___U3CoperationU3E5__2_4;
-		NullCheck(L_23);
-		bool L_24;
-		L_24 = AsyncOperation_get_isDone_m68A0682777E2132FC033182E9F50303566AA354D(L_23, NULL);
-		if (!L_24)
-		{
-			goto IL_0062;
-		}
-	}
-	{
-		// }
-		return (bool)0;
-	}
-}
-// System.Object UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CReturnHomeAsyncU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD151FE624D77CABA8C00C9F6B19E820693E481D2 (U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
-		return L_0;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReturnHomeAsyncU3Ed__14_System_Collections_IEnumerator_Reset_m62E4C1E22C9833FC30A7451934515EF4003AA4FC (U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* __this, const RuntimeMethod* method) 
-{
-	{
-		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
-		NullCheck(L_0);
-		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CReturnHomeAsyncU3Ed__14_System_Collections_IEnumerator_Reset_m62E4C1E22C9833FC30A7451934515EF4003AA4FC_RuntimeMethod_var)));
-	}
-}
-// System.Object UnityStandardAssets.Vehicles.Car.PauseAndResumeMenu/<ReturnHomeAsync>d__14::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CReturnHomeAsyncU3Ed__14_System_Collections_IEnumerator_get_Current_mACC6FFC148CAE9A0B6CF39F1F8B189A92905EE98 (U3CReturnHomeAsyncU3Ed__14_tA697B315F1E30B8D129947378B04E436E5AFB4E7* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
-		return L_0;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_Awake_m7D7C83959F77284782AC3BBC95E21FF0ACC93479 (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral517270BB13D17092FFEF6D891626BF3F0D2760B5);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF1A9BE8908B6E65FACB885209B209FD97BBDF648);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// amplitude = Amplitude.getInstance();
-		il2cpp_codegen_runtime_class_init_inline(Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E_il2cpp_TypeInfo_var);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_0;
-		L_0 = Amplitude_getInstance_m8010E251C8C95520BB4E20C16724F84930EEB820(NULL);
-		__this->___amplitude_18 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___amplitude_18), (void*)L_0);
-		// amplitude.init("1acb370bcf89779db77dd17092d06718");
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_1 = __this->___amplitude_18;
-		NullCheck(L_1);
-		Amplitude_init_m6AA2A103385C3BEFC5B88B707FF1CB36A8A0D477(L_1, _stringLiteral517270BB13D17092FFEF6D891626BF3F0D2760B5, NULL);
-		// if (PlayerPrefs.HasKey("Coins"))
-		bool L_2;
-		L_2 = PlayerPrefs_HasKey_mCA5C64BBA6BF8B230BC3BC92B4761DD3B11D4668(_stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15, NULL);
-		if (!L_2)
-		{
-			goto IL_003c;
-		}
-	}
-	{
-		// CoinInstance.currentCash = PlayerPrefs.GetInt("Coins");
-		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_3 = __this->___CoinInstance_5;
-		int32_t L_4;
-		L_4 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15, NULL);
-		NullCheck(L_3);
-		L_3->___currentCash_5 = L_4;
-	}
-
-IL_003c:
-	{
-		// if (PlayerPrefs.HasKey("Fuel"))
-		bool L_5;
-		L_5 = PlayerPrefs_HasKey_mCA5C64BBA6BF8B230BC3BC92B4761DD3B11D4668(_stringLiteralF1A9BE8908B6E65FACB885209B209FD97BBDF648, NULL);
-		if (!L_5)
-		{
-			goto IL_005d;
-		}
-	}
-	{
-		// FuelInstance.currentFuel = PlayerPrefs.GetInt("Fuel");
-		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_6 = __this->___FuelInstance_6;
-		int32_t L_7;
-		L_7 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteralF1A9BE8908B6E65FACB885209B209FD97BBDF648, NULL);
-		NullCheck(L_6);
-		L_6->___currentFuel_5 = L_7;
-	}
-
-IL_005d:
-	{
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_Start_mCF3E7B2B4E9CDC1D570F592E4B3C41CEA8216FF6 (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Rewarded_RewardedVideoAdClosedEvent_m58A0E1D4E60BEE8724EBD693FFEEADEB031947D0_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Rewarded_RewardedVideoAdRewardedEvent_m47612E0AAA5FD0DBBC4C87D79B2111B4E38B12ED_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Rewarded_RewardedVideoAvailabilityChangedEvent_m48C8F336BC589739B47135F50C97F266E7820147_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// IronSource.Agent.shouldTrackNetworkState(true);
-		il2cpp_codegen_runtime_class_init_inline(IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_0;
-		L_0 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
-		NullCheck(L_0);
-		IronSource_shouldTrackNetworkState_mB5FF34F60168FF821571775E654BC5FDD34DBF13(L_0, (bool)1, NULL);
-		// IronSourceEvents.onRewardedVideoAvailabilityChangedEvent += RewardedVideoAvailabilityChangedEvent;
-		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_1 = (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*)il2cpp_codegen_object_new(Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var);
-		NullCheck(L_1);
-		Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501(L_1, __this, (intptr_t)((void*)Rewarded_RewardedVideoAvailabilityChangedEvent_m48C8F336BC589739B47135F50C97F266E7820147_RuntimeMethod_var), NULL);
-		IronSourceEvents_add_onRewardedVideoAvailabilityChangedEvent_m5A19B1A1EBFDC945BA01B41D2CE0BA9BE5734B72(L_1, NULL);
-		// IronSourceEvents.onRewardedVideoAdClosedEvent += RewardedVideoAdClosedEvent;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_2, __this, (intptr_t)((void*)Rewarded_RewardedVideoAdClosedEvent_m58A0E1D4E60BEE8724EBD693FFEEADEB031947D0_RuntimeMethod_var), NULL);
-		IronSourceEvents_add_onRewardedVideoAdClosedEvent_m959D5DD7F99D48A65FDC3441C934EB3D4E7300E4(L_2, NULL);
-		// IronSourceEvents.onRewardedVideoAdRewardedEvent += RewardedVideoAdRewardedEvent;
-		Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB* L_3 = (Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB*)il2cpp_codegen_object_new(Action_1_t869D0A5AD6511A891F4F832DD63ABCC8F07B86CB_il2cpp_TypeInfo_var);
-		NullCheck(L_3);
-		Action_1__ctor_m893FA618302EAABC4D556938617527B15A7D01DD(L_3, __this, (intptr_t)((void*)Rewarded_RewardedVideoAdRewardedEvent_m47612E0AAA5FD0DBBC4C87D79B2111B4E38B12ED_RuntimeMethod_var), NULL);
-		IronSourceEvents_add_onRewardedVideoAdRewardedEvent_mA71DC1C296BDAFB7EF00BC2937C0D8838E93AFAD(L_3, NULL);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::OKButton()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_OKButton_mDBD23534B49FC050640962AFE0A9CF31C7596ED5 (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// AudioManager.instance.Play("Buttons");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_0 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_0);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_0, _stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410, NULL);
-		// NoConnectionPopup.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___NoConnectionPopup_10;
-		NullCheck(L_1);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::FreeCoinsRewardedVideo()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_FreeCoinsRewardedVideo_m3576F531099438589DBF0905C3EE642D1ECCB2CE (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2A9E2747D0CA413DCBD2B279EC72DFE0BF548D71);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral78FE7F3E238F59DCADFB31DB9073639A0F8E2140);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC4D495F4756BF493A167DB5EF3EFFA207718389D);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
-		s_Il2CppMethodInitialized = true;
-	}
-	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_0 = NULL;
-	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_1 = NULL;
-	{
-		// AudioManager.instance.Play("Buttons");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_0 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_0);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_0, _stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410, NULL);
-		// if (Application.internetReachability != NetworkReachability.NotReachable)
-		int32_t L_1;
-		L_1 = Application_get_internetReachability_m3FECA8BA005340369BB952CE8CDF3E1A53F3BA0E(NULL);
-		if (!L_1)
-		{
-			goto IL_0087;
-		}
-	}
-	{
-		// IronSource.Agent.showRewardedVideo();
-		il2cpp_codegen_runtime_class_init_inline(IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_2;
-		L_2 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
-		NullCheck(L_2);
-		IronSource_showRewardedVideo_m5BF8747147A5AB0C167BBBCED99B300DB0F257AD(L_2, NULL);
-		// FreeCoins = true;
-		__this->___FreeCoins_8 = (bool)1;
-		// Dictionary<string, object> RewardAdPlacement = new Dictionary<string, object>()
-		// {
-		//                      {"placement" , FreeCoinButton}
-		// };
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_3 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		NullCheck(L_3);
-		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_3, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_4 = L_3;
-		RuntimeObject* L_5 = __this->___FreeCoinButton_14;
-		NullCheck(L_4);
-		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_4, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_5, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		V_0 = L_4;
-		// amplitude.logEvent("showingRewardedAd", RewardAdPlacement);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_6 = __this->___amplitude_18;
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_7 = V_0;
-		NullCheck(L_6);
-		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_6, _stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD, L_7, NULL);
-		// Dictionary<string, object> FreeCoinAmountAndCount = new Dictionary<string, object>()
-		// {
-		//                      {"amount" , 500}
-		// };
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_8 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		NullCheck(L_8);
-		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_8, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_9 = L_8;
-		int32_t L_10 = ((int32_t)500);
-		RuntimeObject* L_11 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_10);
-		NullCheck(L_9);
-		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_9, _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1, L_11, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		V_1 = L_9;
-		// amplitude.logEvent("Free_Coins", FreeCoinAmountAndCount);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_12 = __this->___amplitude_18;
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_13 = V_1;
-		NullCheck(L_12);
-		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_12, _stringLiteral2A9E2747D0CA413DCBD2B279EC72DFE0BF548D71, L_13, NULL);
-		// Analytics.CustomEvent("FreeCoins");
-		int32_t L_14;
-		L_14 = Analytics_CustomEvent_m9AB6593D77ED4BF66F5C613E1C40CD103C2CEAEB(_stringLiteralC4D495F4756BF493A167DB5EF3EFFA207718389D, NULL);
-		return;
-	}
-
-IL_0087:
-	{
-		// NoConnectionPopup.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___NoConnectionPopup_10;
-		NullCheck(L_15);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
-		// AudioManager.instance.Play("PopupSound");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_16 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_16);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_16, _stringLiteral78FE7F3E238F59DCADFB31DB9073639A0F8E2140, NULL);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::FreeFuelRewardedVideo()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_FreeFuelRewardedVideo_mA5D1536DEF3E48697F5317B7732221AB73255913 (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral78FE7F3E238F59DCADFB31DB9073639A0F8E2140);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral816C57C6AD84B6942F9F7B9E2A2F0F7B5B456987);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9F2F0665E9215C7D956B394817DABEB2155DAB50);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
-		s_Il2CppMethodInitialized = true;
-	}
-	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_0 = NULL;
-	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_1 = NULL;
-	{
-		// AudioManager.instance.Play("Buttons");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_0 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_0);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_0, _stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410, NULL);
-		// if (Application.internetReachability != NetworkReachability.NotReachable)
-		int32_t L_1;
-		L_1 = Application_get_internetReachability_m3FECA8BA005340369BB952CE8CDF3E1A53F3BA0E(NULL);
-		if (!L_1)
-		{
-			goto IL_0083;
-		}
-	}
-	{
-		// IronSource.Agent.showRewardedVideo();
-		il2cpp_codegen_runtime_class_init_inline(IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_2;
-		L_2 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
-		NullCheck(L_2);
-		IronSource_showRewardedVideo_m5BF8747147A5AB0C167BBBCED99B300DB0F257AD(L_2, NULL);
-		// FreeFuel = true;
-		__this->___FreeFuel_9 = (bool)1;
-		// Dictionary<string, object> RewardAdPlacement = new Dictionary<string, object>()
-		// {
-		//                      {"placement" , FreeFuelButton}
-		// };
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_3 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		NullCheck(L_3);
-		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_3, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_4 = L_3;
-		RuntimeObject* L_5 = __this->___FreeFuelButton_15;
-		NullCheck(L_4);
-		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_4, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_5, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		V_0 = L_4;
-		// amplitude.logEvent("showingRewardedAd", RewardAdPlacement);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_6 = __this->___amplitude_18;
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_7 = V_0;
-		NullCheck(L_6);
-		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_6, _stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD, L_7, NULL);
-		// Dictionary<string, object> FreeFuelAmountAndCount = new Dictionary<string, object>()
-		// {
-		//                      {"amount" , 3}
-		// };
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_8 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		NullCheck(L_8);
-		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_8, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_9 = L_8;
-		int32_t L_10 = 3;
-		RuntimeObject* L_11 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_10);
-		NullCheck(L_9);
-		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_9, _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1, L_11, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		V_1 = L_9;
-		// amplitude.logEvent("Free_Fuel", FreeFuelAmountAndCount);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_12 = __this->___amplitude_18;
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_13 = V_1;
-		NullCheck(L_12);
-		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_12, _stringLiteral9F2F0665E9215C7D956B394817DABEB2155DAB50, L_13, NULL);
-		// Analytics.CustomEvent("FreeFuel");
-		int32_t L_14;
-		L_14 = Analytics_CustomEvent_m9AB6593D77ED4BF66F5C613E1C40CD103C2CEAEB(_stringLiteral816C57C6AD84B6942F9F7B9E2A2F0F7B5B456987, NULL);
-		return;
-	}
-
-IL_0083:
-	{
-		// NoConnectionPopup.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___NoConnectionPopup_10;
-		NullCheck(L_15);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
-		// AudioManager.instance.Play("PopupSound");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_16 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_16);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_16, _stringLiteral78FE7F3E238F59DCADFB31DB9073639A0F8E2140, NULL);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::MoveToNextLevel()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_MoveToNextLevel_mF7C3B209A6E097499B1F8A7D84777A080E4F62EF (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral78FE7F3E238F59DCADFB31DB9073639A0F8E2140);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
-		s_Il2CppMethodInitialized = true;
-	}
-	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_0 = NULL;
-	{
-		// AudioManager.instance.Play("Buttons");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_0 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_0);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_0, _stringLiteralA61F7BBA8E501038575C34BED7A2D6FD990C6410, NULL);
-		// if (Application.internetReachability != NetworkReachability.NotReachable)
-		int32_t L_1;
-		L_1 = Application_get_internetReachability_m3FECA8BA005340369BB952CE8CDF3E1A53F3BA0E(NULL);
-		if (!L_1)
-		{
-			goto IL_0054;
-		}
-	}
-	{
-		// IronSource.Agent.showRewardedVideo();
-		il2cpp_codegen_runtime_class_init_inline(IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_2;
-		L_2 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
-		NullCheck(L_2);
-		IronSource_showRewardedVideo_m5BF8747147A5AB0C167BBBCED99B300DB0F257AD(L_2, NULL);
-		// instance.NextLevels();
-		GameFinish_t8C01CF372112D210F413A51A305B013B573CD95C* L_3 = __this->___instance_13;
-		NullCheck(L_3);
-		GameFinish_NextLevels_mDE02B7BE244BFF04BF714CC3AC4989EEEAE58F12(L_3, NULL);
-		// Dictionary<string, object> RewardAdPlacement = new Dictionary<string, object>()
-		// {
-		//                      {"placement" , WatchAdForNextLevelButton}
-		// };
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_4 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_4, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_5 = L_4;
-		RuntimeObject* L_6 = __this->___WatchAdForNextLevelButton_16;
-		NullCheck(L_5);
-		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_5, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		V_0 = L_5;
-		// amplitude.logEvent("showingRewardedAd", RewardAdPlacement);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_7 = __this->___amplitude_18;
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_8 = V_0;
-		NullCheck(L_7);
-		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_7, _stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD, L_8, NULL);
-		return;
-	}
-
-IL_0054:
-	{
-		// NoConnectionPopup.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___NoConnectionPopup_10;
-		NullCheck(L_9);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)1, NULL);
-		// AudioManager.instance.Play("PopupSound");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_10 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_10);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_10, _stringLiteral78FE7F3E238F59DCADFB31DB9073639A0F8E2140, NULL);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::FreeSkinRewardedVideo()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_FreeSkinRewardedVideo_m3DDF873D010E80617CC983DB96419783932B5195 (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
-		s_Il2CppMethodInitialized = true;
-	}
-	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* V_0 = NULL;
-	{
-		// if (Application.internetReachability != NetworkReachability.NotReachable)
-		int32_t L_0;
-		L_0 = Application_get_internetReachability_m3FECA8BA005340369BB952CE8CDF3E1A53F3BA0E(NULL);
-		if (!L_0)
-		{
-			goto IL_0039;
-		}
-	}
-	{
-		// IronSource.Agent.showRewardedVideo();
-		il2cpp_codegen_runtime_class_init_inline(IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_1;
-		L_1 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
-		NullCheck(L_1);
-		IronSource_showRewardedVideo_m5BF8747147A5AB0C167BBBCED99B300DB0F257AD(L_1, NULL);
-		// Dictionary<string, object> RewardSkinAdPlacement = new Dictionary<string, object>()
-		// {
-		//                      {"placement" , WatchAdForSkinButton}
-		// };
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_2 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_2, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_3 = L_2;
-		RuntimeObject* L_4 = __this->___WatchAdForSkinButton_17;
-		NullCheck(L_3);
-		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_3, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_4, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
-		V_0 = L_3;
-		// amplitude.logEvent("showingRewardedAd", RewardSkinAdPlacement);
-		Amplitude_tAEAFEAB2AF1E990D0EBDC1F52D554AB55C6B691E* L_5 = __this->___amplitude_18;
-		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_6 = V_0;
-		NullCheck(L_5);
-		Amplitude_logEvent_mEDE187C2573F848B3A126D89BCDFA1514FFD6181(L_5, _stringLiteral6637A2DE5FD9E3AF7FB327A3B23A11BC98D651FD, L_6, NULL);
-	}
-
-IL_0039:
-	{
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::RewardedVideoAdClosedEvent()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_RewardedVideoAdClosedEvent_m58A0E1D4E60BEE8724EBD693FFEEADEB031947D0 (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// IronSource.Agent.init(appkey, IronSourceAdUnits.REWARDED_VIDEO);
-		il2cpp_codegen_runtime_class_init_inline(IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_0;
-		L_0 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
-		String_t* L_1 = __this->___appkey_4;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)1);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_2;
-		String_t* L_4;
-		L_4 = IronSourceAdUnits_get_REWARDED_VIDEO_mA0E5A6A8356BC1F538996BDE9FC07C1B51D86057(NULL);
-		NullCheck(L_3);
-		ArrayElementTypeCheck (L_3, L_4);
-		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_4);
-		NullCheck(L_0);
-		IronSource_init_mC764BC165DE9127E939FF7DA044367690B4DD3DA(L_0, L_1, L_3, NULL);
-		// IronSource.Agent.shouldTrackNetworkState(true);
-		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_5;
-		L_5 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
-		NullCheck(L_5);
-		IronSource_shouldTrackNetworkState_mB5FF34F60168FF821571775E654BC5FDD34DBF13(L_5, (bool)1, NULL);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::RewardedVideoAvailabilityChangedEvent(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_RewardedVideoAvailabilityChangedEvent_m48C8F336BC589739B47135F50C97F266E7820147 (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, bool ___0_available, const RuntimeMethod* method) 
-{
-	{
-		// rewardedVideoAvailability = available;
-		bool L_0 = ___0_available;
-		__this->___rewardedVideoAvailability_11 = L_0;
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::RewardedVideoAdRewardedEvent(IronSourcePlacement)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded_RewardedVideoAdRewardedEvent_m47612E0AAA5FD0DBBC4C87D79B2111B4E38B12ED (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* ___0_ssp, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF1A9BE8908B6E65FACB885209B209FD97BBDF648);
-		s_Il2CppMethodInitialized = true;
-	}
-	String_t* G_B4_0 = NULL;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B4_1 = NULL;
-	String_t* G_B3_0 = NULL;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B3_1 = NULL;
-	String_t* G_B8_0 = NULL;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B8_1 = NULL;
-	String_t* G_B7_0 = NULL;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B7_1 = NULL;
-	{
-		// ssp = IronSource.Agent.getPlacementInfo(placementName);
-		il2cpp_codegen_runtime_class_init_inline(IronSource_t7DCCEB700A572343087F7D51705815185046A120_il2cpp_TypeInfo_var);
-		IronSource_t7DCCEB700A572343087F7D51705815185046A120* L_0;
-		L_0 = IronSource_get_Agent_m263B42666F99FAD3CCC93BBCF79EE3E85D485566(NULL);
-		String_t* L_1 = __this->___placementName_7;
-		NullCheck(L_0);
-		IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* L_2;
-		L_2 = IronSource_getPlacementInfo_mCF44F07E63A48BF07FE8CB4F3861AB726773E840(L_0, L_1, NULL);
-		___0_ssp = L_2;
-		// if (ssp != null)
-		IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* L_3 = ___0_ssp;
-		if (!L_3)
-		{
-			goto IL_0101;
-		}
-	}
-	{
-		// placementName = ssp.getPlacementName();
-		IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* L_4 = ___0_ssp;
-		NullCheck(L_4);
-		String_t* L_5;
-		L_5 = IronSourcePlacement_getPlacementName_m747D38E22E987B023508667E0026B1DD18D88C2B_inline(L_4, NULL);
-		__this->___placementName_7 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___placementName_7), (void*)L_5);
-		// string rewardName = ssp.getRewardName();
-		IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* L_6 = ___0_ssp;
-		NullCheck(L_6);
-		String_t* L_7;
-		L_7 = IronSourcePlacement_getRewardName_m49DECEF7708B57ED1C5C402479DD8E1F21D6CB18_inline(L_6, NULL);
-		// int rewardAmount = ssp.getRewardAmount();
-		IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* L_8 = ___0_ssp;
-		NullCheck(L_8);
-		int32_t L_9;
-		L_9 = IronSourcePlacement_getRewardAmount_m872D997472B60D9E782F5D30DE02845109BBE909_inline(L_8, NULL);
-		// if (FreeCoins == true)
-		bool L_10 = __this->___FreeCoins_8;
-		if (!L_10)
-		{
-			goto IL_009c;
-		}
-	}
-	{
-		// CoinInstance.currentCash += 500;
-		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_11 = __this->___CoinInstance_5;
-		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_12 = L_11;
-		NullCheck(L_12);
-		int32_t L_13 = L_12->___currentCash_5;
-		NullCheck(L_12);
-		L_12->___currentCash_5 = ((int32_t)il2cpp_codegen_add(L_13, ((int32_t)500)));
-		// PlayerPrefs.SetInt("Coins", CoinInstance.currentCash);
-		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_14 = __this->___CoinInstance_5;
-		NullCheck(L_14);
-		int32_t L_15 = L_14->___currentCash_5;
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15, L_15, NULL);
-		// CoinInstance.cashAmount.text = "" + CoinInstance.currentCash;
-		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_16 = __this->___CoinInstance_5;
-		NullCheck(L_16);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_17 = L_16->___cashAmount_4;
-		CoinData_tADAA0EC1CEC264E0D6B33157C0BAC5A03FCD980E* L_18 = __this->___CoinInstance_5;
-		NullCheck(L_18);
-		int32_t* L_19 = (&L_18->___currentCash_5);
-		String_t* L_20;
-		L_20 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_19, NULL);
-		String_t* L_21 = L_20;
-		G_B3_0 = L_21;
-		G_B3_1 = L_17;
-		if (L_21)
-		{
-			G_B4_0 = L_21;
-			G_B4_1 = L_17;
-			goto IL_008a;
-		}
-	}
-	{
-		G_B4_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		G_B4_1 = G_B3_1;
-	}
-
-IL_008a:
-	{
-		NullCheck(G_B4_1);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, G_B4_1, G_B4_0);
-		// PlayerPrefs.Save();
-		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
-		// FreeCoins = false;
-		__this->___FreeCoins_8 = (bool)0;
-		return;
-	}
-
-IL_009c:
-	{
-		// else if (FreeFuel == true)
-		bool L_22 = __this->___FreeFuel_9;
-		if (!L_22)
-		{
-			goto IL_0101;
-		}
-	}
-	{
-		// FuelInstance.currentFuel += 3;
-		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_23 = __this->___FuelInstance_6;
-		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_24 = L_23;
-		NullCheck(L_24);
-		int32_t L_25 = L_24->___currentFuel_5;
-		NullCheck(L_24);
-		L_24->___currentFuel_5 = ((int32_t)il2cpp_codegen_add(L_25, 3));
-		// PlayerPrefs.SetInt("Fuel", FuelInstance.currentFuel);
-		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_26 = __this->___FuelInstance_6;
-		NullCheck(L_26);
-		int32_t L_27 = L_26->___currentFuel_5;
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteralF1A9BE8908B6E65FACB885209B209FD97BBDF648, L_27, NULL);
-		// FuelInstance.fuelAmount.text = "" + FuelInstance.currentFuel;
-		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_28 = __this->___FuelInstance_6;
-		NullCheck(L_28);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_29 = L_28->___fuelAmount_4;
-		FuelData_tFAD12AE534D069BF61B9C85535A128D425D064BF* L_30 = __this->___FuelInstance_6;
-		NullCheck(L_30);
-		int32_t* L_31 = (&L_30->___currentFuel_5);
-		String_t* L_32;
-		L_32 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_31, NULL);
-		String_t* L_33 = L_32;
-		G_B7_0 = L_33;
-		G_B7_1 = L_29;
-		if (L_33)
-		{
-			G_B8_0 = L_33;
-			G_B8_1 = L_29;
-			goto IL_00f0;
-		}
-	}
-	{
-		G_B8_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		G_B8_1 = G_B7_1;
-	}
-
-IL_00f0:
-	{
-		NullCheck(G_B8_1);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, G_B8_1, G_B8_0);
-		// PlayerPrefs.Save();
-		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
-		// FreeFuel = false;
-		__this->___FreeFuel_9 = (bool)0;
-	}
-
-IL_0101:
-	{
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Rewarded::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rewarded__ctor_m135E88183ED9E1D918D2AB78732C969C85E6C151 (Rewarded_t4DB2A1F516B9161C7B289F6470CC52932E79826F* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral79D33A3A0B9D256F358B6A9572BB0181E20B5B5C);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9DA7B596C07B11A65E2667BC87EC57777926861C);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA825DFF2EFDEE65254DD2CF716D86D45561B078D);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB404F63CFA087BF3979B80169574C6B0155AF029);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// private object FreeCoinButton = "FreeCoinButton";
-		__this->___FreeCoinButton_14 = _stringLiteralA825DFF2EFDEE65254DD2CF716D86D45561B078D;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___FreeCoinButton_14), (void*)_stringLiteralA825DFF2EFDEE65254DD2CF716D86D45561B078D);
-		// private object FreeFuelButton = "FreeFuelButton";
-		__this->___FreeFuelButton_15 = _stringLiteralB404F63CFA087BF3979B80169574C6B0155AF029;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___FreeFuelButton_15), (void*)_stringLiteralB404F63CFA087BF3979B80169574C6B0155AF029);
-		// private object WatchAdForNextLevelButton = "WatchAdForNextLevelButton";
-		__this->___WatchAdForNextLevelButton_16 = _stringLiteral79D33A3A0B9D256F358B6A9572BB0181E20B5B5C;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___WatchAdForNextLevelButton_16), (void*)_stringLiteral79D33A3A0B9D256F358B6A9572BB0181E20B5B5C);
-		// private object WatchAdForSkinButton = "WatchAdForSkinButton";
-		__this->___WatchAdForSkinButton_17 = _stringLiteral9DA7B596C07B11A65E2667BC87EC57777926861C;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___WatchAdForSkinButton_17), (void*)_stringLiteral9DA7B596C07B11A65E2667BC87EC57777926861C);
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void UnityStandardAssets.Vehicles.Car.SpeedVariation::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpeedVariation_Start_m316B8016AB1CF28FE248644AC06E6E7FEED90B15 (SpeedVariation_tC3855852E458B6FEA14719FF0EFF9743A9D88F80* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisCarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_m83612DF20D907705994B4C139301E9DE5DFF2A69_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// Bus = GetComponent<CarController>();
-		CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* L_0;
-		L_0 = Component_GetComponent_TisCarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_m83612DF20D907705994B4C139301E9DE5DFF2A69(__this, Component_GetComponent_TisCarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_m83612DF20D907705994B4C139301E9DE5DFF2A69_RuntimeMethod_var);
-		__this->___Bus_4 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___Bus_4), (void*)L_0);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.SpeedVariation::Update()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpeedVariation_Update_mDC9E55B7F627EEC2434AC03701E8EC33AD1223A6 (SpeedVariation_tC3855852E458B6FEA14719FF0EFF9743A9D88F80* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisCarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_m83612DF20D907705994B4C139301E9DE5DFF2A69_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if(Bus == null) Bus = GetComponent<CarController>();
-		CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* L_0 = __this->___Bus_4;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_1)
-		{
-			goto IL_001a;
-		}
-	}
-	{
-		// if(Bus == null) Bus = GetComponent<CarController>();
-		CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* L_2;
-		L_2 = Component_GetComponent_TisCarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_m83612DF20D907705994B4C139301E9DE5DFF2A69(__this, Component_GetComponent_TisCarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347_m83612DF20D907705994B4C139301E9DE5DFF2A69_RuntimeMethod_var);
-		__this->___Bus_4 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___Bus_4), (void*)L_2);
-	}
-
-IL_001a:
-	{
-		// if (Bus == null) return;
-		CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* L_3 = __this->___Bus_4;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_4;
-		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_4)
-		{
-			goto IL_0029;
-		}
-	}
-	{
-		// if (Bus == null) return;
-		return;
-	}
-
-IL_0029:
-	{
-		// if (HealthBar.instance == null) return;
-		HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9* L_5 = ((HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9_StaticFields*)il2cpp_codegen_static_fields_for(HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9_il2cpp_TypeInfo_var))->___instance_10;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_6;
-		L_6 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_6)
-		{
-			goto IL_0037;
-		}
-	}
-	{
-		// if (HealthBar.instance == null) return;
-		return;
-	}
-
-IL_0037:
-	{
-		// if (HealthBar.instance.CurrentHealth == 1)
-		HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9* L_7 = ((HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9_StaticFields*)il2cpp_codegen_static_fields_for(HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9_il2cpp_TypeInfo_var))->___instance_10;
-		NullCheck(L_7);
-		int32_t L_8 = L_7->___CurrentHealth_6;
-		if ((!(((uint32_t)L_8) == ((uint32_t)1))))
-		{
-			goto IL_0055;
-		}
-	}
-	{
-		// Bus.m_Topspeed = 20f;
-		CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* L_9 = __this->___Bus_4;
-		NullCheck(L_9);
-		L_9->___m_Topspeed_18 = (20.0f);
-		return;
-	}
-
-IL_0055:
-	{
-		// Bus.m_Topspeed = 40f;
-		CarController_tCEF3C1742808D025CBF959BD90A024FE2BD47347* L_10 = __this->___Bus_4;
-		NullCheck(L_10);
-		L_10->___m_Topspeed_18 = (40.0f);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.SpeedVariation::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpeedVariation__ctor_m15953F5F8F6ED6D243FBB8F15C237060F330F487 (SpeedVariation_tC3855852E458B6FEA14719FF0EFF9743A9D88F80* __this, const RuntimeMethod* method) 
-{
-	{
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void UnityStandardAssets.Vehicles.Car.Timer::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Start_m563335F2C13BECD358EE9A1717EED4C7405919D3 (Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697* __this, const RuntimeMethod* method) 
-{
-	{
-		// TimerIsRunning = true;
-		__this->___TimerIsRunning_6 = (bool)1;
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Timer::Update()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Update_m3F5FCC440CCB130F2093806644A421C2265F7CA2 (Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7CB769703018961A98904E0CD8E6078D6C2832CA);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if (Bus.isTimerOn == true)
-		BusMovement_tADB9F9BA701F9EB87C98BDC5EF1870E6B89CE69A* L_0 = __this->___Bus_10;
-		NullCheck(L_0);
-		bool L_1 = L_0->___isTimerOn_61;
-		if (!L_1)
-		{
-			goto IL_008b;
-		}
-	}
-	{
-		// if (TimerIsRunning)
-		bool L_2 = __this->___TimerIsRunning_6;
-		if (!L_2)
-		{
-			goto IL_008b;
-		}
-	}
-	{
-		// if (TimeRemaining > 0)
-		float L_3 = __this->___TimeRemaining_4;
-		if ((!(((float)L_3) > ((float)(0.0f)))))
-		{
-			goto IL_005e;
-		}
-	}
-	{
-		// TimeRemaining -= Time.deltaTime;
-		float L_4 = __this->___TimeRemaining_4;
-		float L_5;
-		L_5 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___TimeRemaining_4 = ((float)il2cpp_codegen_subtract(L_4, L_5));
-		// slider.value -= 1f * Time.deltaTime;
-		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_6 = __this->___slider_8;
-		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_7 = L_6;
-		NullCheck(L_7);
-		float L_8;
-		L_8 = VirtualFuncInvoker0< float >::Invoke(46 /* System.Single UnityEngine.UI.Slider::get_value() */, L_7);
-		float L_9;
-		L_9 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		NullCheck(L_7);
-		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_7, ((float)il2cpp_codegen_subtract(L_8, ((float)il2cpp_codegen_multiply((1.0f), L_9)))));
-		// DisplayTime(TimeRemaining);
-		float L_10 = __this->___TimeRemaining_4;
-		Timer_DisplayTime_mBB553D1A916C651BA41291740F8FE0378737DC0C(__this, L_10, NULL);
-		return;
-	}
-
-IL_005e:
-	{
-		// TimeRemaining = 0;
-		__this->___TimeRemaining_4 = (0.0f);
-		// TimerIsRunning = false;
-		__this->___TimerIsRunning_6 = (bool)0;
-		// FailScreen.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___FailScreen_7;
-		NullCheck(L_11);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)1, NULL);
-		// AudioManager.instance.Play("LevelFailed");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_12 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_12);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_12, _stringLiteral7CB769703018961A98904E0CD8E6078D6C2832CA, NULL);
-	}
-
-IL_008b:
-	{
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Timer::DisplayTime(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_DisplayTime_mBB553D1A916C651BA41291740F8FE0378737DC0C (Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697* __this, float ___0_TimeToDisplay, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD3C6FF105F16F36B05CE62DC0895F7A6B90F6ED8);
-		s_Il2CppMethodInitialized = true;
-	}
-	float V_0 = 0.0f;
-	float V_1 = 0.0f;
-	{
-		// TimeToDisplay += 1;
-		float L_0 = ___0_TimeToDisplay;
-		___0_TimeToDisplay = ((float)il2cpp_codegen_add(L_0, (1.0f)));
-		// float Minutes = Mathf.FloorToInt(TimeToDisplay / 60);
-		float L_1 = ___0_TimeToDisplay;
-		int32_t L_2;
-		L_2 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline(((float)(L_1/(60.0f))), NULL);
-		V_0 = ((float)L_2);
-		// float Seconds = Mathf.FloorToInt(TimeToDisplay % 60);
-		float L_3 = ___0_TimeToDisplay;
-		int32_t L_4;
-		L_4 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline((fmodf(L_3, (60.0f))), NULL);
-		V_1 = ((float)L_4);
-		// TimeText.text = string.Format("{0:00}:{1:00}", Minutes, Seconds);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___TimeText_5;
-		float L_6 = V_0;
-		float L_7 = L_6;
-		RuntimeObject* L_8 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_7);
-		float L_9 = V_1;
-		float L_10 = L_9;
-		RuntimeObject* L_11 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_10);
-		String_t* L_12;
-		L_12 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteralD3C6FF105F16F36B05CE62DC0895F7A6B90F6ED8, L_8, L_11, NULL);
-		NullCheck(L_5);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, L_12);
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.Timer::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer__ctor_m78A24A74FF1BF8943EB30BE1E1F7BA0D298B399D (Timer_tC2DFB7731955C63BF54EB1C43DD5C348B057D697* __this, const RuntimeMethod* method) 
-{
-	{
-		// private float TimeRemaining = 10;
-		__this->___TimeRemaining_4 = (10.0f);
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void UnityStandardAssets.Vehicles.Car.UnaffectedHealth::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnaffectedHealth_Awake_mC5CF6BDE7BE764327486128414C75769D670E641 (UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if (instance == null)
-		UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0* L_0 = ((UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_StaticFields*)il2cpp_codegen_static_fields_for(UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_il2cpp_TypeInfo_var))->___instance_9;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_1)
-		{
-			goto IL_0013;
-		}
-	}
-	{
-		// instance = this;
-		((UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_StaticFields*)il2cpp_codegen_static_fields_for(UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_il2cpp_TypeInfo_var))->___instance_9 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&((UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_StaticFields*)il2cpp_codegen_static_fields_for(UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0_il2cpp_TypeInfo_var))->___instance_9), (void*)__this);
-	}
-
-IL_0013:
-	{
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.UnaffectedHealth::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnaffectedHealth_Start_m59B4A78BA88B641EEEE6526964CB213BAF37FF84 (UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0* __this, const RuntimeMethod* method) 
-{
-	{
-		// CurrentHealth = MaxHealth;
-		int32_t L_0 = __this->___MaxHealth_4;
-		__this->___CurrentHealth_5 = L_0;
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.UnaffectedHealth::SetHealth(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnaffectedHealth_SetHealth_m8CCA6FE785CEC63BB95A82D65933AC7704DB8A86 (UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0* __this, int32_t ___0_health, const RuntimeMethod* method) 
-{
-	{
-		// slider.value = health;
-		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_0 = __this->___slider_6;
-		int32_t L_1 = ___0_health;
-		NullCheck(L_0);
-		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_0, ((float)L_1));
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.UnaffectedHealth::SetMaxHealth(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnaffectedHealth_SetMaxHealth_m0A57D41F04412ECB6322D049FAB8D773279C2629 (UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0* __this, int32_t ___0_health, const RuntimeMethod* method) 
-{
-	{
-		// slider.maxValue = health;
-		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_0 = __this->___slider_6;
-		int32_t L_1 = ___0_health;
-		NullCheck(L_0);
-		Slider_set_maxValue_m43F3BF47C6D7063D80C578FD9B95AD88494203BE(L_0, ((float)L_1), NULL);
-		// slider.value = health;
-		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_2 = __this->___slider_6;
-		int32_t L_3 = ___0_health;
-		NullCheck(L_2);
-		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_2, ((float)L_3));
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.UnaffectedHealth::OnCollisionEnter(UnityEngine.Collision)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnaffectedHealth_OnCollisionEnter_m0C28461BAD2D928F8F45E356F5AC4DC3DCEC0CB6 (UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0* __this, Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* ___0_collision, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BusService_t545A0A75BAA8F084DA6C094B5447033DC8758742_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral725A177C9794D8298EFEED11CCEB028D61634F89);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA27A735963C35C40C55510103CE6D297CAD13B07);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDDBC67A0A5B715656006F4E96C4CDEA983C1AB81);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6223909301FC6EC095026FC41BEB25614A36F3C);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if (collision.gameObject.tag == "CityProps" || collision.gameObject.tag == "AI")
-		Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* L_0 = ___0_collision;
-		NullCheck(L_0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
-		L_1 = Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E(L_0, NULL);
-		NullCheck(L_1);
-		String_t* L_2;
-		L_2 = GameObject_get_tag_mEDD27BF795072834D656B286CBE51B2C99747805(L_1, NULL);
-		bool L_3;
-		L_3 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_2, _stringLiteralDDBC67A0A5B715656006F4E96C4CDEA983C1AB81, NULL);
-		if (L_3)
-		{
-			goto IL_0031;
-		}
-	}
-	{
-		Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* L_4 = ___0_collision;
-		NullCheck(L_4);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
-		L_5 = Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E(L_4, NULL);
-		NullCheck(L_5);
-		String_t* L_6;
-		L_6 = GameObject_get_tag_mEDD27BF795072834D656B286CBE51B2C99747805(L_5, NULL);
-		bool L_7;
-		L_7 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_6, _stringLiteral725A177C9794D8298EFEED11CCEB028D61634F89, NULL);
-		if (!L_7)
-		{
-			goto IL_00c5;
-		}
-	}
-
-IL_0031:
-	{
-		// AudioManager.instance.Play("Crash");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_8 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_8);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_8, _stringLiteralA27A735963C35C40C55510103CE6D297CAD13B07, NULL);
-		// AudioManager.instance.Play("PassengersScreaming");
-		AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* L_9 = ((AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields*)il2cpp_codegen_static_fields_for(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_il2cpp_TypeInfo_var))->___instance_5;
-		NullCheck(L_9);
-		AudioManager_Play_mB69D5512DD0ECB0B853CD681D2282DC78844DE4F(L_9, _stringLiteralE6223909301FC6EC095026FC41BEB25614A36F3C, NULL);
-		// if (CurrentHealth > 0)
-		int32_t L_10 = __this->___CurrentHealth_5;
-		if ((((int32_t)L_10) <= ((int32_t)0)))
-		{
-			goto IL_0078;
-		}
-	}
-	{
-		// CurrentHealth = CurrentHealth - 1;
-		int32_t L_11 = __this->___CurrentHealth_5;
-		__this->___CurrentHealth_5 = ((int32_t)il2cpp_codegen_subtract(L_11, 1));
-		// slider.value = CurrentHealth;
-		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_12 = __this->___slider_6;
-		int32_t L_13 = __this->___CurrentHealth_5;
-		NullCheck(L_12);
-		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_12, ((float)L_13));
-	}
-
-IL_0078:
-	{
-		// if (CurrentHealth == 0 && MainScreenFail < 2)
-		int32_t L_14 = __this->___CurrentHealth_5;
-		if (L_14)
-		{
-			goto IL_00a4;
-		}
-	}
-	{
-		int32_t L_15 = __this->___MainScreenFail_10;
-		if ((((int32_t)L_15) >= ((int32_t)2)))
-		{
-			goto IL_00a4;
-		}
-	}
-	{
-		// MainScreenFail = MainScreenFail + 1;
-		int32_t L_16 = __this->___MainScreenFail_10;
-		__this->___MainScreenFail_10 = ((int32_t)il2cpp_codegen_add(L_16, 1));
-		// ServiceScreen.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___ServiceScreen_8;
-		NullCheck(L_17);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)1, NULL);
-		return;
-	}
-
-IL_00a4:
-	{
-		// else if (CurrentHealth == 0 && MainScreenFail == 2)
-		int32_t L_18 = __this->___CurrentHealth_5;
-		if (L_18)
-		{
-			goto IL_00c5;
-		}
-	}
-	{
-		int32_t L_19 = __this->___MainScreenFail_10;
-		if ((!(((uint32_t)L_19) == ((uint32_t)2))))
-		{
-			goto IL_00c5;
-		}
-	}
-	{
-		// BusService.instance.FailScreen.SetActive(true);
-		BusService_t545A0A75BAA8F084DA6C094B5447033DC8758742* L_20 = ((BusService_t545A0A75BAA8F084DA6C094B5447033DC8758742_StaticFields*)il2cpp_codegen_static_fields_for(BusService_t545A0A75BAA8F084DA6C094B5447033DC8758742_il2cpp_TypeInfo_var))->___instance_13;
-		NullCheck(L_20);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = L_20->___FailScreen_12;
-		NullCheck(L_21);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_21, (bool)1, NULL);
-	}
-
-IL_00c5:
-	{
-		// }
-		return;
-	}
-}
-// System.Void UnityStandardAssets.Vehicles.Car.UnaffectedHealth::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnaffectedHealth__ctor_mB8094BA9E97685BD35635CD21EE232E39132A5BD (UnaffectedHealth_t8C6C3A1F3B268DC35D9A564EEDCB0218FA980BB0* __this, const RuntimeMethod* method) 
-{
-	{
-		// private int MaxHealth = 100;
-		__this->___MaxHealth_4 = ((int32_t)100);
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HealthBar_set_GodMode_m9EABC15ECA0026C8D70FCD7645F0F61C188CF9C7_inline (HealthBar_t28759010C1C98C11501DE2B04BFDB9A62C105EA9* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -21772,100 +20398,5 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HealthBar_set_GodMode_m9EABC
 		__this->___m_GodMode_4 = L_0;
 		// set { m_GodMode = value; }
 		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	float V_1 = 0.0f;
-	bool V_2 = false;
-	{
-		float L_0 = ___0_value;
-		V_0 = (bool)((((float)L_0) < ((float)(0.0f)))? 1 : 0);
-		bool L_1 = V_0;
-		if (!L_1)
-		{
-			goto IL_0015;
-		}
-	}
-	{
-		V_1 = (0.0f);
-		goto IL_002d;
-	}
-
-IL_0015:
-	{
-		float L_2 = ___0_value;
-		V_2 = (bool)((((float)L_2) > ((float)(1.0f)))? 1 : 0);
-		bool L_3 = V_2;
-		if (!L_3)
-		{
-			goto IL_0029;
-		}
-	}
-	{
-		V_1 = (1.0f);
-		goto IL_002d;
-	}
-
-IL_0029:
-	{
-		float L_4 = ___0_value;
-		V_1 = L_4;
-		goto IL_002d;
-	}
-
-IL_002d:
-	{
-		float L_5 = V_1;
-		return L_5;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* IronSourcePlacement_getPlacementName_m747D38E22E987B023508667E0026B1DD18D88C2B_inline (IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* __this, const RuntimeMethod* method) 
-{
-	{
-		// return placementName;
-		String_t* L_0 = __this->___placementName_2;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* IronSourcePlacement_getRewardName_m49DECEF7708B57ED1C5C402479DD8E1F21D6CB18_inline (IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* __this, const RuntimeMethod* method) 
-{
-	{
-		// return rewardName;
-		String_t* L_0 = __this->___rewardName_0;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t IronSourcePlacement_getRewardAmount_m872D997472B60D9E782F5D30DE02845109BBE909_inline (IronSourcePlacement_t9BF684401AE5CD06D4B498DB3CEC11831CBF4571* __this, const RuntimeMethod* method) 
-{
-	{
-		// return rewardAmount;
-		int32_t L_0 = __this->___rewardAmount_1;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline (float ___0_f, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		float L_0 = ___0_f;
-		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
-		double L_1;
-		L_1 = floor(((double)L_0));
-		V_0 = il2cpp_codegen_cast_double_to_int<int32_t>(L_1);
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		int32_t L_2 = V_0;
-		return L_2;
 	}
 }
